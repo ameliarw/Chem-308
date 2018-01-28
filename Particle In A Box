@@ -1,1 +1,45 @@
+function plotPIB1D( n )
+%remember, n refers to the number of eigenvectors generated
+%here are my constants: 
+%m is mass, L is length of box, barht height of barrier, w is the barrier
+%width 
 
+m = 1;
+L = 5e-9;
+hbarsq = ((6.626*10^-34)/pi)^2; 
+barht = 1e6;
+w=3; 
+pts = 250;
+
+%now account for the delta x and discritize the number of elements in the x vector 
+%We say that there are some number of points within the x vector
+x = linspace(0, L, pts);
+dx = x(2)-x(1);
+
+%x is a vector that goes from 0 to 5 separated by some amount, dictated by
+%the number of points. Vvec is a vector with the dimension of pts entries
+%with one column
+%now we have some number, points of entries in the x vector
+Vvec = zeros(pts, 1);
+Vvec([1:w, end - (w-1):end]) = barht;
+%We created a vector of zeros, but we just set the first three and the last
+%three entries (because w=3) equal to some barht (large number, using 1e6)
+
+%plot vvec to see w
+% figure(1) 
+% plot(x, Vvec)
+%Now we Vvec on the diagonal of our potential matrix
+V = diag(Vvec);
+
+%making the second derivative matrix
+D2 = -2*eye(n) + diag(ones(n-1,1), 1) + diag(ones(n-1,1),-1);
+%now account for the delta x idea by subtracting the first element from the
+%second element because they will be evenly spaced, and multiply the matrix
+%by the constants 
+T = 1/(dx^2)*(-hbarsq/(2*m))*D2;
+
+%here's our Hamiltonian, which accounts for both the potential energy and
+%kinetic energy
+H= T + V;
+
+%now we want to solve for the eigenvalues of the 
