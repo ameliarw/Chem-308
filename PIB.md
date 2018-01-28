@@ -1,4 +1,6 @@
-###Particle in a Box 
+##Particle in a Box
+--
+
 We've created a program which discritizes space and combines the potential energy and kinetic energy into a PIB hamiltonian matrix.
 The eigenvalues and eigenvectors of this matrix have also been determined and sorted in two different matrices. 
 One is a matrix composed of the sorted eigenvectors.
@@ -6,7 +8,8 @@ The eigenvalues of the total energy matrix are the diagonal elements of another 
 Hamiltonian matrix were found, these eigenvalues and eigenvectors were sorted so that they will be plotted in the correct order. The graphs
 of each eigenvector were then shifted upwards and scaled by 0.25 so that they could be seen more easily. 
 
-Code for the program: 
+Code for the program:
+
 function plotPIB1D( n )
 %remember, n refers to the number of eigenvectors generated
 %here are my constants: 
