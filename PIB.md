@@ -1,4 +1,4 @@
-##Particle in a Box
+Particle in a Box
 --
 
 We've created a program which discritizes space and combines the potential energy and kinetic energy into a PIB hamiltonian matrix.
