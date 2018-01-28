@@ -1,3 +1,12 @@
+###Particle in a Box 
+We've created a program which discritizes spac and combines the potential energy and kinetic energy into a PIB hamiltonian matrix.
+The eigenvalues and eigenvectors of this matrix have also been determined and sorted in two different matrices. 
+One is a matrix composed of the sorted eigenvectors.
+The eigenvalues of the Hamiltonian matrix are the diagonal elements of another matrix, vals. 
+
+We've used commands such as linspace(), zeros(), a
+
+
 function plotPIB1D( n )
 %remember, n refers to the number of eigenvectors generated
 %here are my constants: 
