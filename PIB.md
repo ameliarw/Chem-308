@@ -9,7 +9,7 @@ Hamiltonian matrix were found, these eigenvalues and eigenvectors were sorted so
 of each eigenvector were then shifted upwards and scaled by 0.25 so that they could be seen more easily. 
 
 
-
+![n_5]
 
 
 Code for the program:
