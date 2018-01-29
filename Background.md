@@ -11,7 +11,7 @@ The Hamiltonian operator is comprised of both the kinetic energy and potential e
 
 ### The Hamiltonian operator operating on an eigenfunction will yield the energy of that quantum state multiplied by the original eigenfunction:
 
-[how do I put in math stuff]
+$$ \hat{H}\Psi = i \hbar\frac{\partial{\Psi}}{\partial t} $$
 
 This expression is also called the Schrodinger Equation.
 
