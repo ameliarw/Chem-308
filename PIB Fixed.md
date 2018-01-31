@@ -7,7 +7,7 @@ The eigenvalues and eigenvectors of this matrix have also been determined and so
 One is a matrix composed of the sorted eigenvectors.
 The eigenvalues of the total energy matrix are the diagonal elements of another matrix, vals. Once the eigenvalues and eigenvectors of the 
 Hamiltonian matrix were found, these eigenvalues and eigenvectors were sorted so that they will be plotted in the correct order. The graphs
-of each eigenvector were then shifted upwards and scaled by 0.25 so that they could be seen more easily. 
+of each eigenvector were then shifted upwards and scaled so that they could be seen more easily. 
 
 This is the code which sets the length of the box, the mass of the particle, and (hbar)^2 and produces a figure containing n number of eigenvectors for the one dimensional PIB, spaced according to their energies. 
 
