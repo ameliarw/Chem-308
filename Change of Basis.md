@@ -1,4 +1,4 @@
-###Change of Basis
+### Change of Basis
 
 In order solve the time dependent Schrodigner equation, we will first use an "easy" basis, then change the basis such that the 
 solution is in the basis we want. 
