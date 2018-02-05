@@ -1,3 +1,9 @@
+[home](/README.md)
+
+### Here's our eigsort function 
+This function takes the 
+This function takes the matrix which has eigenvectors as the columns and sorts those columns in the same order
+
 function [srtvecs, srtvals] = eigsort(vecs, vals)
 
 %Sorts the vecs and vals 
