@@ -1,3 +1,4 @@
+[home](/README.md)
 
 ## Summary of Key Quantum Ideas
 -----
