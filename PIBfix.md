@@ -13,7 +13,7 @@ This is the code which sets the length of the box, the mass of the particle, and
 
 ![pibL1](https://github.com/ameliarw/Chem-308/blob/master/pibL1.jpg)
 
-
+##### Code from Matlab to plot the eigenvectors of the PIB model
 function plotPIB1D (n)
 
 %n refers to the number of eigenvectors generated
