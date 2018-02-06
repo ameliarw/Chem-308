@@ -1,8 +1,14 @@
 [home](/README.md)
 
 ### Here's our eigsort function 
-This function takes the 
-This function takes the matrix which has eigenvectors as the columns and sorts those columns in the same order
+When we call upon the eig function on a certain matrix, in our case the total energy matrix, in matlab, we produce two matrices: vecs and vals. 
+Vecs is defined as a matrix which has the corresponding eigenvectors of the original matrix as the columns of vecs. 
+Vals is defined as a diagonal matrix which has the corresponding eigenvalues on the diagonal. 
+This eigsort function sorts the eigenvalues, the diagonals of vals, in ascending order and retains this order to sort the eigenvectors, or columns of vecs, such that each eigenvalue still matches up with its corresponding eigenvector. Ultimately, the eigenvectors and values are sorted into ascending order of eigenvalues. 
+
+---- 
+
+#### Actual matlab code: 
 
 function [srtvecs, srtvals] = eigsort(vecs, vals)
 
