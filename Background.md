@@ -23,6 +23,12 @@ This expression is also called the Schrodinger Equation.
 - If two operators do not commute, then they do not share the same set of eigenfunctions. This is also to say that they do not have the same basis.
 
 
+##### All operators we use are hermitian
+Hermitian operators produce real eigenvalues. A hermitian matrix has a defining property where the complex conjugate is equal to the complex conjugate transpose. 
+
+
+
+
 
 
 
