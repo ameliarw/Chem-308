@@ -1,4 +1,4 @@
-[home] (/README.md)
+[home](/README.md)
 
 ### MatLab code from class on 2/8 for time evolution of non-stationary states
 
