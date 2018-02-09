@@ -7,4 +7,6 @@
     - [Eigsort Function](/Eigsort.md)
 3. [The Time Dependent Schrodiner Equation](/TDSE.md)
     - [Change of Basis](/Basis.md)
+    - [TDSE Code](/TDSEmatlab.md)
+    - [3D Plot Code](/plot3d.md)
 
