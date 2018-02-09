@@ -17,14 +17,19 @@ eigenvalue with a periodic movement about the complex plane. When another soluti
 was plotted, multiple delta functions appeared in the energy basis plot, and these energies evovled with different 
 frequencies as well. The energy eigenstates have more simple time evolution compared with other possible solutions to the TDSE. 
 
-
-[Solutions are energy eigenfunctions in the position basis - to talk about solutions in vector form, 
-to translate the discussion from state descriptions that are functions of x to wavevectors, assume the 
-wavevectors are expressed in the position basis. 
-
 We can mathematically separate the space and time dependence of our wavefunction if the wavefunction is an 
 energy eigenfunction/stationary state/solution to the TDSE. 
 
 These two variables can be separated and our wavefunction can be written as the product of two functions, 
-one of which depends on space and the other depends on time.]
+one of which depends on space and the other depends on time.
 
+The time function is Tn(t) = e^(−iEnt/hbar)
+
+The solutions of the TDSE can be in the position basis or the energy basis depending on which basis is chosen, as eigenvectors
+do not have a specific basis. The energy basis, however, proves to be a more useful basis to use when describing the time
+evolution of quantum states, as quantum states will have faster or slower rates of rotation through the complex plane
+depending on the energies of those quantum states. Therefore, solutions to the TDSE should be changed into the energy basis. 
+
+#### Time Evolution of Non-Stationary States
+While the time evolution of stationary states proves to be periodic and predictable, non-stationary states are composed of 
+eigenvectors of different energies, leading to variation in the rates of time evolution. 
