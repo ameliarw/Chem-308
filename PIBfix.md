@@ -1,7 +1,9 @@
-[home](/README.md)
-{include mathjax.html %}
+{% include mathjax.html %}
 
-Particle in a Box
+
+[home](/README.md)
+
+# Particle in a Box
 --
 
 We've created a program which discritizes space and combines the potential energy and kinetic energy into a PIB hamiltonian matrix.
