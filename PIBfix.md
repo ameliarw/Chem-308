@@ -1,6 +1,5 @@
 {% include mathjax.html %}
 
-
 [home](/README.md)
 
 # Particle in a Box
