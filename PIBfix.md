@@ -17,6 +17,8 @@ This is the code which sets the length of the box, the mass of the particle, and
 ------
 
 ##### Code from Matlab to plot the eigenvectors of the PIB model
+
+```Matlab
 function plotPIB1D (n)
 
 %n refers to the number of eigenvectors generated
@@ -108,3 +110,4 @@ shiftvecs = shiftvecs(:,1:n);
 axis([min(x) max(x) min(v) 1.1*max(max(shiftvecs))])
 
 end
+```
