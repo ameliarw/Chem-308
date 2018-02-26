@@ -2,6 +2,7 @@
 
 ### MatLab code from class on 2/8 for time evolution of non-stationary states
 
+```Matlab
 function [x,E,psiX,psiE]=TDSE
 
 % define constants, discritize , then define V and turn into matrix
@@ -94,3 +95,5 @@ t = t + dt;
 end
 
 end
+
+```
