@@ -1,5 +1,5 @@
 ### Code from class on 2/8 for 3-Dimensional Plot of TDSE
-
+```Matlab
 function AW_plot3(basisaxis,psi);
 %% Plot complex valued vectors as 3D plots. The complex plane forms the
 %% backdrop for the plot and the eigenvalue axis (defining the space)
@@ -29,3 +29,4 @@ function AW_plot3(basisaxis,psi);
 
 
 end
+```
