@@ -17,16 +17,17 @@ The Hamiltonian operator is comprised of both the kinetic energy and potential e
 $$
 \hat{H}\Psi = i \hbar\frac{\partial{\Psi}}{\partial t}
 $$
- 
-This expression is also called the Schrodinger Equation.
 
-- The solutions to the Schrodinger, or the set of eigenvalues can be represented by {En}. This set is the complete list of possible total energy measurement results. 
+The Hamiltonian operator is the combination of the kinetic energy and the potential energy and provides the total energy of a system. 
+This expression is also called the Time Independent Schrodinger Equation. Note that this expression only depends on position, not time. 
+
+- The solutions to the Schrodinger, or the set of eigenvalues can be represented by $ {E_n} $. This set is the complete list of possible total energy measurement results. 
 
 - If two operators do not commute, then they do not share the same set of eigenfunctions. This is also to say that they do not have the same basis.
 
 
 ##### All operators we use are hermitian
-Hermitian operators produce real eigenvalues. A hermitian matrix has a defining property where the complex conjugate is equal to the complex conjugate transpose. 
+Hermitian operators produce real eigenvalues. A hermitian matrix has a defining property where the complex conjugate is equal to the complex conjugate transpose. A complex conjugate transpose is the original matrix with the rows now serving as the columns and the columns serving as the rows, and any complex components of the matrix are replaced with $ -i = -\sqrt{-1} $. 
 
 
 
