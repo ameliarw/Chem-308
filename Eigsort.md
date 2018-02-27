@@ -10,6 +10,8 @@ This eigsort function sorts the eigenvalues, the diagonals of vals, in ascending
 
 #### Actual matlab code: 
 
+```Matlab
+
 function [srtvecs, srtvals] = eigsort(vecs, vals)
 
 %Sorts the vecs and vals 
@@ -30,3 +32,4 @@ srtvecs = vecs(:, ord);
 srtvals = diag(dsort);
 
 end
+```
