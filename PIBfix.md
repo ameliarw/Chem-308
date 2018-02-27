@@ -14,7 +14,7 @@ of each eigenvector were then shifted upwards and scaled so that they could be s
 
 This is the code which sets the length of the box, the mass of the particle, and $ hbar^2 $ and produces a figure containing n number of eigenvectors for the one dimensional PIB, spaced according to their energies. 
 
-![pibL1](https://github.com/ameliarw/Chem-308/blob/master/pibL1.jpg)
+![pibL1](/pibL1.jpg)
 
 ------
 
