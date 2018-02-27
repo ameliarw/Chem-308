@@ -1,4 +1,7 @@
-### Code from class on 2/8 for 3-Dimensional Plot of TDSE
+[home](/README.md)
+
+
+### Code for Three Dimensional Plot of TDSE
 ```Matlab
 function AW_plot3(basisaxis,psi);
 %% Plot complex valued vectors as 3D plots. The complex plane forms the
