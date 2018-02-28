@@ -64,17 +64,29 @@ H= T + V;
 ```
 
 ##### Eigenfunctions = Eigenvectors
-Vectors can now be used to hold the same information that eigenfunctions hold. The basis of a vector will matter tremendously, as when vectors are expressed in their native basis, graphically, the vectors are delta functions. For example, if the energy of the second eigenvector of the particle in a box model is found and presented in the energy basis, the vector would be 
+Vectors can now be used to hold the same information that eigenfunctions hold. The basis of a vector will matter tremendously. Choosing to express a vector in a different basis has the potential to simplify it greatly. For example, if the energy of the second eigenvector of the particle in a box model is found and presented in the energy basis, the vector $$\vec{\v}$$ would be:
+
+$$ \eqalign{ \vec{\v} &= \begin{pmatrix} 1 \ 0 \ \end{pmatrix}\ &= 1\begin{pmatrix} 1 \ 0 \ \end{pmatrix}
+
+0\begin{pmatrix} 0 \ 1 \ \end{pmatrix}\ &= 1\cdot\vec{\alpha} + 0\cdot\vec{\beta} \ } $$
+
+
 $$\begin{bmatrix}
-0//
-1//
-0//
-0//
-vdots//
+0/
+1/
+0/
+0/
+vdots/
 \end{bmatrix}$$
 
+
 ##### Inner product vs. Matrix multiplication
-We will use both operations to manipulate our matrices and vectors, but the inner product of two vectors is quite different than the multiplication of two vectors. The inner product is the sum of each entry in one vector multiplied by the corresponding entry of a different vector. This manipulation results in a scalar. When two vectors are multplied, a new vector of the same dimensions is generated with each entry in this new vector being the product of the corresponding entries of the two initial vectors. The dimensions of these vectors must match - one vector must be a column vector with ${n}$ entries and the other must be a row vector with ${n}$ entries. 
+We will use both operations to manipulate our matrices and vectors, but the inner product of two vectors is quite different than the multiplication of two vectors. For our 
+
+The inner product is the sum of each entry in one vector multiplied by the corresponding entry of a different vector. This manipulation results in a scalar. 
+
+
+When two vectors are multplied, a new square matrix of the same dimensions is generated with each entry in this new vector being the product of the corresponding entries of the two initial vectors. The dimensions of these vectors must match - one vector must be a row vector with ${n}$ entries and the other must be a row vector with ${n}$ entries. 
 
 ##### Vector Normalization
 We want to work with vectors which have a length of 1 - this is to say that the vector is normalized. We can normalize a vector by dividing that vector by its own length:
