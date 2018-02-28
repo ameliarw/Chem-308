@@ -9,7 +9,7 @@ This course focuses on using linear algebra to describe the properties of quantu
 3. [The Time Dependent Schrodinger Equation](/TDSE.md)
     - [Change of Basis](/Basis.md)
     - [3D Plot Code](/plot3d.md)    
-    - [Stationary States](/TDSEmatlab.md)
-    - [Non-Stationary States](/nonstat.md)
-    - [Gaussian Fit](/gaussian.md)
+ A. [Stationary States](/TDSEmatlab.md)
+ B. [Non-Stationary States](/nonstat.md)
+ C.  [Gaussian Fit](/gaussian.md)
 
