@@ -2,8 +2,8 @@
 
 # Time Evolution of A Stationary State
 
-
-![Second State](/tdse2.PNG)
+Here's the time evolution of the second eigenvector in the position basis and energy basis. The expectation value for position is plotted with a red star, and the expectation value for energy is shown on the graph. 
+![Second State](/tdse2.gif)
 
 ### MatLab code
 
