@@ -32,7 +32,5 @@ do not have a specific basis. The energy basis, however, proves to be a more use
 evolution of quantum states, as quantum states will have faster or slower rates of rotation through the complex plane
 depending on the energies of those quantum states. Therefore, solutions to the TDSE should be changed into the energy basis. 
 
-#### Time Evolution of Non-Stationary States
-While the time evolution of stationary states proves to be periodic and predictable, non-stationary states are composed of 
-eigenvectors of different energies, leading to variation in the rates of time evolution. 
-[More Non-Stationary States](/nonstat.md)
+What happens when you aren't dealing with a quantum state that is an energy eigenstate and the variables can no longer be separated? 
+[Non-Stationary States](/nonstat.md)
