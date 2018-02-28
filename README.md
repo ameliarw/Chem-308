@@ -12,6 +12,8 @@ This course focuses on using linear algebra to describe the properties of quantu
 
 ##### Graphs and Code
 A. [Stationary States](/TDSEmatlab.md)
+
 B. [Non-Stationary States](/nonstat.md)
+
 C. [Gaussian Fit](/gaussian.md)
 
