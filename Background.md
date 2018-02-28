@@ -79,3 +79,7 @@ We will use both operations to manipulate our matrices and vectors, but the inne
 ##### Vector Normalization
 We want to work with vectors which have a length of 1 - this is to say that the vector is normalized. We can normalize a vector by dividing that vector by its own length:
 \begin{equation} \vec{v_norm} = \frac{\vec{v}}{\parallel\vec{v}\parallel} \end{equation}
+
+
+[home](/README.md)
+
