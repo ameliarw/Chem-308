@@ -7,9 +7,8 @@
     - [Eigsort Function](/Eigsort.md)
 3. [The Time Dependent Schrodinger Equation](/TDSE.md)
     - [Change of Basis](/Basis.md)
-    - [Stationary States](/stat.md)
-       - [Code](/TDSEmatlab.md)
-       -  [3D Plot Code](/plot3d.md)
+    - [Code](/TDSEmatlab.md)
+    -  [3D Plot Code](/plot3d.md)
     - [Non-Stationary States](/nonstat.md)
     - [Gaussian Fit](/gaussian.md)
 
