@@ -19,7 +19,7 @@ w=3;
 pts = 250;
 
 %now account for the delta x and discritize the number of elements in the x vector
-x = linspace(0, L, pts);
+x = linspace(0, L, pts)';
 dx = x(2)-x(1);
 
 %x is a vector that goes from 0 to L separated by some amount, dictated by the number
@@ -27,6 +27,8 @@ dx = x(2)-x(1);
 % now we have points number of entries in the x vector
 Vvec = zeros(pts, 1);
 Vvec([1:w, end - (w-1):end]) = barht;
+%Vvec(120:130) = 75;
+%this makes a barrier in the middle of the box
 
 %We created a vector of zeros, but we just set the first three and the last 
 %three entries (because w=3) equal to some barht (large number, using 1e6)
@@ -57,43 +59,64 @@ H= T + V;
 %order of n, but the eigenvalues and eigenvectors stay together
 [srtvecs, srtvals] = eigsort(vecs, vals);
 
-EtoX = srtvecs;
-XtoE = inv(srtvecs);
+% Create two matrices which allow us to change from energy basis to position basis and change from the position basis to the energy basis
+EtoX=srtvecs; 
+XtoE=inv(srtvecs); 
+% this is our vector in the energy basis. A stationary state will only have one value of 1, the total contribution is only due to one state
+psiE=zeros(pts,1); 
+psiE([2])=1; 
+psiX=EtoX*psiE;
 
-%defining an energy space vector which corresponds to the first energy
-%eigenvector 
-psiE = zeros(pts, 1);
-psiE([1 2]) = 1;
-
-%now get the first eigenvector in the positon basis
-psiX = EtoX*psiE;
-%this output is the first eigenvector in the position basis 
+%this output is the second eigenvector in the position basis 
 
 %get the corresponding x values corresponding to the first eigenvector
 E = diag(srtvals);
-
 %set t to get animation with time evolving
 t = 0;
-dt = 0.01;
+dt = 0.005;
 
-% size(E)
-% size(x')
-% size(psiX)
-% size(psiE)
 
 for k = 1:100
-    psiEt = psiE.*exp((-i*E*t)/hbarsq);
+%introduce time evolution
+    psiEt = psiE.*exp((-1i*E*t)/hbarsq);
     psiXt = EtoX*psiEt;
-figure (1)
-%clf 
-subplot (1,2,1)
-AW_plot3 (x', psiXt)
-subplot (1,2,2)
-AW_plot3 (E, psiEt)
-drawnow
+    
+    %normalize these vectors
+    psiXt = psiXt/norm(psiXt);
+    psiEt = psiEt/norm(psiEt);
+    
+    %the probability density would be the normalized psiX * normpsiX
+    %complex conjugate
+    
+    prob = 5000* abs(psiXt).^2;
+    
+ figure(1)
+ subplot (2,2,1)
+    AW_plot3 (x, 5.*psiXt,1)
+ subplot (2,2,2)
+    AW_plot3 (E, psiEt,10)
+ subplot (2,2,[3 4])
+    plot(x, prob, x, Vvec)
+    axis([-inf inf 0 100])
+    
+
+% expectation value for position, plotted with a red *
+   xexp = real(psiXt'*(x.*psiXt));
+   hold on 
+   plot (real(xexp), 0, 'r*')
+   
+% energy expectation value in energy basis
+   Eexp=real(psiEt'*(srtvals*psiEt));
+   plot (xexp, Eexp, 'b*')
+   text(0.2,Eexp,['E= ' num2str(Eexp)])
+ hold off
+
+    
+ drawnow
 t = t + dt;
 end
 
 end
+
 
 ```
