@@ -34,7 +34,8 @@ In the linear algebra representation of quantum states, different vectors combin
 
 ![Combination](/34.gif)
 
-This concept is depicted more generally by this equation, where the {c} refers to the coefficient, or the contribution of each vector state, {p}: 
+This concept is depicted more generally by this equation, where the ${c}$ refers to the coefficient, or the contribution of each vector state, ${p}$, to the overall state, ${psi}$: 
+
 $$ \eqalign{ \vec{\psi} &= \sum_{j}c_{j}\vec{p_{j}}\ &= c_{1}\vec{p_{1}} + c_{2}\vec{p_{2}}+ \ldots \ &= \langle \vec{p_{1}}, \vec{\psi}\rangle \vec{p_{1}} + \langle \vec{p_{2}}, \vec{\psi}\rangle \vec{p_{2}}+ \ldots }$$
 
 
