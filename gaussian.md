@@ -11,6 +11,16 @@ The Gaussian curve is a special case where there is minimum uncertainty in both 
 
 This makes the Gaussian a good model. While the Gaussian model has the smallest uncertainty in both position and momentum, there is still a relationship between the shapes of the curve in these two domains. We can use this understanding of uncertainty to think about how the probability density of the position domain relates to the probability density of the momentum domain for the same state. If the curve is narrow in the position domain, that is there is a larger probability of finding the particle at a certain position, the curve of the Gaussian in the momentum domain will be broader - this is to say there is a wider distribution of possible momenta, as there is more uncertainty in the momentum. If there is greater uncertainy in the momentum (if the curve is broad in the momentum space), the curve in the position space will in turn also broaden, as the momenta which are faster would contribute to the particle moving faster to a new location and the slower momenta would contribute to the particle moving slower to a new location, increasing uncertainty in the location of the particle and causing a broadening in the Gaussian. 
 
+
+##### What does this look like over time? 
+Note the red star, the expectation value of the particle fit to this Gaussian curve and how it changes over time. 
+![Gaussian](/gaus.gif)
+
+We've set the probability density to begin slightly to the left of the barrier, and we've added in a barrier to make the behavior of the particle more interesting. 
+
+The curve behaves in a less complicated fashion when the barrier is removed: 
+![No barrier](/tdsenobarrier.gif)
+
 ##### Matlab Code to Include the Gaussian
 ``` Matlab
 function [x,E,psiX,psiE]=TDSE
