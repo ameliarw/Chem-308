@@ -10,7 +10,7 @@ A wavefunction provides the complete description of a quantum state. We will beg
 ##### How can the energy of a quantum state be determined?
 The Hamiltonian operator is comprised of both the kinetic energy and potential energy operator. In simplified models, like the one-dimensional particle in a box model, the potential energy of the box is generally set to zero while there is infinite potential energy out of the box - this is to say that the particle exists in a well of infinite potential. 
 
-![Particle in a Box Model](/img53.jpg)
+![Particle in a Box Model](/img53.png)
 
 ##### The Hamiltonian operator operating on an eigenfunction will yield the energy of that quantum state multiplied by the original eigenfunction:
 
