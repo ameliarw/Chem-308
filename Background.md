@@ -65,8 +65,15 @@ H= T + V;
 
 ##### Eigenfunctions = Eigenvectors
 Vectors can now be used to hold the same information that eigenfunctions hold. The basis of a vector will matter tremendously, as when vectors are expressed in their native basis, graphically, the vectors are delta functions. For example, if the energy of the second eigenvector of the particle in a box model is found and presented in the energy basis, the vector would be 
-$$\begin{bmatrix}0//1//0//0//...\end{bmatrix}$$
+$$\begin{bmatrix}
+0//
+1//
+0//
+0//
+vdots//
+\end{bmatrix}$$
 
-
+##### Inner product vs. Matrix multiplication
+We will use both operations to manipulate our matrices and vectors, but the inner product of two vectors is quite different than the multiplication of two vectors. The inner product is the sum of each entry in one vector multiplied by the corresponding entry of a different vector. This manipulation results in a scalar. When two vectors are multplied, a new vector of the same dimensions is generated with each entry in this new vector being the product of the corresponding entries of the two initial vectors. The dimensions of these vectors must match - one vector must be a column vector with ${n}$ entries and the other must be a row vector with ${n}$ entries. 
 
 
