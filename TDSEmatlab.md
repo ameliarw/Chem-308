@@ -1,6 +1,6 @@
 [home](/README.md)
 
-### MatLab code from class on 2/8 for time evolution of non-stationary states
+### MatLab code for Time Evolution of A Stationary State
 
 ```Matlab
 function [x,E,psiX,psiE]=TDSE
