@@ -34,3 +34,6 @@ depending on the energies of those quantum states. Therefore, solutions to the T
 
 What happens when you aren't dealing with a quantum state that is an energy eigenstate and the variables can no longer be separated? 
 [Non-Stationary States](/nonstat.md)
+
+What does this time evolution of a stationary state look like? 
+[Stationary States](/TDSEmatlab.md)
