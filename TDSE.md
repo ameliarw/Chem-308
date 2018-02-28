@@ -23,7 +23,7 @@ energy eigenfunction/stationary state/solution to the TDSE.
 These two variables can be separated and our wavefunction can be written as the product of two functions, 
 one of which depends on space and the other depends on time.
 
-The time function is Tn(t) = e^(−iEnt/hbar)
+The time function is ${T_n(t) = e^(−iEnt/hbar)}$
 
 The solutions of the TDSE can be in the position basis or the energy basis depending on which basis is chosen, as eigenvectors
 do not have a specific basis. The energy basis, however, proves to be a more useful basis to use when describing the time
@@ -33,3 +33,4 @@ depending on the energies of those quantum states. Therefore, solutions to the T
 #### Time Evolution of Non-Stationary States
 While the time evolution of stationary states proves to be periodic and predictable, non-stationary states are composed of 
 eigenvectors of different energies, leading to variation in the rates of time evolution. 
+[More Non-Stationary States](/nonstat.md)
