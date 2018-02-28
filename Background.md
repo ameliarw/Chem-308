@@ -76,4 +76,6 @@ vdots//
 ##### Inner product vs. Matrix multiplication
 We will use both operations to manipulate our matrices and vectors, but the inner product of two vectors is quite different than the multiplication of two vectors. The inner product is the sum of each entry in one vector multiplied by the corresponding entry of a different vector. This manipulation results in a scalar. When two vectors are multplied, a new vector of the same dimensions is generated with each entry in this new vector being the product of the corresponding entries of the two initial vectors. The dimensions of these vectors must match - one vector must be a column vector with ${n}$ entries and the other must be a row vector with ${n}$ entries. 
 
-
+##### Vector Normalization
+We want to work with vectors which have a length of 1 - this is to say that the vector is normalized. We can normalize a vector by dividing that vector by its own length:
+\begin{equation} \vec{v_norm} = \frac{\vec{v}}{\parallel\vec{v}\parallel} \end{equation}
