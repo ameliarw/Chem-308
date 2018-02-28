@@ -2,7 +2,7 @@
 
 [home](/README.md)
 
-# The Time Dependent Schrodinger Equation
+# The Time Dependent Schr"{o}dinger Equation
 Now, our wavefunction or quantum state no longer only depends on space, but also time. In the Time Independent 
 Schrodinger Equation, only energy eigenstates are solutions to the time-independent Schrodinger and therefore only energy 
 eigenstates have well defined energy. In the TDSE, however, all physically realizable states are solutions to the 
