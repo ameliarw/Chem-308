@@ -1,6 +1,11 @@
 [home](/README.md)
 
-### MatLab code for Time Evolution of A Stationary State
+# Time Evolution of A Stationary State
+
+
+![Second State](/tdse2.png)
+
+### MatLab code
 
 ```Matlab
 function [x,E,psiX,psiE]=TDSE
