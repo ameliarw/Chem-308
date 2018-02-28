@@ -6,6 +6,8 @@ eigenvectors of different energies, leading to variation in the rates of time ev
 
 Here's what the time evolution of a non-stationary state looks like in the position and energy basis. The probability density of finding the particle at a specific position is also plotted. Note how the expectation value for the position changes over time. The first, second, and fifth states are contributing to the overall quantum state in this example - as seen in the three different "lollipops" in the graph of the energy basis. 
 
+Because these three energy states are stationary states themselves, the time and position dependence for each state may be separated. The resulting graphs are representations of the equal contributions from these three stationary state to the overall non-stationary quantum state.
+
 ![three states](/tdsenonstat.gif)
 
 ###### Matlab code 
