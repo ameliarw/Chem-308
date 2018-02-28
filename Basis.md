@@ -2,7 +2,7 @@
 
 ### Change of Basis
 
-In order solve the time dependent Schrodigner equation, we will first use an "easy" basis, then change the basis such that the 
+In order solve the time-dependent Schr"{o}dinger equation, we will first use an "easy" basis, then change the basis such that the 
 solution is in the basis we want. 
 
 Take for example the Hamiltonian operator. As we've previously determined, using the eig function in matlab will generate a matrix consisting of eigenvectors in the position basis and a matrix with the eigenvalues (rememeber: eigenvalues have no basis). 
