@@ -21,7 +21,7 @@ $$
 The Hamiltonian operator is the combination of the kinetic energy and the potential energy and provides the total energy of a system. 
 This expression is also called the Time Independent Schr"{o}dinger Equation. Note that this expression only depends on position, not time. 
 
-- The solutions to the Schr"{o}dinger, or the set of eigenvalues can be represented by $ {E_n} $. This set is the complete list of possible total energy measurement results. 
+- The solutions to the Schr"{o}dinger, or the set of eigenvalues can be represented by $ {{E_n}} $. This set is the complete list of possible total energy measurement results. 
 
 - If two operators do not commute, then they do not share the same set of eigenfunctions. This is also to say that they do not have the same basis.
 
@@ -38,10 +38,18 @@ This concept is depicted more generally by this equation, where the ${c}$ refers
 
 $$ \eqalign{ \vec{\psi} &= \sum_{j}c_{j}\vec{p_{j}}\ &= c_{1}\vec{p_{1}} + c_{2}\vec{p_{2}}+ \ldots \ &= \langle \vec{p_{1}}, \vec{\psi}\rangle \vec{p_{1}} + \langle \vec{p_{2}}, \vec{\psi}\rangle \vec{p_{2}}+ \ldots }$$
 
+##### Functions as eigenfunction
+A function is an eigenfunction if and only if 
+
 # Linear Algebra Translation
 
 ##### Operators as Matrices
 Operators now become matrices when using linear algebra to gain information about quantum states. The Hamiltonian operator combines the potential energy of a certain quantum state with the kinetic energy of a state, and this operation can be done using calculus: 
+$$
+\hat{H} = \frac{\-hbar^2}{2m}\frac{\partial^2}{\partial x^2} + {V(x)}
+$$
+
+
 ![h](/h.png)
 
 Using linear algebra, we can construct a matrix that will similarly take the second derivative of another matrix. We can then combine this kinetic energy matrix with the potential energy to form the Hamiltonian operator in the form of a matrix: 
