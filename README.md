@@ -7,9 +7,9 @@ This course focuses on using linear algebra to describe the properties of quantu
 2. [Particle in a Box - 1D](/PIBfix.md)
     - [Eigsort Function](/Eigsort.md)
 3. [The Time Dependent Schrodinger Equation](/TDSE.md)
-    - [Change of Basis](/Basis.md)
-    - [Code](/TDSEmatlab.md)
-    -  [3D Plot Code](/plot3d.md)
+        - [Change of Basis](/Basis.md)
+        - [3D Plot Code](/plot3d.md)    
+    - [Stationary States](/TDSEmatlab.md)
     - [Non-Stationary States](/nonstat.md)
     - [Gaussian Fit](/gaussian.md)
 
