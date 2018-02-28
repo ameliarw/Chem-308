@@ -3,7 +3,7 @@
 # Time Evolution of A Stationary State
 
 
-![Second State](/tdse2.png)
+![Second State](/tdse2.PNG)
 
 ### MatLab code
 
