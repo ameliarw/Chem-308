@@ -19,9 +19,9 @@ $$
 $$
 
 The Hamiltonian operator is the combination of the kinetic energy and the potential energy and provides the total energy of a system. 
-This expression is also called the Time Independent Schrodinger Equation. Note that this expression only depends on position, not time. 
+This expression is also called the Time Independent Schr"{o}dinger Equation. Note that this expression only depends on position, not time. 
 
-- The solutions to the Schrodinger, or the set of eigenvalues can be represented by $ {E_n} $. This set is the complete list of possible total energy measurement results. 
+- The solutions to the Schr"{o}dinger, or the set of eigenvalues can be represented by $ {E_n} $. This set is the complete list of possible total energy measurement results. 
 
 - If two operators do not commute, then they do not share the same set of eigenfunctions. This is also to say that they do not have the same basis.
 
@@ -30,13 +30,13 @@ This expression is also called the Time Independent Schrodinger Equation. Note t
 Hermitian operators produce real eigenvalues. A hermitian matrix has a defining property where the complex conjugate is equal to the complex conjugate transpose. A complex conjugate transpose is the original matrix with the rows now serving as the columns and the columns serving as the rows, and any complex components of the matrix are replaced with $ -i = -\sqrt{-1} $. 
 
 ##### Quantum states are linear combinations of states
-In the linear algebra representation of quantum states, different vectors combine to form each eigenstate. Here's a graphical representation of this concept, where vectors $\vec{u}$ and $\vec{v}$ combine to form different vector 
+In the linear algebra representation of quantum states, different vectors combine to form each eigenstate. Here's a graphical representation of this concept, where vector $\vec{w}$ can be written as a linear combination of vectors $\vec{u}$ and $\vec{v}$:
 
-$$\vec{\psi}$$ as a linear combination of momentum eigenvectors,
+![Combination](/34.gif)
 
+This concept is depicted more generally by this equation, where the {c} refers to the coefficient, or the contribution of each vector state, {p}: 
 $$ \eqalign{ \vec{\psi} &= \sum_{j}c_{j}\vec{p_{j}}\ &= c_{1}\vec{p_{1}} + c_{2}\vec{p_{2}}+ \ldots \ &= \langle \vec{p_{1}}, \vec{\psi}\rangle \vec{p_{1}} + \langle \vec{p_{2}}, \vec{\psi}\rangle \vec{p_{2}}+ \ldots }$$
 
-where $$\vec{p_{j}}$$ is the $$j$$th eigenvector of the momentum operator, and $$c_{j}$$ is the $$j$$th expansion coefficient. Notice that the expansion coefficients are equal to the inner products of the system's state vector with each of the basis vectors.
 
 
 
