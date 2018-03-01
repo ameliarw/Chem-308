@@ -19,3 +19,6 @@ $
     1 & z & z^2 \\
     \end{matrix}
 $
+
+$$\psi(x) = c_1 \begin{pmatrix} 1 \ 0 \ 0 \ \vdots \ 0 \end{pmatrix} + c_2 \begin{pmatrix} 0\1\0\ \vdots \0 \end{pmatrix} + c_3 \begin{pmatrix} 0\0\1\ \vdots \0 \end{pmatrix} + ... + c_n \begin{pmatrix} 0\0\0\ \vdots \1 \end{pmatrix}$$
+
