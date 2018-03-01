@@ -35,19 +35,17 @@ In the linear algebra representation of quantum states, different vectors combin
 ![Combination](/34.gif)
 
 This concept is depicted more generally by this equation, where the ${c}$ refers to the coefficient, or the contribution of each vector state, ${p}$, to the overall state, ${\psi}$: 
-
- {\begin{equation}\label{what} \ {\vec{\psi} = \sum_{j}c_{j}\vec{p_{j}}\ &= c_{1}\vec{p_{1}} + c_{2}\vec{p_{2}}+ \ldots \ }
  
- \begin{equation}\label{hey} \psi(x) = c_1\vec{x_1} + c_2\vec{x_2} + c_3\vec{x_3} + ... + c_n\vec{x_n} \end{equation}
+ \begin{equation}\label{hey} \psi(x) = c_1\vec{p_1} + c_2\vec{p_2} + c_3\vec{p_3} + ... + c_n\vec{p_n} \end{equation}
 
 ##### Functions as eigenfunction
 An operator performs a certain operation on a function. As we've previously mentioned, this could range from multiplying a function by a variable, like the position operator, or taking the second derivative of a function, like the Hamiltonian operator. Operators can only operate on functions which are eigenfunctions for the operator. For a wavefunction to be an eigenfunction of an operator, the operation must return the original function multiplied by a scalar multiple. This scalar multiple is the eigenvalue of that operator and the observable value that we are trying to find. 
 
 More concisely put: 
 
- \begin{equation}\label{help}\{\omega}\{\psi}=\lambda_i\{\psi}\end{equation} 
+ \begin{equation}\label{help}\{\hatomega}\{\psi}=\lambda_i\{\psi}\end{equation} 
 
-Where ${\omega}$ is an operator, ${\psi}$ is an eigenfunction, and ${\lambda}$ is an observable. This expression can be translated into matrixes and vectors using linear algebra. 
+Where ${\hat{omega}}$ is an operator, ${\psi}$ is an eigenfunction, and ${\lambda}$ is an observable. This expression can be translated into matrixes and vectors using linear algebra. 
 
 # Linear Algebra Translation
 
