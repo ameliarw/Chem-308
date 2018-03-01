@@ -1,4 +1,5 @@
-{% include mathjack.html %}
+{% include mathjax.html %}
+
 [home](/README.md)
 
 # Difference Equation vs. Differential Equation
