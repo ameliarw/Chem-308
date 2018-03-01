@@ -15,6 +15,6 @@ In order to describe a single quantum state, the matrix consisting of the eigenv
 
 $$ { \begin{bmatrix} 1\\\ 0\\\ 0\\\ 0 \\\ \vdots \end{bmatrix}} * {\begin{bmatrix} x_1 & 0 & 0 & \cdots \\\ 0 & x_2 & 0 & \cdots \\\ 0 & 0 & x_3 & \cdots\\\ \end{bmatrix}} = 
 {\begin{bmatrix} x_1 \\\ 0 \\\ 0 \\\ \vdots \end{bmatrix}} $$ 
-
+ 
 
 
