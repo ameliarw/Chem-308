@@ -43,9 +43,9 @@ An operator performs a certain operation on a function. As we've previously ment
 
 More concisely put: 
 
- \begin{equation}\label{help}\{\hatomega}\{\psi}=\lambda_i\{\psi}\end{equation} 
+ \begin{equation}\label{help}\{\hat{O}}\{\psi}=\lambda_i\{\psi}\end{equation} 
 
-Where ${\hat{omega}}$ is an operator, ${\psi}$ is an eigenfunction, and ${\lambda}$ is an observable. This expression can be translated into matrixes and vectors using linear algebra. 
+Where ${\hat{O}}$ is an operator, ${\psi}$ is an eigenfunction, and ${\lambda}$ is an observable. This expression can be translated into matrixes and vectors using linear algebra. 
 
 # Linear Algebra Translation
 
@@ -54,7 +54,7 @@ Operators now become matrices when using linear algebra to gain information abou
 
  \begin{equation}\label{merp} \mathbf{O}\vec{v_i}=\lambda_i \vec{v_i} \end{equation} 
 
-Where ${O}$ is a matrix, ${vec{v_i}}$ is an eigenvector, and ${lambda}$ is the observable. 
+Where ${O}$ is a matrix, ${v}$ is an eigenvector, and ${lambda}$ is the observable. 
 
 
 The Hamiltonian operator combines the potential energy of a certain quantum state with the kinetic energy of a state, and this operation can be done using calculus: 
@@ -84,7 +84,7 @@ H= T + V;
 ##### Eigenfunctions = Eigenvectors
 Vectors can now be used to hold the same information that eigenfunctions hold. The basis of a vector will matter tremendously. Choosing to express a vector in a different basis has the potential to simplify it greatly. For example, if the energy of the second eigenvector of the particle in a box model is found and presented in the energy basis, the vector $${vec{v}}$$ would be:
 
-$ {vec{v}}=\begin{bmatrix} 0 \\\ 1 \\\ 0 \\\ vdots \end{bmatrix} $
+$ {vec{v}}=\begin{bmatrix} 0 \\\ 1 \\\ 0 \\\ \vdots \end{bmatrix} $
 
 
 ##### Inner product vs. Matrix multiplication
