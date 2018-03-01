@@ -17,5 +17,5 @@ B. [Non-Stationary States](/nonstat.md)
 
 C. [Gaussian Fit](/gaussian.md)
 
-D. [Introduction to Pertubation Theory] (/perturb.md)
+D. [Introduction to Pertubation Theory](/perturb.md)
 
