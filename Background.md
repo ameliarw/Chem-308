@@ -36,14 +36,16 @@ In the linear algebra representation of quantum states, different vectors combin
 
 This concept is depicted more generally by this equation, where the ${c}$ refers to the coefficient, or the contribution of each vector state, ${p}$, to the overall state, ${\psi}$: 
 
-$ {\begin{equation}\label{what} \ {\vec{\psi} = \sum_{j}c_{j}\vec{p_{j}}\ &= c_{1}\vec{p_{1}} + c_{2}\vec{p_{2}}+ \ldots \ }$
+ {\begin{equation}\label{what} \ {\vec{\psi} = \sum_{j}c_{j}\vec{p_{j}}\ &= c_{1}\vec{p_{1}} + c_{2}\vec{p_{2}}+ \ldots \ }
+ 
+ \begin{equation}\label{hey} \psi(x) = c_1\vec{x_1} + c_2\vec{x_2} + c_3\vec{x_3} + ... + c_n\vec{x_n} \end{equation}
 
 ##### Functions as eigenfunction
 An operator performs a certain operation on a function. As we've previously mentioned, this could range from multiplying a function by a variable, like the position operator, or taking the second derivative of a function, like the Hamiltonian operator. Operators can only operate on functions which are eigenfunctions for the operator. For a wavefunction to be an eigenfunction of an operator, the operation must return the original function multiplied by a scalar multiple. This scalar multiple is the eigenvalue of that operator and the observable value that we are trying to find. 
 
 More concisely put: 
 
-$ {\begin{equation}\label{help}\{\omega}\{\psi}=\lambda_i\{\psi}\end{equation} $
+ \begin{equation}\label{help}\{\omega}\{\psi}=\lambda_i\{\psi}\end{equation} 
 
 Where ${\omega}$ is an operator, ${\psi}$ is an eigenfunction, and ${\lambda}$ is an observable. This expression can be translated into matrixes and vectors using linear algebra. 
 
@@ -52,7 +54,7 @@ Where ${\omega}$ is an operator, ${\psi}$ is an eigenfunction, and ${\lambda}$ i
 ##### Operators as Matrices
 Operators now become matrices when using linear algebra to gain information about quantum states. The expression above can be modified slightly: 
 
-$ {\begin{equation}\label{merp} \mathbf{O}\vec{v_i}=\lambda_i \vec{v_i} \end{equation} $
+ \begin{equation}\label{merp} \mathbf{O}\vec{v_i}=\lambda_i \vec{v_i} \end{equation} 
 
 Where ${O}$ is a matrix, ${vec{v_i}}$ is an eigenvector, and ${lambda}$ is the observable. 
 
@@ -84,7 +86,7 @@ H= T + V;
 ##### Eigenfunctions = Eigenvectors
 Vectors can now be used to hold the same information that eigenfunctions hold. The basis of a vector will matter tremendously. Choosing to express a vector in a different basis has the potential to simplify it greatly. For example, if the energy of the second eigenvector of the particle in a box model is found and presented in the energy basis, the vector $$\vec{\v}$$ would be:
 
-$ {vec{v}}=\begin{bmatrix} 0 \\\ 1 \\\ \0 \\\ vdots \end{bmatrix}
+$ {vec{v}}=\begin{bmatrix} 0 \\\ 1 \\\ \0 \\\ vdots \end{bmatrix} $
 
 
 ##### Inner product vs. Matrix multiplication
