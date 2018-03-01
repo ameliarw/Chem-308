@@ -68,13 +68,15 @@ H= T + V;
 %order of n, but the eigenvalues and eigenvectors stay together
 [srtvecs, srtvals] = eigsort(vecs, vals);
 
-EtoX=srtvecs; % change from energy basis to position basis
-XtoE=inv(srtvecs); % change from position basis to energy basis
-psiE=zeros(pts,1); % vector of all zeros
-psiE([1 2 5])=1; % change position 1,2 in vector to 1
+% Create two matrices which allow us to change from energy basis to position basis and change from the position basis to the energy basis
+EtoX=srtvecs; 
+XtoE=inv(srtvecs); 
+% this is our vector in the energy basis. A stationary state will only have one value of 1, the total contribution is only due to one state
+psiE=zeros(pts,1);
+%psiE now has equal contributions from vectors 1, 2, and 5
+psiE([1 2 5])=1; 
 psiX=EtoX*psiE;
 
-%this output is the first eigenvector in the position basis 
 
 %get the corresponding x values corresponding to the first eigenvector
 E = diag(srtvals);
@@ -90,11 +92,8 @@ for k = 1:100
     %normalize these vectors
     psiXt = psiXt/norm(psiXt);
     psiEt = psiEt/norm(psiEt);
-    
-    %the probability density would be the normalized psiX * normpsiX
-    %complex conjugate
-    
-%     prob = psiXt .* psiXt;
+ 
+ %scale the probability for easier viewing on the graph
     prob = 5000* abs(psiXt).^2;
     
  figure(1)
