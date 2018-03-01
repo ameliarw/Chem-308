@@ -55,11 +55,9 @@ Where {O} is a matrix, {vec{v_i}} is an eigenvector, and ${lambda}$
 
 The Hamiltonian operator combines the potential energy of a certain quantum state with the kinetic energy of a state, and this operation can be done using calculus: 
 $$
-\hat{H} = \frac{\-hbar^2}{2m}\frac{\partial^2}{\partial x^2} + {V(x)}
+\hat{H} = \frac{-hbar^2}{2m}\frac{\partial^2}{\partial x^2} + {V(x)}
 $$
 
-
-![h](/h.png)
 
 Using linear algebra, we can construct a matrix that will similarly take the second derivative of another matrix. We can then combine this kinetic energy matrix with the potential energy to form the Hamiltonian operator in the form of a matrix: 
 ```Matlab
@@ -83,18 +81,7 @@ H= T + V;
 ##### Eigenfunctions = Eigenvectors
 Vectors can now be used to hold the same information that eigenfunctions hold. The basis of a vector will matter tremendously. Choosing to express a vector in a different basis has the potential to simplify it greatly. For example, if the energy of the second eigenvector of the particle in a box model is found and presented in the energy basis, the vector $$\vec{\v}$$ would be:
 
-$$ \eqalign{ \vec{\v} &= \begin{pmatrix} 1 \ 0 \ \end{pmatrix}\ &= 1\begin{pmatrix} 1 \ 0 \ \end{pmatrix}
-
-0\begin{pmatrix} 0 \ 1 \ \end{pmatrix}\ &= 1\cdot\vec{\alpha} + 0\cdot\vec{\beta} \ } $$
-
-
-$$\begin{bmatrix}
-0/
-1/
-0/
-0/
-vdots/
-\end{bmatrix}$$
+$|v>=\begin{bmatrix} 0 \\\ 1 \\\ \vdots \\\ 0 \end{bmatrix}
 
 
 ##### Inner product vs. Matrix multiplication
