@@ -1,6 +1,8 @@
 {% include mathjack.html %}
 [home](/README.md)
 
+# Difference Equation vs. Differential Equation
+
 ## A new way to time evolve 
 
 We've so far looked at the time evolution of a quantum state by separating out the function in terms of position and time, using a differential approach, where we
