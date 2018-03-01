@@ -36,14 +36,14 @@ In the linear algebra representation of quantum states, different vectors combin
 
 This concept is depicted more generally by this equation, where the ${c}$ refers to the coefficient, or the contribution of each vector state, ${p}$, to the overall state, ${\psi}$: 
 
-$$ \eqalign{ \vec{\psi} &= \sum_{j}c_{j}\vec{p_{j}}\ &= c_{1}\vec{p_{1}} + c_{2}\vec{p_{2}}+ \ldots \ $$
+$ \begin{equation}\label{what} \ {\vec{\psi} = \sum_{j}c_{j}\vec{p_{j}}\ &= c_{1}\vec{p_{1}} + c_{2}\vec{p_{2}}+ \ldots \ $
 
 ##### Functions as eigenfunction
 An operator performs a certain operation on a function. As we've previously mentioned, this could range from multiplying a function by a variable, like the position operator, or taking the second derivative of a function, like the Hamiltonian operator. Operators can only operate on functions which are eigenfunctions for the operator. For a wavefunction to be an eigenfunction of an operator, the operation must return the original function multiplied by a scalar multiple. This scalar multiple is the eigenvalue of that operator and the observable value that we are trying to find. 
 
 More concisely put: 
 
-$ {\begin{equation}\label{eig}\{\omega}\{\psi}=\lambda_i\{\psi}\end{equation} $
+$ {\begin{equation}\label{help}\{\omega}\{\psi}=\lambda_i\{\psi}\end{equation} $
 
 Where ${\omega}$ is an operator, ${\psi}$ is an eigenfunction, and ${\lambda}$ is an observable. This expression can be translated into matrixes and vectors using linear algebra. 
 
@@ -52,14 +52,14 @@ Where ${\omega}$ is an operator, ${\psi}$ is an eigenfunction, and ${\lambda}$ i
 ##### Operators as Matrices
 Operators now become matrices when using linear algebra to gain information about quantum states. The expression above can be modified slightly: 
 
-$ {\begin{equation}\label{eig} \mathbf{O}\vec{v_i}=\lambda_i \vec{v_i} \end{equation} $
+$ {\begin{equation}\label{merp} \mathbf{O}\vec{v_i}=\lambda_i \vec{v_i} \end{equation} $
 
-Where ${mathbf{O}}$ is a matrix, ${vec{v_i}}$ is an eigenvector, and ${lambda}$
+Where ${O}$ is a matrix, ${vec{v_i}}$ is an eigenvector, and ${lambda}$ is the observable. 
 
 
 The Hamiltonian operator combines the potential energy of a certain quantum state with the kinetic energy of a state, and this operation can be done using calculus: 
 
-###### $ \hat{H} = \frac{-hbar^2}{2m}\frac{\partial^2}{\partial x^2} + {V(x)} $
+## $ \hat{H} = \frac{-hbar^2}{2m}\frac{\partial^2}{\partial x^2} + {V(x)} $
 
 
 Using linear algebra, we can construct a matrix that will similarly take the second derivative of another matrix. We can then combine this kinetic energy matrix with the potential energy to form the Hamiltonian operator in the form of a matrix: 
