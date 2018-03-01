@@ -82,9 +82,9 @@ H= T + V;
 ```
 
 ##### Eigenfunctions = Eigenvectors
-Vectors can now be used to hold the same information that eigenfunctions hold. The basis of a vector will matter tremendously. Choosing to express a vector in a different basis has the potential to simplify it greatly. For example, if the energy of the second eigenvector of the particle in a box model is found and presented in the energy basis, the vector $$\vec{\v}$$ would be:
+Vectors can now be used to hold the same information that eigenfunctions hold. The basis of a vector will matter tremendously. Choosing to express a vector in a different basis has the potential to simplify it greatly. For example, if the energy of the second eigenvector of the particle in a box model is found and presented in the energy basis, the vector $${vec{v}}$$ would be:
 
-$ {vec{v}}=\begin{bmatrix} 0 \\\ 1 \\\ \0 \\\ vdots \end{bmatrix} $
+$ {vec{v}}=\begin{bmatrix} 0 \\\ 1 \\\ 0 \\\ vdots \end{bmatrix} $
 
 
 ##### Inner product vs. Matrix multiplication
