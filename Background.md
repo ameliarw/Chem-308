@@ -19,9 +19,9 @@ $$
 $$
 
 The Hamiltonian operator is the combination of the kinetic energy and the potential energy and provides the total energy of a system. 
-This expression is also called the Time Independent Schr"{o}dinger Equation. Note that this expression only depends on position, not time. 
+This expression is also called the Time Independent Schrodinger Equation. Note that this expression only depends on position, not time. 
 
-- The solutions to the Schr"{o}dinger, or the set of eigenvalues can be represented by $ {{E_n}} $. This set is the complete list of possible total energy measurement results. 
+- The solutions to the Schrodinger, or the set of eigenvalues can be represented by $ {E_n} $. This set is the complete list of possible total energy measurement results. 
 
 - If two operators do not commute, then they do not share the same set of eigenfunctions. This is also to say that they do not have the same basis.
 
@@ -36,15 +36,24 @@ In the linear algebra representation of quantum states, different vectors combin
 
 This concept is depicted more generally by this equation, where the ${c}$ refers to the coefficient, or the contribution of each vector state, ${p}$, to the overall state, ${psi}$: 
 
-$$ \eqalign{ \vec{\psi} &= \sum_{j}c_{j}\vec{p_{j}}\ &= c_{1}\vec{p_{1}} + c_{2}\vec{p_{2}}+ \ldots \ &= \langle \vec{p_{1}}, \vec{\psi}\rangle \vec{p_{1}} + \langle \vec{p_{2}}, \vec{\psi}\rangle \vec{p_{2}}+ \ldots }$$
+$$ \eqalign{ \vec{\psi} &= \sum_{j}c_{j}\vec{p_{j}}\ &= c_{1}\vec{p_{1}} + c_{2}\vec{p_{2}}+ \ldots \ 
 
 ##### Functions as eigenfunction
-A function is an eigenfunction if and only if 
+An operator performs a certain operation on a function. As we've previously mentioned, this could range from multiplying a function by a variable, like the position operator, or taking the second derivative of a function, like the Hamiltonian operator. Operators can only operate on functions which are eigenfunctions for the operator. For a wavefunction to be an eigenfunction of an operator, the operation must return the original function multiplied by a scalar multiple. This scalar multiple is the eigenvalue of that operator and the observable value that we are trying to find. 
+
+More concisely put: 
+$$ {\begin{equation}\label{eig} \{omega}\{psi}=\lambda_i \{psi} \end{equation} $$
+Where ${omega}$ is an operator, ${psi}$ is an eigenfunction, and ${lambda}$ is an observable. This expression can be translated into matrixes and vectors using linear algebra. 
 
 # Linear Algebra Translation
 
 ##### Operators as Matrices
-Operators now become matrices when using linear algebra to gain information about quantum states. The Hamiltonian operator combines the potential energy of a certain quantum state with the kinetic energy of a state, and this operation can be done using calculus: 
+Operators now become matrices when using linear algebra to gain information about quantum states. The expression above can be modified slightly: 
+$$ {\begin{equation}\label{eig} \mathbf{O}\vec{v_i}=\lambda_i \vec{v_i} \end{equation} $$
+Where {O} is a matrix, {vec{v_i}} is an eigenvector, and ${lambda}$
+
+
+The Hamiltonian operator combines the potential energy of a certain quantum state with the kinetic energy of a state, and this operation can be done using calculus: 
 $$
 \hat{H} = \frac{\-hbar^2}{2m}\frac{\partial^2}{\partial x^2} + {V(x)}
 $$
@@ -89,12 +98,13 @@ vdots/
 
 
 ##### Inner product vs. Matrix multiplication
-We will use both operations to manipulate our matrices and vectors, but the inner product of two vectors is quite different than the multiplication of two vectors. For our 
+We will use both operations to manipulate our matrices and vectors, but the inner product of two vectors is quite different than the multiplication of two vectors. For our purposes, we are considering column or row vectors. 
 
-The inner product is the sum of each entry in one vector multiplied by the corresponding entry of a different vector. This manipulation results in a scalar. 
+The inner product is the sum of each entry in one vector multiplied by the corresponding entry of a different vector. This manipulation results in a scalar. To get the inner product, a row vector is multiplied by a column vector, and these two vectors must have the same number of entries. 
+$={\begin{bmatrix} v_{1} & v_{2} & ... & v_{n} \end{bmatrix}}^* \begin{bmatrix} w_{1} \\\ w_{2} \\\ \vdots \\\ w_{n} \end{bmatrix}=\sum_{n=1}^{n}v_i ^*w_i $.
 
-
-When two vectors are multplied, a new square matrix of the same dimensions is generated with each entry in this new vector being the product of the corresponding entries of the two initial vectors. The dimensions of these vectors must match - one vector must be a row vector with ${n}$ entries and the other must be a row vector with ${n}$ entries. 
+When two vectors are multplied, a new square matrix of the same dimensions (if the two vectors have the same number of entries) is generated with each entry in this new vector being the product of the corresponding entries of the two initial vectors. This outer product is generated by multiplying a column vector by a row vector. The order of this multiplication does matter. 
+$\begin{bmatrix} w_{1} \\\ w_{2} \\\ \vdots \\\ w_{n} \end{bmatrix}^*{\begin{bmatrix} v_{1} & v_{2} & ... & v_{n} \end{bmatrix}}$
 
 ##### Vector Normalization
 We want to work with vectors which have a length of 1 - this is to say that the vector is normalized. We can normalize a vector by dividing that vector by its own length:
