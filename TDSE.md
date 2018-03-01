@@ -2,7 +2,7 @@
 
 [home](/README.md)
 
-# The Time Dependent Schr"{o}dinger Equation
+# The Time Dependent Schrodinger Equation
 Now, our wavefunction or quantum state no longer only depends on space, but also time. In the Time Independent 
 Schrodinger Equation, only energy eigenstates are solutions to the time-independent Schrodinger and therefore only energy 
 eigenstates have well defined energy. In the TDSE, however, all physically realizable states are solutions to the 
@@ -25,7 +25,10 @@ energy eigenfunction/stationary state/solution to the TDSE.
 These two variables can be separated and our wavefunction can be written as the product of two functions, 
 one of which depends on space and the other depends on time.
 
-The time function is ${T_n(t) = e^(−iEnt/hbar)}$
+The time function is ${T_n(t) = exp(−iEnt/hbar)}$
+
+The complete time-dependent Schrodinger equation can be written as:
+\begin{equation}\label{tdse} \mathcal{H}\Psi(x,t) = E\Psi(x,t) \end{equation}
 
 The solutions of the TDSE can be in the position basis or the energy basis depending on which basis is chosen, as eigenvectors
 do not have a specific basis. The energy basis, however, proves to be a more useful basis to use when describing the time
