@@ -12,3 +12,5 @@ $$ \begin{equation}\label{tdse} \mathcal{H}\Psi(x,t) = E\Psi(x,t) \end{equation}
 
 Where the time dependence is represented as: 
 $${T_n(t) = e^(((−iEnt/hbar))}$$
+
+Our differential is 
