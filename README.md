@@ -19,3 +19,5 @@ C. [Gaussian Fit](/gaussian.md)
 
 D. [Introduction to Pertubation Theory](/perturb.md)
 
+E. [Differential vs. Difference Equations](/diff.md)
+
