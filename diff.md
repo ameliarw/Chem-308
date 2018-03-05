@@ -14,4 +14,8 @@ $$ \begin{equation}\label{tdse} \mathcal{H}\Psi(x,t) = E\Psi(x,t) \end{equation}
 Where the time dependence is represented as: 
 $${T_n(t) = e^(((−iEnt/hbar))}$$
 
-Our differential is 
+Instead of using a differential equation to solve the Hamiltonian and find an energy eigenvalue using this formula: 
+$ \hat{H} = \frac{-hbar^2}{2m}\frac{\partial^2}{\partial x^2} + {V(x)} $, we can instead define a difference equation to better understand the time evolution of a quantum state. 
+
+Where we have previously discritized space using some arbitrary quantity %{dt}$, we can now compare the wavefunctions at two different times in order to better understand time evolution. 
+$$ \begin{equation}\label{tdse} \mathcal{H}\Psi(x,t) = i*{hbar}\frac{\partial}{\partial t}Psi(x,t) \end{equation} $$
