@@ -18,7 +18,7 @@ The vectors from the left and right well are contributing differently to the dep
 
 We can use these depictions of the right well and left well contributions to the central well to better understand the molecular orbital model of a H2 molecule. The one electron from each hydrogen atom can combine in the bonding sigma orbital, representative of constructive interference, or in the sigma star, or anti-bonding orbital representative of destructive interference between the two. 
 
-![hmo](/hmo.PNG)
+![hmo](/hmo.png)
 
 By analyzing the contributions of the left well and right well programs above to the overall central barrier picture, we can apply this new understanding to the ways in which hydrogen atomic orbitals combine during bonding events. As an introduction to the pertubation theory, in which one uses a known model or foundation to better understand an unknown model, we have developed a better understanding of the contributions of separate atomic orbitals to molecular orbitals by using this simplified left-well/right-well program. 
 
