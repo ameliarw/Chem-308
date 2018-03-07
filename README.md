@@ -8,7 +8,10 @@ This course focuses on using linear algebra to describe the properties of quantu
     - [Eigsort Function](/Eigsort.md)
 3. [The Time Dependent Schrodinger Equation](/TDSE.md)
     - [Change of Basis](/Basis.md)
-    - [3D Plot Code](/plot3d.md)    
+    - [3D Plot Code](/plot3d.md)   
+4. [Differential vs. Difference Equations](/diff.md)
+5. [Selection Rules](/rules.md)
+
 
 ##### Graphs and Code
 A. [Stationary States](/TDSEmatlab.md)
@@ -19,5 +22,5 @@ C. [Gaussian Fit](/gaussian.md)
 
 D. [Introduction to Pertubation Theory](/perturb.md)
 
-E. [Differential vs. Difference Equations](/diff.md)
+
 
