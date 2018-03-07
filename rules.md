@@ -52,4 +52,10 @@ The 1s and 2p are time evolving with changing phase
 The 2p is switching phase faster than the 1s is switching phase, giving us an oscillating dipole 
 The difference between the frequency of the 1s and 2p, as given by the energy difference of the states, give rise to the oscillating of this transition 
 Think about going from a 1s to a 2s and from a 1s to a 3d 
-Based on cartoons 
+
+#### Transition from 1s to 2s - is it allowed?
+![transition1](/20180306-221525_p1.jpg)
+
+#### Transition from 1s to 3d - is it allowed?
+![transition2](/20180306-221525_p0.jpg)
+
