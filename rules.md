@@ -52,8 +52,7 @@ The 2p is switching phase faster than the 1s is switching phase, giving us an os
 The difference between the frequency of the 1s and 2p, as given by the energy difference of the states, give rise to the oscillating of this transition 
 Think about going from a 1s to a 2s and from a 1s to a 3d 
 
-#### Transition from 1s to 2s - is it allowed?
-![transition1](/20180306-221525_p1.jpg)
+
 
 #### Transition from 1s to 3d - is it allowed?
 ![transition2](/20180306-221525_p0.jpg)
