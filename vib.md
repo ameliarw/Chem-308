@@ -73,7 +73,7 @@ function rules(n)
 %width, k = spring constant, q = charge
 
 m = 1;
-L = 3;
+L = 1;
 hbarsq = 1; 
 barht = 1e6;
 w=3; 
