@@ -84,7 +84,8 @@ We want to work with vectors which have a length of 1 - this is to say that the 
 \begin{equation} \vec{v_n} = \frac{\vec{v}}{\parallel\vec{v}\parallel} \end{equation}
 
 ##### Hamiltonian operator as a matrix
-Using linear algebra, we can construct a matrix that will similarly take the second derivative of another matrix. We can then combine this kinetic energy matrix with the potential energy to form the Hamiltonian operator in the form of a matrix: 
+Using linear algebra, we can construct a matrix that will similarly take the second derivative of another matrix. We can then combine this kinetic energy matrix with the potential energy to form the Hamiltonian operator in the form of a matrix. The potential energy is characteristic of the system in which the particle exists. 
+
 ```Matlab
 Vvec = zeros(pts, 1
 Vvec([1:w, end - (w-1):end]) = barht;
@@ -102,6 +103,5 @@ T = (-hbarsq/(2*m))*D2;
 %here's our Hamiltonian, which accounts for both the potential energy and kinetic energy
 H= T + V;
 ```
-
 [home](/README.md)
 
