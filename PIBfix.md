@@ -3,7 +3,8 @@
 [home](/README.md)
 
 # Particle in a Box
---
+
+The particle in a box model serves as a classic quantum model which demonstrates the quantization of energy. The 
 
 We've created a program which discritizes space and combines the potential energy and kinetic energy into a PIB hamiltonian matrix.
 The eigenvalues and eigenvectors of this matrix have also been determined and sorted in two different matrices. 
