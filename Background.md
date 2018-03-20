@@ -4,7 +4,7 @@
 
 ## Summary of Key Quantum Ideas
 -----
-A wavefunction provides the complete description of a quantum state. We will begin to use state vectors as the complete description of a quantum state in order to organize this information and manipulate it using linear algebra. In order to determine different qualities of a wavefunction, or state vector, an operation must be performed. Operating on wavefunction yields an observable, or a value specific to that quantum state. Different operators provide different information - there are operators for position, momentum, energy, etc. 
+A wavefunction provides the complete description of a quantum state. In order to determine different qualities of a wavefunction an operation must be performed. Operating on wavefunction yields an observable, or a value specific to that quantum state. Different operators provide different information - there are operators for position, momentum, energy, etc. 
 
 
 ##### How can the energy of a quantum state be determined?
@@ -18,7 +18,10 @@ $$
 \hat{H}\Psi = i \hbar\frac{\partial{\Psi}}{\partial t}
 $$
 
-The Hamiltonian operator is the combination of the kinetic energy and the potential energy and provides the total energy of a system. 
+The Hamiltonian operator combines the potential energy of a certain quantum state with the kinetic energy of a state, and this operation can be done using calculus: 
+
+## $ \hat{H} = \frac{-hbar^2}{2m}\frac{\partial^2}{\partial x^2} + {V(x)} $
+
 This expression is also called the Time Independent Schrodinger Equation. Note that this expression only depends on position, not time. 
 
 - The solutions to the Schrodinger, or the set of eigenvalues can be represented by $ {E_n} $. This set is the complete list of possible total energy measurement results. 
@@ -27,7 +30,7 @@ This expression is also called the Time Independent Schrodinger Equation. Note t
 
 
 ##### All operators we use are hermitian
-Hermitian operators produce real eigenvalues. A hermitian matrix has a defining property where the complex conjugate is equal to the complex conjugate transpose. A complex conjugate transpose is the original matrix with the rows now serving as the columns and the columns serving as the rows, and any complex components of the matrix are replaced with $ -i = -\sqrt{-1} $. 
+Hermitian operators produce real eigenvalues.
 
 ##### Quantum states are linear combinations of states
 In the linear algebra representation of quantum states, different vectors combine to form each eigenstate. Here's a graphical representation of this concept, where vector $\vec{w}$ can be written as a linear combination of vectors $\vec{u}$ and $\vec{v}$:
@@ -56,30 +59,8 @@ Operators now become matrices when using linear algebra to gain information abou
 
 Where ${O}$ is a matrix, ${v}$ is an eigenvector, and ${lambda}$ is the observable. 
 
-
-The Hamiltonian operator combines the potential energy of a certain quantum state with the kinetic energy of a state, and this operation can be done using calculus: 
-
-## $ \hat{H} = \frac{-hbar^2}{2m}\frac{\partial^2}{\partial x^2} + {V(x)} $
-
-
-Using linear algebra, we can construct a matrix that will similarly take the second derivative of another matrix. We can then combine this kinetic energy matrix with the potential energy to form the Hamiltonian operator in the form of a matrix: 
-```Matlab
-Vvec = zeros(pts, 1
-Vvec([1:w, end - (w-1):end]) = barht;
-%We created a vector of zeros, but we just set the first three and the last three entries (because w=3) equal to some barht (large number, using 1e6) to model the infinite potential well
-
-%Now we create the potential energy matrix but putting the entries of Vvec in a diagonal matrix
-V = diag(Vvec);
-
-%making the second derivative matrix
-D2 = (1/(dx^2))*(-2*eye(pts) + diag(ones(pts-1,1), 1) + diag(ones(pts-1,1),-1));
-
-%now account for the delta x idea by subtracting the first element from the second element because they will be evenly spaced, and multiply the matrix by the constants 
-T = (-hbarsq/(2*m))*D2;
-
-%here's our Hamiltonian, which accounts for both the potential energy and kinetic energy
-H= T + V;
-```
+##### All operators we use are hermitian
+A hermitian matrix has a defining property where the complex conjugate is equal to the complex conjugate transpose. A complex conjugate transpose is the original matrix with the rows now serving as the columns and the columns serving as the rows, and any complex components of the matrix are replaced with $ -i = -\sqrt{-1} $. 
 
 ##### Eigenfunctions = Eigenvectors
 Vectors can now be used to hold the same information that eigenfunctions hold. The basis of a vector will matter tremendously. Choosing to express a vector in a different basis has the potential to simplify it greatly. For example, if the energy of the second eigenvector of the particle in a box model is found and presented in the energy basis, the vector $${vec{v}}$$ would be:
@@ -102,6 +83,25 @@ $ {outer product} = \begin{bmatrix} u_{1} \\\ u_{2} \\\ \vdots \\\ u_{n} \end{bm
 We want to work with vectors which have a length of 1 - this is to say that the vector is normalized. We can normalize a vector by dividing that vector by its own length:
 \begin{equation} \vec{v_n} = \frac{\vec{v}}{\parallel\vec{v}\parallel} \end{equation}
 
+##### Hamiltonian operator as a matrix
+Using linear algebra, we can construct a matrix that will similarly take the second derivative of another matrix. We can then combine this kinetic energy matrix with the potential energy to form the Hamiltonian operator in the form of a matrix: 
+```Matlab
+Vvec = zeros(pts, 1
+Vvec([1:w, end - (w-1):end]) = barht;
+%We created a vector of zeros, but we just set the first three and the last three entries (because w=3) equal to some barht (large number, using 1e6) to model the infinite potential well
+
+%Now we create the potential energy matrix but putting the entries of Vvec in a diagonal matrix
+V = diag(Vvec);
+
+%making the second derivative matrix
+D2 = (1/(dx^2))*(-2*eye(pts) + diag(ones(pts-1,1), 1) + diag(ones(pts-1,1),-1));
+
+%now account for the delta x idea by subtracting the first element from the second element because they will be evenly spaced, and multiply the matrix by the constants 
+T = (-hbarsq/(2*m))*D2;
+
+%here's our Hamiltonian, which accounts for both the potential energy and kinetic energy
+H= T + V;
+```
 
 [home](/README.md)
 
