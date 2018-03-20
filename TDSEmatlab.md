@@ -2,7 +2,7 @@
 
 # Time Evolution of A Stationary State
 
-Here's the time evolution of the second eigenvector in the position basis and energy basis. The expectation value for position is plotted with a red star, and the expectation value for energy is shown on the graph. 
+Here's the time evolution of the second eigenvector in the position basis and energy basis. The expectation value for position is plotted with a red star, and the expectation value for energy is shown on the graph. In the first graph, the time evolution of the quantum state described by the second energy eigenvalue is displayed in the positions basis. The probability amplitude of each position value evolves through the complex plane with time. In the second graph, the time evolution of the second energy eigenstate in the energy basis is depicted. This 
 ![Second State](/tdse2.gif)
 
 ### MatLab code
