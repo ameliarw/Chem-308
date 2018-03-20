@@ -25,7 +25,7 @@ energy eigenfunction/stationary state/solution to the TDSE.
 These two variables can be separated and our wavefunction can be written as the product of two functions, 
 one of which depends on space and the other depends on time.
 
-The time function is ${T_n(t) = exp(−iEnt/hbar)}$
+The time function is ${T_n(t) = \exp(−iE_nt/\hbar)}$
 
 The complete time-dependent Schrodinger equation can be written as:
 \begin{equation}\label{tdse} \mathcal{H}\Psi(x,t) = E\Psi(x,t) \end{equation}
