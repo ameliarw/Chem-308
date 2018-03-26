@@ -13,6 +13,7 @@ This course focuses on using linear algebra to describe the properties of quantu
 6. [Selection Rules](/rules.md)
     - [Vibrational Transitions](/vib.md)
     - [Morse Potential](/morse.md)
+7. [Fourier Transform](/ftrans.md)
 
 
 ##### Graphs and Code
