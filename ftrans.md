@@ -1,5 +1,5 @@
 ### Fourier Transforms Introduction
-Fourier transforms are the link between position space and momentum space and allow for the movement from one space to another. We've introduced a similar concept with the change of basis topic. 
+
 
 In the video: 
 There are two graphs present. One graph is the time evolution of a wavepacket in the position space, and the other graph is the time evolution of a wavepacket in the momentum space. The plane in the middle is at x = 0 and k = 0. 
@@ -15,7 +15,12 @@ Generally, the Fourier transform can be expressed as:
 
 The first equation allows for the transformation from the time domain to the frequency domain, while the second equation is the inverse Fourier which allows for the transformation from the frequency domain to the time domain. 
 
-The Fourier transform can also be used to 
+The Fourier transform can also be used to move between position and momentum space. Fourier transforms are also the link between position space and momentum space and allow for the movement from one space to another. We've introduced a similar concept with the change of basis topic. The Fourier transform can also be written with position and momentum: 
+![pos and mom](/posmom.png)
+
+The Fourier transform and inverse Fourier transform of position and momentum both yield Gaussian functions if all the values are real values. 
+
+If the width of the wavepacket in position space is larger, the width of the wavepacket is momentum space will be smaller,
 
 2) How it relates to position and momentum
 3) Why the gaussian wavepackets in position and momentum do what they do.
