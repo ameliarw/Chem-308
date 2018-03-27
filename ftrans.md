@@ -2,13 +2,29 @@
 Fourier transforms are the link between position space and momentum space and allow for the movement from one space to another. We've introduced a similar concept with the change of basis topic. 
 
 In the video: 
-There are two graphs present. One graph is the time evolution of a wavepacket in the position space, and the other graph is the time evolution of a wavepacket in the momentum space. The plan in the middle is at x = 0 and k = 0. 
+There are two graphs present. One graph is the time evolution of a wavepacket in the position space, and the other graph is the time evolution of a wavepacket in the momentum space. The plane in the middle is at x = 0 and k = 0. 
 
-At a higher k, the wavelength of the wavepacket will be decreased and the graph will appear more steep. At higher k values, or wavenumbers, the wavepacket will have more energy. 
-
-How can we use the Fourier transform to move from time to frequency? 
+At a higher k values, the wavelength of the wavepacket will be decreased and the graph will appear more steep. At higher k values, or wavenumbers, the wavepacket will have more energy. 
 
 ![video](/fvid.mp4)
+
+The Fourier transform classically refers to the idea of tranforming a function which exists in time space into a function which exists in frequency space. A function of time can be transformed into a function of frequency, using the Fourier transform. 
+
+Generally, the Fourier transform can be expressed as: 
+![fourier](/four.jpg)
+
+The first equation allows for the transformation from the time domain to the frequency domain, while the second equation is the inverse Fourier which allows for the transformation from the frequency domain to the time domain. 
+
+The Fourier transform can also be used to 
+
+2) How it relates to position and momentum
+3) Why the gaussian wavepackets in position and momentum do what they do.
+Be sure to include, as a minimum, descriptions of the following, along with
+math-based explanations of what you see:
+     a) What happens in k space when the wavepacket moves along x?
+     b) What happens in x space when the wavepacket moves along k?
+     c) What's the relationship between the width of the wavepacket in x
+         space and the width in k space?
 
 Key Points of the Video
 - When the wavepacket appears as a Gaussian, either in position or momentum space, then it means that it only has real values. 
