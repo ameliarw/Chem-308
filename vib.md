@@ -7,7 +7,7 @@ We need to have an oscillating dipole moment (can’t get from stationary state)
 Electric dipole moment which oscillates at the frequency of the electromagnetic field. 
 Frequency matching as energy matching → if you match the frequency, you match the energy
 Polarization of light 
-Horizontal or vertical (think of as basis) 
+Horizontal or vertical (think of as basis)  
 Or a combination of the two in circularly polarized light 
 Circularly polarized light has angular and linear momentum, should be considered 
 Horizontal and vertical together as combination
