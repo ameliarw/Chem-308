@@ -3,7 +3,7 @@
 Mechanism we are focused on is the relationship between an oscillating electromagnetic field (light) and a dipole moment. 
 
 We need to have an oscillating dipole moment (can’t get from stationary state) 
-
+ 
 Electric dipole moment which oscillates at the frequency of the electromagnetic field. 
 Frequency matching as energy matching → if you match the frequency, you match the energy
 Polarization of light 
