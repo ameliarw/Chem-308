@@ -16,7 +16,7 @@ Key Points of the Video
 - If the k values increase, kinkier helix in the position space. 
 - As position gets bigger too, the momentum, the k gets kinkier too
 - If position is wide, then momentum space evolves more slowly 
-- Handedness of the helices are based on the sign of k 
+- Handedness of the helices are based on the sign of k    
 - The relationship between wide and narrow continues,  if one is wide, then the other is narrow. 
 
 Find a way to describe all of these things on webpage.
