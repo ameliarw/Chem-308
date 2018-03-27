@@ -8,6 +8,8 @@ At a higher k, the wavelength of the wavepacket will be decreased and the graph 
 
 How can we use the Fourier transform to move from time to frequency? 
 
+![video](/fvid.mp4)
+
 Key Points of the Video
 - When the wavepacket appears as a Gaussian, either in position or momentum space, then it means that it only has real values. 
 - When the momentum is shifted to the left, then the particle has momentum to the left. 
