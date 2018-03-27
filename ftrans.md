@@ -21,33 +21,17 @@ The first equation allows for the transformation from the time domain to the fre
 The Fourier transform can also be used to move between position and momentum space. Fourier transforms are also the link between position space and momentum space and allow for the movement from one space to another. We've introduced a similar concept with the change of basis topic. The Fourier transform can also be written with position and momentum: 
 ![pos and mom](/posmom.png)
 
-The Fourier transform and inverse Fourier transform of position and momentum both yield Gaussian functions if all the values are real values. 
+The Fourier transform and inverse Fourier transform of position and momentum both yield Gaussian functions if all the values are real values. With the introduction of imaginary numbers, the Gaussian wavepacket time evolves through the complex plane when x or k do not equal zero. 
+
+When the wavepacket moves along x, with either more positive or more negative x values, the wavepacket in the momentum space develops more kinks. The opposite relationship is also true, as when k values increase in the momentum space, the helix in the position space also gets kinkier. The handedness of the helices are based on the sign of k or x. 
 
 Position and momentum are still defined by their uncertainties relative to each other, where 
-$ ΔxΔp≥ℏ2 % 
-If the position of a particle is known, the momentum will be more uncertain. If the momentum is well-defined, the position will not be well-defined. This relation hold true with gaussian wavepackets in postion and momentum space as well. If the wavepacket is narrow in position space
+$ ΔxΔp≥ℏ/2 $
+If the position of a particle is known, the momentum will be more uncertain. If the momentum is well-defined, the position will not be well-defined. This relation hold true with gaussian wavepackets in postion and momentum space as well. If the wavepacket is narrow in position space. When the wavepacket in the position space is wide, the wavepacket in the momentum space evolves more slowly. 
 
-2) How it relates to position and momentum
-3) Why the gaussian wavepackets in position and momentum do what they do.
-Be sure to include, as a minimum, descriptions of the following, along with
-math-based explanations of what you see:
-     a) What happens in k space when the wavepacket moves along x?
-     b) What happens in x space when the wavepacket moves along k?
-     c) What's the relationship between the width of the wavepacket in x
-         space and the width in k space?
+(Also I think I will need to ask more about the mathematical explanations for this)
 
-Key Points of the Video
-- When the wavepacket appears as a Gaussian, either in position or momentum space, then it means that it only has real values. 
-- When the momentum is shifted to the left, then the particle has momentum to the left. 
-- If the k values increase, kinkier helix in the position space. 
-- As position gets bigger too, the momentum, the k gets kinkier too
-- If position is wide, then momentum space evolves more slowly 
-- Handedness of the helices are based on the sign of k    
-- The relationship between wide and narrow continues,  if one is wide, then the other is narrow. 
-
-Find a way to describe all of these things on webpage.
-
-(NOTES THAT WILL BE FURTHER EXPLAINED EVENTUALLY...BEFORE THURSDAY AFTER I TURN IN THESIS)
+(NOTES BELOW THAT WILL BE FURTHER EXPLAINED EVENTUALLY...BEFORE THURSDAY AFTER I TURN IN THESIS)
 
 MATH
 Fourier transforms with position and momentum 
