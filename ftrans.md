@@ -1,3 +1,6 @@
+[home](/README.md)
+{% include mathjax% }
+
 ### Fourier Transforms Introduction
 
 
@@ -20,7 +23,9 @@ The Fourier transform can also be used to move between position and momentum spa
 
 The Fourier transform and inverse Fourier transform of position and momentum both yield Gaussian functions if all the values are real values. 
 
-If the width of the wavepacket in position space is larger, the width of the wavepacket is momentum space will be smaller,
+Position and momentum are still defined by their uncertainties relative to each other, where 
+$ ΔxΔp≥ℏ2 % 
+If the position of a particle is known, the momentum will be more uncertain. If the momentum is well-defined, the position will not be well-defined. This relation hold true with gaussian wavepackets in postion and momentum space as well. If the wavepacket is narrow in position space
 
 2) How it relates to position and momentum
 3) Why the gaussian wavepackets in position and momentum do what they do.
