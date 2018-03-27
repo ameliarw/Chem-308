@@ -1,5 +1,5 @@
 [home](/README.md)
-{% include mathjax% }
+{% include mathjax %}
 
 ### Fourier Transforms Introduction
    
