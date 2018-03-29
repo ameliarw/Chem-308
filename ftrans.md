@@ -51,7 +51,6 @@ Linear combination of sinusoidal functions
 When you do the fourier transform, you’re looking at linear combinations of sines and cosines
 You just want to know how much cos and sin of each frequency contributes to the overall function
  
-To be a unitary transformation - keep the same length of the original vector, scaling
 The (1/sqrt(2pi)) is to scale the transformation properly 
 
 SO connection to linear algebra
