@@ -39,7 +39,6 @@ The Fourier transform is a linear combination of sines and cosines. The evolving
 
 f(k) specifies how much a pure sinusoid with wavenumber of k contributes to f(x) and spans all k values
 
-	And different contributions of a and b or cos and sin will shift this left and right
 	R determines the magnitude of the function, phi determines how much it is shifted
 	Eikx = cos(kx) + isin(kx)
 Any way we are doing it, we are choosing sinusoids as the basis
