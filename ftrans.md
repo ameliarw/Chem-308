@@ -79,6 +79,5 @@ This would be the integral of f(x)*g(x) = some number
 When we do this using linear algebra, we have to keep in mind that we have to parameters - we have both x and k as parameters 
 f(x) and g(x) 
 Need a row vector * a column vector 
-What is the fourier transform of the first derivative of f(x)?
-	- With the fourier transform, multiplication becomes a derivative and derivatives become a multiplication.
+With the fourier transform, multiplication becomes a derivative and derivatives become a multiplication.
 
