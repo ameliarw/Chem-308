@@ -53,9 +53,6 @@ When you do the fourier transform, you’re looking at linear combinations of si
 You just want to know how much cos and sin of each frequency contributes to the overall function
 Start with a function in position space and express as a linear combination of fkeikx
  
-
-If the sum is infinite then the sum of all ks equals the integral of [math] overall of k 
-
 To be a unitary transformation - keep the same length of the original vector, scaling
 The (1/sqrt(2pi)) is to scale the transformation properly 
 
