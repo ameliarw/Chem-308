@@ -19,7 +19,7 @@ Note the red star, the expectation value of the particle fit to this Gaussian cu
 ![Gaussian](/gaus.gif)
 
 We've set the probability density to begin slightly to the left of the barrier, and we've added in a barrier to make the behavior of the particle more interesting. 
-
+ 
 The curve behaves in a less complicated fashion when the barrier is removed: 
 ![No barrier](/tdsenobarrier.gif)
 
