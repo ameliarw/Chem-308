@@ -39,7 +39,6 @@ The Fourier transform is a linear combination of sines and cosines. The evolving
 
 f(k) specifies how much a pure sinusoid with wavenumber of k contributes to f(x) and spans all k values
 
-When you do the fourier transform, you’re looking at linear combinations of sines and cosines
  
 With the fourier transform, multiplication becomes a derivative and derivatives become a multiplication.
 
