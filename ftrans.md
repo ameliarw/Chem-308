@@ -58,7 +58,6 @@ f(x) can be re-written as the sum of fkeikx where fk is like cj and eidk like ph
 If the sum is infinite then the sum of all ks equals the integral of [math] overall of k 
 
 To be a unitary transformation - keep the same length of the original vector, scaling
-f(x) = (1/sqrt(2pi)) * integral from infinity to negative infinity (fkeikxdk)
 The (1/sqrt(2pi)) is to scale the transformation properly 
 
 This is the inverse fourier transform
