@@ -7,7 +7,7 @@ Here's the time evolution of the second eigenvector in the position basis and en
 
 ### MatLab code
 
-```Matlab
+```Matlab 
 function [x,E,psiX,psiE]=TDSE
 
 % define constants, discritize , then define V and turn into matrix
