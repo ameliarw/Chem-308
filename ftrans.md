@@ -50,7 +50,6 @@ Any way we are doing it, we are choosing sinusoids as the basis
 Linear combination of sinusoidal functions 
 When you do the fourier transform, you’re looking at linear combinations of sines and cosines
 You just want to know how much cos and sin of each frequency contributes to the overall function
-Start with a function in position space and express as a linear combination of fkeikx
  
 To be a unitary transformation - keep the same length of the original vector, scaling
 The (1/sqrt(2pi)) is to scale the transformation properly 
