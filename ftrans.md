@@ -51,8 +51,6 @@ Linear combination of sinusoidal functions
 When you do the fourier transform, you’re looking at linear combinations of sines and cosines
 You just want to know how much cos and sin of each frequency contributes to the overall function
  
-SO connection to linear algebra
-<u, v> = inner product, gets a scalar 
 
 
 With the fourier transform, multiplication becomes a derivative and derivatives become a multiplication.
