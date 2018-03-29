@@ -74,7 +74,6 @@ f(x) = (1/sqrt(2pi)) * integral from infinity to negative infinity (f(x)e-ikxdk)
 SO connection to linear algebra
 <u, v> = inner product, gets a scalar 
 
-In calc-land 
 f(x) and g(x) 
 This would be the integral of f(x)*g(x) = some number 
  
