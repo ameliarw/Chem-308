@@ -37,7 +37,6 @@ The Fourier transform is a linear combination of sines and cosines. The evolving
  
 -----------------------
 
-f(k) specifies how much a pure sinusoid with wavenumber of k contributes to f(x) and spans all k values
 
  
 
