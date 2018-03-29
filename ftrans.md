@@ -32,27 +32,10 @@ Position and momentum are still defined by their uncertainties relative to each 
 
 If the position of a particle is known, the momentum will be more uncertain. If the momentum is well-defined, the position will not be well-defined. This relation hold true with gaussian wavepackets in postion and momentum space as well. If the wavepacket is narrow in position space. When the wavepacket in the position space is wide, the wavepacket in the momentum space evolves more slowly. 
 
-The Fourier transform is a linear combination of sines and cosines. The evolving combination of sines and cosines is what causes the helical shape, and with higher energy, higher k values, the helical shape will appear to evolve more quickly and display more kinks. 
+The Fourier transform is a linear combination of sines and cosines. The evolving combination of sines and cosines is what causes the helical shape, and with higher energy, higher k values, the helical shape will appear to evolve more quickly and display more kinks. The Fourier transform 
 
 
 -----------------------
-
-
-(Also I think I will need to ask more about the mathematical explanations for this)
-
-(NOTES BELOW THAT WILL BE FURTHER EXPLAINED EVENTUALLY...BEFORE THURSDAY AFTER I TURN IN THESIS)
-
-MATH
-Fourier transforms with position and momentum 
-
-Start with f(x) 
-
-Fourier(f(x)) = f(k) is known as the fourier transform of f(x) 
-
-K has units of 1/distance - cycles per unit distance 
-Large wavelength is small k
-Small wavelength is large k
------------------------------ k = 0
 
 f(k) specifies how much a pure sinusoid with wavenumber of k contributes to f(x) and spans all k values
 
