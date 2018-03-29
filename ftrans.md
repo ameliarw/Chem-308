@@ -61,7 +61,6 @@ The (1/sqrt(2pi)) is to scale the transformation properly
 
 This is the inverse fourier transform
 
-How much of each eisk contributes to the overall function 
 
 
 f(x) = (1/sqrt(2pi)) * integral from infinity to negative infinity (f(x)e-ikxdk)
