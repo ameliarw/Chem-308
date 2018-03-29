@@ -39,7 +39,6 @@ The Fourier transform is a linear combination of sines and cosines. The evolving
 
 f(k) specifies how much a pure sinusoid with wavenumber of k contributes to f(x) and spans all k values
 
-Any way we are doing it, we are choosing sinusoids as the basis
 Linear combination of sinusoidal functions 
 When you do the fourier transform, you’re looking at linear combinations of sines and cosines
 You just want to know how much cos and sin of each frequency contributes to the overall function
