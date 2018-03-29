@@ -54,7 +54,6 @@ You just want to know how much cos and sin of each frequency contributes to the 
 To be a unitary transformation - keep the same length of the original vector, scaling
 The (1/sqrt(2pi)) is to scale the transformation properly 
 
-f(x) = (1/sqrt(2pi)) * integral from infinity to negative infinity (f(x)e-ikxdk)
 
 SO connection to linear algebra
 <u, v> = inner product, gets a scalar 
