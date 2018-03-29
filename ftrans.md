@@ -34,7 +34,7 @@ If the position of a particle is known, the momentum will be more uncertain. If 
 
 The Fourier transform is a linear combination of sines and cosines. The evolving combination of sines and cosines is what causes the helical shape, and with higher energy, higher k values, the helical shape will appear to evolve more quickly and display more kinks. The Fourier transform 
 
-
+ 
 -----------------------
 
 f(k) specifies how much a pure sinusoid with wavenumber of k contributes to f(x) and spans all k values
