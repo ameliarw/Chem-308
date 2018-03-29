@@ -38,4 +38,3 @@ The Fourier transform is a linear combination of sines and cosines. The evolving
 -----------------------
 
 
-
