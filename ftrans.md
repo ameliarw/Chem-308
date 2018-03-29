@@ -67,7 +67,6 @@ So I have a wavefunction in momentum space and I want to see what it is like in 
 How much of each eisk contributes to the overall function 
 
 
-Can also do it the opposite way - the i becomes negative because complex plane - 
 f(x) = (1/sqrt(2pi)) * integral from infinity to negative infinity (f(x)e-ikxdk)
 
 SO connection to linear algebra
