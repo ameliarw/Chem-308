@@ -61,7 +61,6 @@ The (1/sqrt(2pi)) is to scale the transformation properly
 
 This is the inverse fourier transform
 
-So I have a wavefunction in momentum space and I want to see what it is like in position space
 How much of each eisk contributes to the overall function 
 
 
