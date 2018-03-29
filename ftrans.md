@@ -54,10 +54,6 @@ You just want to know how much cos and sin of each frequency contributes to the 
 SO connection to linear algebra
 <u, v> = inner product, gets a scalar 
 
-f(x) and g(x) 
-This would be the integral of f(x)*g(x) = some number 
- 
-f(x) and g(x) 
-Need a row vector * a column vector 
+
 With the fourier transform, multiplication becomes a derivative and derivatives become a multiplication.
 
