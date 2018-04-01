@@ -1,4 +1,4 @@
-## Modeling the Morse Potential 
+## Modeling the Morse Potential  
 Feedback on the pages: 
 Update the landing pages so that it feels that anyone in the chemistry department would be able to read
 Give global view of the topics, shouldn’t just read like a diary
