@@ -32,7 +32,7 @@ This expression is also called the Time Independent Schrodinger Equation. Note t
 ##### All operators we use are hermitian
 Hermitian operators produce real eigenvalues.
 
-##### Quantum states are linear combinations of states
+##### Quantum states are linear combinations of states 
 In the linear algebra representation of quantum states, different vectors combine to form each eigenstate. Here's a graphical representation of this concept, where vector $\vec{w}$ can be written as a linear combination of vectors $\vec{u}$ and $\vec{v}$:
 
 ![Combination](/34.gif)
