@@ -1,7 +1,7 @@
 {% include mathjax.html %}
 
 [home](/README.md)
-
+ 
 ## Summary of Key Quantum Ideas
 ----- 
 A wavefunction provides the complete description of a quantum state. In order to determine different qualities of a wavefunction an operation must be performed. Operating on wavefunction yields an observable, or a value specific to that quantum state. Different operators provide different information - there are operators for position, momentum, energy, etc. 
