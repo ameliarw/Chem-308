@@ -3,7 +3,7 @@ Feedback on the pages:
 Update the landing pages so that it feels that anyone in the chemistry department would be able to read
 Give global view of the topics, shouldn’t just read like a diary
 Not even necessarily specific to the course, but more about the topics covered 
-
+  
 How can we visually display which transitions are allowed? 
 First, the time independent Schrodinger equation will be solved using the potential energy of the harmonic oscillator. Then the eigenvectors and eigenvalues can be solved. 
 We will use the dipole moment as the transition operator to determine whether or not the transition is allowed. 
