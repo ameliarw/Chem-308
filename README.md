@@ -23,6 +23,8 @@ B. [Non-Stationary States](/nonstat.md)
 
 C. [Gaussian Fit](/gaussian.md)
 
+[Position and Momentum Gaussian Wavepacket](/posmommatlab.md)
+
 
 ###### Collection of Matlab Functions
 - [3D Plot Code](/plot3d.md)
