@@ -9,7 +9,7 @@ This course focuses on using linear algebra to describe the properties of quantu
 3. [The Time Dependent Schrodinger Equation](/TDSE.md)
     - [Change of Basis](/Basis.md)
     - [Stationary States](/TDSEmatlab.md)
-    
+    - [Non-Stationary States](/nonstat.md)
 4. [Differential vs. Difference Equations](/diff.md)
 5. [Introduction to Pertubation Theory](/perturb.md)
 6. [Selection Rules](/rules.md)
