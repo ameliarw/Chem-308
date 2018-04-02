@@ -80,7 +80,7 @@ H= T + V;
 %order of n, but the eigenvalues and eigenvectors stay together
 [srtvecs, srtvals] = eigsort(vecs, vals);
 
-EtoX = srtvecs;
+EtoX = srtvecs; 
 XtoE = inv(srtvecs);
 %defining an energy space vector which corresponds to the first energy
 %eigenvector 
