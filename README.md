@@ -7,29 +7,33 @@ This course focuses on using linear algebra to describe the properties of quantu
 1. [Summary of Key Quantum Ideas](/Background.md)
 2. [Particle in a Box - 1D](/PIBfix.md)
 3. [The Time Dependent Schrodinger Equation](/TDSE.md)
-    - [Change of Basis](/Basis.md)   
+    - [Change of Basis](/Basis.md)
+    - [Stationary States](/TDSEmatlab.md)
+    
 4. [Differential vs. Difference Equations](/diff.md)
 5. [Introduction to Pertubation Theory](/perturb.md)
 6. [Selection Rules](/rules.md)
     - [Vibrational Transitions](/vib.md)
     - [Morse Potential](/morse.md)
 7. [Fourier Transform](/ftrans.md)
+    - [Gaussian Wavepackets](/gaussian.md)
+   
 
 
-##### Graphs and Code
-A. [Stationary States](/TDSEmatlab.md)
+##### Collection of Matlab Functions
 
-B. [Non-Stationary States](/nonstat.md)
-
-C. [Gaussian Fit](/gaussian.md)
-
-[Position and Momentum Gaussian Wavepacket](/posmommatlab.md)
-
-[Selection Rules] (/rulesmatlab.md)
-
-
-###### Collection of Matlab Functions
 - [3D Plot Code](/plot3d.md)
 - [Eigsort Function](/Eigsort.md)
+- [Particle in a Box](/pibcode.md)
+- [Stationary States](/TDSEcode.md)
+- [Non-Stationary States](/nonstatcode.md)
+- [Gaussian Wavepacket](/gaussiancode.md)
+- [Position and Momentum with Gaussian Wavepackets](/posmommatlab.md)
+- [Selection Rules](/rulesmatlab.md)
+- [Morse Potential](/morsecode.md)
+- [Pertubation Theory](/perturbcode.md)
+
+
+
 
 
