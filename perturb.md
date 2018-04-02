@@ -107,7 +107,7 @@ end
 
 %% Reexpress central barrier stationary states using left-well and right-well eigenvectors as bases.
     figure(2)
-    clf
+    clf 
     indmax = 4;    % truncate E space plots to clarify display
 for j = 1:v
 
