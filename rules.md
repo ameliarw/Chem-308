@@ -57,3 +57,5 @@ Think about going from a 1s to a 2s and from a 1s to a 3d
 #### Transition from 1s to 3d - is it allowed?
 ![transition2](/20180306-221525_p0.jpg)
 
+
+
