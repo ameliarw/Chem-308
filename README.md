@@ -25,6 +25,8 @@ C. [Gaussian Fit](/gaussian.md)
 
 [Position and Momentum Gaussian Wavepacket](/posmommatlab.md)
 
+[Selection Rules] (/rulesmatlab.md)
+
 
 ###### Collection of Matlab Functions
 - [3D Plot Code](/plot3d.md)
