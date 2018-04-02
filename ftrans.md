@@ -8,7 +8,7 @@ There are two graphs present. One graph is the time evolution of a wavepacket in
  
 At a higher k values, the wavelength of the wavepacket will be decreased and the graph will appear more steep. At higher k values, or wavenumbers, the wavepacket will have more energy. 
 
-![video](/fvid.mp4)
+![video](/posmom.gif)
 
 The Fourier transform classically refers to the idea of tranforming a function which exists in time space into a function which exists in frequency space. A function of time can be transformed into a function of frequency, using the Fourier transform. 
 
