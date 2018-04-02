@@ -5,7 +5,7 @@ This course focuses on using linear algebra to describe the properties of quantu
 
 ##### Introduction to Concepts
 1. [Summary of Key Quantum Ideas](/Background.md)
-2. [Particle in a Box - 1D](/PIBfix.md)
+2. [Particle in a Box - 1D](/pibbackground.md)
 3. [The Time Dependent Schrodinger Equation](/TDSE.md)
     - [Change of Basis](/Basis.md)
     - [Stationary States](/TDSEmatlab.md)
