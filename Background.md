@@ -6,6 +6,15 @@
 ----- 
 A wavefunction provides the complete description of a quantum state. In order to determine different qualities of a wavefunction an operation must be performed. Operating on wavefunction yields an observable, or a value specific to that quantum state. Different operators provide different information - there are operators for position, momentum, energy, etc. 
 
+##### Functions as eigenfunction
+An operator performs a certain operation on a function. As we've previously mentioned, this could range from multiplying a function by a variable, like the position operator, or taking the second derivative of a function, like the Hamiltonian operator. Operators can only operate on functions which are eigenfunctions for the operator. For a wavefunction to be an eigenfunction of an operator, the operation must return the original function multiplied by a scalar multiple. This scalar multiple is the eigenvalue of that operator and the observable value that we are trying to find. 
+
+More concisely put: 
+
+ \begin{equation}\label{help}\{\hat{O}}\{\psi}=\lambda_i\{\psi}\end{equation} 
+
+Where ${\hat{O}}$ is an operator, ${\psi}$ is an eigenfunction, and ${\lambda}$ is an observable. This expression can be translated into matrixes and vectors using linear algebra. 
+
 ##### The Hamiltonian operator operating on an eigenfunction will yield the energy of that quantum state multiplied by the original eigenfunction:
 
 $ 
@@ -32,24 +41,6 @@ The Hamiltonian operator is composed of both the kinetic energy and potential en
 ![Particle in a Box Model](/img53.png)
 
 
-##### Quantum states are linear combinations of states 
-In the linear algebra representation of quantum states, different vectors combine to form each eigenstate. Here's a graphical representation of this concept, where vector $\vec{w}$ can be written as a linear combination of vectors $\vec{u}$ and $\vec{v}$:
-
-![Combination](/34.gif)
-
-This concept is depicted more generally by this equation, where the ${c}$ refers to the coefficient, or the contribution of each vector state, ${p}$, to the overall state, ${\psi}$: 
- 
- \begin{equation}\label{hey} \psi(x) = c_1\vec{p_1} + c_2\vec{p_2} + c_3\vec{p_3} + ... + c_n\vec{p_n} \end{equation}
-
-##### Functions as eigenfunction
-An operator performs a certain operation on a function. As we've previously mentioned, this could range from multiplying a function by a variable, like the position operator, or taking the second derivative of a function, like the Hamiltonian operator. Operators can only operate on functions which are eigenfunctions for the operator. For a wavefunction to be an eigenfunction of an operator, the operation must return the original function multiplied by a scalar multiple. This scalar multiple is the eigenvalue of that operator and the observable value that we are trying to find. 
-
-More concisely put: 
-
- \begin{equation}\label{help}\{\hat{O}}\{\psi}=\lambda_i\{\psi}\end{equation} 
-
-Where ${\hat{O}}$ is an operator, ${\psi}$ is an eigenfunction, and ${\lambda}$ is an observable. This expression can be translated into matrixes and vectors using linear algebra. 
-
 # Linear Algebra Translation
 
 ##### Operators as Matrices
@@ -67,6 +58,14 @@ Vectors can now be used to hold the same information that eigenfunctions hold. T
 
 $ {vec{v}}=\begin{bmatrix} 0 \\\ 1 \\\ 0 \\\ \vdots \end{bmatrix} $
 
+##### Quantum states are linear combinations of states 
+In the linear algebra representation of quantum states, different vectors combine to form each eigenstate. Here's a graphical representation of this concept, where vector $\vec{w}$ can be written as a linear combination of vectors $\vec{u}$ and $\vec{v}$:
+
+![Combination](/34.gif)
+
+This concept is depicted more generally by this equation, where the ${c}$ refers to the coefficient, or the contribution of each vector state, ${p}$, to the overall state, ${\vec{v}}$: 
+ 
+ \begin{equation}\label{hey} \vec{v} = c_1\vec{p_1} + c_2\vec{p_2} + c_3\vec{p_3} + ... + c_n\vec{p_n} \end{equation}
 
 ##### Inner product vs. Matrix multiplication
 We will use both operations to manipulate our matrices and vectors, but the inner product of two vectors is quite different than the multiplication of two vectors. For our purposes, we are considering column or row vectors. 
