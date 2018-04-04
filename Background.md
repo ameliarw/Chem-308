@@ -85,22 +85,9 @@ We want to work with vectors which have a length of 1 - this is to say that the 
 ##### Hamiltonian operator as a matrix
 Using linear algebra, we can construct a matrix that will similarly take the second derivative of another matrix within the context of the ![Particle in a Box problem](/pibbackground.md). We can then combine this kinetic energy matrix with the potential energy to form the Hamiltonian operator in the form of a matrix. The potential energy is characteristic of the system in which the particle exists. 
 
-Here, we create a vector of zeros with the first three and last three entries (as w=3) equal to the height of our potential energy well to model that the potential energy of our system goes to infinity at the edge of our box. 
-```Matlab
-Vvec = zeros(pts, 1)
-Vvec([1:w, end - (w-1):end]) = barht;```
+Here, we create a vector of zeros with the first three and last three entries (as w=3) equal to the height of our potential energy well to model that the potential energy of our system goes to infinity at the edge of our box. By putting this vector on the diagonal of a new matrix, V, we've created the potential energy matrix. 
 
-Now we create the potential energy matrix but putting the entries of Vvec on the diagonal.
-```V = diag(Vvec);```
+Taking the second derivative of a function can be thought of a considering the change in slope 
 
-%making the second derivative matrix
-D2 = (1/(dx^2))*(-2*eye(pts) + diag(ones(pts-1,1), 1) + diag(ones(pts-1,1),-1));
-
-%now account for the delta x idea by subtracting the first element from the second element because they will be evenly spaced, and multiply the matrix by the constants 
-T = (-hbarsq/(2*m))*D2;
-
-%here's our Hamiltonian, which accounts for both the potential energy and kinetic energy
-H= T + V;
-```
-[home](/README.md)
+ [home](/README.md)
 
