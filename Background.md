@@ -13,7 +13,7 @@ More concisely put:
 
  \begin{equation}\label{help}\{\hat{O}}\{\psi}=\lambda_i\{\psi}\end{equation} 
 
-Where ${\hat{O}}$ is an operator, ${\psi}$ is an eigenfunction, and ${\lambda}$ is an observable. This expression can be translated into matrixes and vectors using linear algebra. 
+Where ${\hat{O}}$ is an operator, ${\psi}$ is an eigenfunction, and ${\lambda}$ is an observable. 
 
 ##### The Hamiltonian operator operating on an eigenfunction will yield the energy of that quantum state multiplied by the original eigenfunction:
 
@@ -83,15 +83,15 @@ We want to work with vectors which have a length of 1 - this is to say that the 
 \begin{equation} \vec{v_n} = \frac{\vec{v}}{\parallel\vec{v}\parallel} \end{equation}
 
 ##### Hamiltonian operator as a matrix
-Using linear algebra, we can construct a matrix that will similarly take the second derivative of another matrix. We can then combine this kinetic energy matrix with the potential energy to form the Hamiltonian operator in the form of a matrix. The potential energy is characteristic of the system in which the particle exists. 
+Using linear algebra, we can construct a matrix that will similarly take the second derivative of another matrix within the context of the ![Particle in a Box problem](/pibbackground.md). We can then combine this kinetic energy matrix with the potential energy to form the Hamiltonian operator in the form of a matrix. The potential energy is characteristic of the system in which the particle exists. 
 
+Here, we create a vector of zeros with the first three and last three entries (as w=3) equal to the height of our potential energy well to model that the potential energy of our system goes to infinity at the edge of our box. 
 ```Matlab
-Vvec = zeros(pts, 1
-Vvec([1:w, end - (w-1):end]) = barht;
-%We created a vector of zeros, but we just set the first three and the last three entries (because w=3) equal to some barht (large number, using 1e6) to model the infinite potential well
+Vvec = zeros(pts, 1)
+Vvec([1:w, end - (w-1):end]) = barht;```
 
-%Now we create the potential energy matrix but putting the entries of Vvec in a diagonal matrix
-V = diag(Vvec);
+Now we create the potential energy matrix but putting the entries of Vvec on the diagonal.
+```V = diag(Vvec);```
 
 %making the second derivative matrix
 D2 = (1/(dx^2))*(-2*eye(pts) + diag(ones(pts-1,1), 1) + diag(ones(pts-1,1),-1));
