@@ -105,7 +105,7 @@ T = (-hbarsq/(2*m))*D2
 The Hamiltonian matrix consists of both the potential energy matrix and the kinetic energy matrix. 
 ```Matlab
 H = T + V;
-``` 
+```  
 
  [home](/README.md)
 
