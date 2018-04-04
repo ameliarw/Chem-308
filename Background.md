@@ -87,7 +87,9 @@ Using linear algebra, we can construct a matrix that will similarly take the sec
 
 Here, we create a vector of zeros with the first three and last three entries (as w=3) equal to the height of our potential energy well to model that the potential energy of our system goes to infinity at the edge of our box. By putting this vector on the diagonal of a new matrix, V, we've created the potential energy matrix. 
 
-Taking the second derivative of a function can be thought of a considering the change in slope 
+We've then created a matrix which will find the kinetic energy of a different matrix. The kinetic energy matrix takes the second derivative of a different vector by calculating how much the entries change over the. The second derivative can be thought of as how the change in slope of a graph changes, and a similar thought is used here to consider how the change in entries of a vector change. This second derivative matrix shown below is then multiplied by 1/dx^2 and that resulting matrix is then multiplied by frac{/hbar^2}{2* m} to determine the total kinetic energy of the vector. 
+
+The Hamiltonian matrix consists of both the potential energy matrix and the kinetic energy matrix. 
 
  [home](/README.md)
 
