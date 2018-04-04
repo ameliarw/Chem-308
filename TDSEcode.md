@@ -1,3 +1,7 @@
+[home](/README.md)
+
+{% include mathjax.html %}
+
 # Time Evolution of A Stationary State
 
 This is the code used to describe the time evolution of a stationary state. 
