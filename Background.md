@@ -6,16 +6,10 @@
 ----- 
 A wavefunction provides the complete description of a quantum state. In order to determine different qualities of a wavefunction an operation must be performed. Operating on wavefunction yields an observable, or a value specific to that quantum state. Different operators provide different information - there are operators for position, momentum, energy, etc. 
 
-
-##### How can the energy of a quantum state be determined?
-The Hamiltonian operator is composed of both the kinetic energy and potential energy operator. In simplified models, like the one-dimensional particle in a box model, the potential energy of the box is generally set to zero while there is infinite potential energy out of the box - this is to say that the particle exists in a well of infinite potential. 
-
-![Particle in a Box Model](/img53.png)
-
 ##### The Hamiltonian operator operating on an eigenfunction will yield the energy of that quantum state multiplied by the original eigenfunction:
 
 $$
-\hat{H}\Psi = i \hbar\frac{\partial{\Psi}}{\partial t}
+\hat{H}\Psi = \{E}\Psi
 $$
 
 The Hamiltonian operator combines the potential energy of a certain quantum state with the kinetic energy of a state, and this operation can be done using calculus: 
@@ -31,6 +25,12 @@ This expression is also called the Time Independent Schrodinger Equation. Note t
 
 ##### All operators we use are hermitian
 Hermitian operators produce real eigenvalues.
+
+##### How can the energy of a quantum state be determined?
+The Hamiltonian operator is composed of both the kinetic energy and potential energy operator. In simplified models, like the one-dimensional particle in a box model, the potential energy of the box is generally set to zero while there is infinite potential energy out of the box - this is to say that the particle exists in a well of infinite potential. 
+
+![Particle in a Box Model](/img53.png)
+
 
 ##### Quantum states are linear combinations of states 
 In the linear algebra representation of quantum states, different vectors combine to form each eigenstate. Here's a graphical representation of this concept, where vector $\vec{w}$ can be written as a linear combination of vectors $\vec{u}$ and $\vec{v}$:
