@@ -2,7 +2,7 @@
 
 [home](/README.md)
 
-# Particle in a Box
+# Particle in a Box Code
 
 The particle in a box model serves as a classic quantum model which demonstrates the quantization of energy. The 
 
