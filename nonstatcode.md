@@ -1,4 +1,6 @@
-###### Matlab code 
+# Non-Stationary State Code
+This is the code used to visualize the time evolution of a non-stationary state which has equal contributions from the 1st, 2nd, and 5th energy states. 
+
 ```Matlab
 function [x,E,psiX,psiE]=TDSE
 
