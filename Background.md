@@ -12,9 +12,9 @@ $
 \hat{H}\Psi = \{E}\Psi
 $
 
-The Hamiltonian operator combines the potential energy of a certain quantum state with the kinetic energy of a state, and this operation can be done using calculus: 
+##### The Hamiltonian operator combines the potential energy of a certain quantum state with the kinetic energy of a state, and this operation can be done using calculus: 
 
-## $ \hat{H} = \frac{-\hbar^2}{2m}\frac{\partial^2}{\partial x^2} + {V(x)} $
+$ \hat{H} = \frac{-\hbar^2}{2m}\frac{\partial^2}{\partial x^2} + {V(x)} $
 
 This expression is also called the Time Independent Schrodinger Equation. Note that this expression only depends on position, not time. 
 
