@@ -20,7 +20,7 @@ By diving by psi * chi the functions which don't depend on r or R can then be ca
 
 When everything is simplified down as much as possible, the end result is a total potential function which depends on both the repulsion of the two nuclei as well as the attraction between the nuclei and the electron. Gives rise to the shape of the potential energy function - 
 
-[PE Graph](/bond energy.GIF)
+![PE Graph](/bond energy.GIF)
 
 In the graph above, the total potential energy of a system is depicted by changing the internuclear distance. The graph can be thought of as  
 When the electronic energy is calculated, the total potential energy ends up being calculated. 
