@@ -1,4 +1,10 @@
-#### Matlab Code for Selection Rules: 
+
+[home](/README.md)
+
+{% include mathjax.html %}
+# Selection Rules: 
+
+This is the code used to determine which transitions are allowed. 
 ```Matlab
 function rules(n)
 %remember, n refers to the number of eigenvectors generated
