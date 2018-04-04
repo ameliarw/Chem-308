@@ -9,7 +9,7 @@ A wavefunction provides the complete description of a quantum state. In order to
 ##### The Hamiltonian operator operating on an eigenfunction will yield the energy of that quantum state multiplied by the original eigenfunction:
 
 $ 
-{\hat{H}\Psi = \{E}\Psi}
+\hat{H}\Psi = \{E}\Psi
 $
 
 The Hamiltonian operator combines the potential energy of a certain quantum state with the kinetic energy of a state, and this operation can be done using calculus: 
