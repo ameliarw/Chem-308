@@ -1,4 +1,11 @@
-#### Matlab Code
+
+[home](/README.md)
+
+{% include mathjax.html %}
+
+# Selection Rules for Morse Potential
+This code models which transitions are allowed in the harmonic oscillator which uses the Morse potential as the potential energy of the system. 
+
 ```Matlab
 function rules(n)
 %remember, n refers to the number of eigenvectors generated
