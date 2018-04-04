@@ -1,3 +1,11 @@
+[home](/README.md)
+
+{% include mathjax.html %}
+
+# Position and Momentum Relationship
+ 
+This is the code used to better understand the relationship between the Gaussian wavepacket in position and momentum space. 
+
 ```Matlab 
 
 function	PosAndMomVarWidth
