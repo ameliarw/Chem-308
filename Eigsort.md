@@ -1,6 +1,5 @@
 [home](/README.md)
 
-### Here's our eigsort function 
 When we call upon the eig function on a certain matrix, in our case the total energy matrix, in matlab, we produce two matrices: vecs and vals. 
 Vecs is defined as a matrix which has the corresponding eigenvectors of the original matrix as the columns of vecs. 
 Vals is defined as a diagonal matrix which has the corresponding eigenvalues on the diagonal. 
