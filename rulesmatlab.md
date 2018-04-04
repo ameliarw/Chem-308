@@ -4,7 +4,7 @@
 {% include mathjax.html %}
 # Selection Rules: 
 
-This is the code used to determine which transitions are allowed. 
+This is the code used to determine which transitions are allowed in the simple harmonic oscillator. 
 ```Matlab
 function rules(n)
 %remember, n refers to the number of eigenvectors generated
