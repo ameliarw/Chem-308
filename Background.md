@@ -94,7 +94,8 @@ V = diag(Vvec);
 ``` 
 
 We've then created a matrix which will find the kinetic energy of a different matrix. The second derivative of a function can be thought of as how the change in slope of a graph changes, and a similar thought is used here to consider how the change in entries of a vector change. This second derivative matrix shown below is then multiplied by 1/dx^2 and that resulting matrix is then multiplied by frac{/hbar^2}{2* m} to determine the total kinetic energy of the vector. 
-!{secondderiv}(/secondderic.png)
+
+!{secondderiv}(/2ndderic.PNG)
 
 ```Matlab
 D2 = (1/(dx^2))*(-2*eye(pts) + diag(ones(pts-1,1), 1) + diag(ones(pts-1,1),-1));
