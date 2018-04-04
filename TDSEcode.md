@@ -1,4 +1,6 @@
-### MatLab code
+# Time Evolution of A Stationary State
+
+This is the code used to describe the time evolution of a stationary state. 
 
 ```Matlab 
 function [x,E,psiX,psiE]=TDSE
