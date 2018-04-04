@@ -1,3 +1,12 @@
+
+[home](/README.md)
+
+{% include mathjax.html %}
+
+# Introduction to Pertubation Theory 
+
+This code combine the behavior of a right well and a left well to describe the behavior of a particle in a new well with a central barrier. 
+
 ```Matlab
 function      Perturb2018
 %% PIB example demonstrating the use of the eigenvectors of a simple hamiltonian to understand those of a more complicated one.
