@@ -1,5 +1,13 @@
 
-##### Matlab Code to Create a Gaussian Wavepacket
+
+[home](/README.md)
+
+{% include mathjax.html %}
+
+# Creating a Gaussian Wavepacket 
+
+This is the code used to create a Gaussian wavepacket to understand the time evolution of a Gaussian wavepacket. 
+
 ``` Matlab
 function [x,E,psiX,psiE]=TDSE
 
