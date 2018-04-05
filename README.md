@@ -14,6 +14,7 @@ This website focuses on using linear algebra to describe the properties of quant
 5. [Introduction to Pertubation Theory](/perturb.md)
 6. [Selection Rules](/rules.md)
     - [Vibrational Transitions](/vib.md)
+    - [Electronic Transitions](/electrontrans.md)
     - [Morse Potential](/morse.md)
 7. [Fourier Transform](/ftrans.md)
     - [Gaussian Wavepackets](/gaussian.md)
