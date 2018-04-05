@@ -8,3 +8,5 @@ Take for example the transition of an electron in a hydrogen atom moving from a 
 The program below demonstrates this concept by applying an oscillating electric field (like light) to a system, and the effect of this oscillating electric field can be visualized by observing how other states then become populated. If the energy of the photon is sufficient enough for the transition to occur, higher energy states can also be populated. 
 
 The energy state itself appears to oscillate because the force is equal to the negative slope of the potential function. When the slope of the potential is downward, the force moves to the left, and when the slope of the potential is upward, the force moves to the right. While the potential well is defined and constant, the potential of the oscillating electric field does change with time, and this is why the graph appears to oscillate over time. 
+
+![harmtrans](/harmtrans.gif)
