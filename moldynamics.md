@@ -19,6 +19,10 @@ AB distance 3.5
 BC distance 0.85
 ![abcphase](/abcphase.gif)
 
+Velocity of AB -4.93
+Velocity of BC -3
+AB distance 3.75
+BC distance 0.85
 ![reaction](/reaction.gif)
 
 ![pewell](/pewell.gif)
