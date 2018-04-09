@@ -32,11 +32,8 @@ The number of elements in the x vector is now defined. The linspace command is u
 x = linspace(0, L, pts)';
 dx = x(2)-x(1);
 ```
-
-%now account for the delta x and discritize the number of elements in the x vector
-x = linspace(0, L, pts)';
-dx = x(2)-x(1);
-
+The potential vector {Vvec} can now be constructed by creating a vector of zeros. This defines the potential energy within the box to zero, and by setting the first and last three entries of the barrier equal to the {barht} defined above, a well with infinite potential is created. 
+```
 %x is a vector that goes from 0 to L separated by some amount, dictated by the number
 %of points. Vvec is a vector with the dimension of pts entries with one column
 % now we have points number of entries in the x vector
@@ -44,10 +41,7 @@ Vvec = zeros(pts, 1);
 Vvec([1:w, end - (w-1):end]) = barht;
 %Vvec(120:130) = 75;
 %this makes a barrier in the middle of the box
-
-%We created a vector of zeros, but we just set the first three and the last 
-%three entries (because w=3) equal to some barht (large number, using 1e6)
-%to model the infinite potential well
+```
 
 %Now we create the potential energy matrix but putting the entries of Vvec
 % in a diagonal matrix
