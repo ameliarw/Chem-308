@@ -110,7 +110,7 @@ l = ones(pts, 1);
 %k becomes k' so that the dimension matches such that we get a matrix of our eigenvalues. 
 repvals = l*k';
 %defining shiftvecs so that the graphs will be shifted up. Shiftvecs must also be scaled by some factor to make it easier to visualize
-sc = 100;
+sc = 100; 
 shiftvecs = repvals + sc*srtvecs;
 ```
 
