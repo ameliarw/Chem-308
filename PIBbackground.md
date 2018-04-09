@@ -95,7 +95,7 @@ The [vecs, vals] command creates two new matrices which are the eigenvectors and
 [vecs, vals] = eig(H);
 ```
 
-The srtvecs commmand, ![described here](/Eigsort/md) puts the eigenvectors and eigenvalues together in ascending order of energy level. 
+The srtvecs commmand, [described here](/Eigsort.md) puts the eigenvectors and eigenvalues together in ascending order of energy level. 
 ```
 %now we sort the vectors and values so that they are plotted in ascending order of n, but the eigenvalues and eigenvectors stay together
 [srtvecs, srtvals] = eigsort(vecs, vals);
