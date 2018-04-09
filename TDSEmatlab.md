@@ -8,15 +8,12 @@ Here's the time evolution of the second eigenvector in the position basis and en
 ![Second State](/tdse2.gif)
 
 ### MatLab code
-
-```Matlab 
+```Matlab
 function [x,E,psiX,psiE]=TDSE
+```
 
-% define constants, discritize , then define V and turn into matrix
-% KE operator as matrix T
-%H = T + V
-%n refers to the number of eigenvectors generated
-
+First a number of different constants must be defined. Here, the mass of the particle (m), the length of the box (L), and {/hbar^2} are all defined as 1 in order to simplify the problem. The height of the barrier is defined as a large number to account for the infinite potential of the box and is set at {1 x 10^6}. A new variable w is defined as 3 in order to construct the potential wall, where w is essentially the width of the barrier. The number points used is set equal to 250.
+```
 %here are my constants: %m is mass, L is length of box, barht height of barrier, w is the barrier width
 m = 1;
 L = 1;
@@ -24,10 +21,14 @@ hbarsq = 1;
 barht = 1e6;
 w=3;
 pts = 250;
+```
 
+The number of elements in the x vector is now defined. The linspace command is used to create a vector of x values which span from zero to the box length and are composed of pts number of elements. These x elements are evenly spaced between 0 and L. The change in x between all of these points is constant, as the points are evenly spaced and defined here as the difference between the second x element and the first x element. 
+```
 %now account for the delta x and discritize the number of elements in the x vector
 x = linspace(0, L, pts)';
 dx = x(2)-x(1);
+```
 
 %x is a vector that goes from 0 to L separated by some amount, dictated by the number
 %of points. Vvec is a vector with the dimension of pts entries with one column
