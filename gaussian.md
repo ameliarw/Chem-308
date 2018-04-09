@@ -22,6 +22,7 @@ The curve behaves in a less complicated fashion when the barrier is removed:
 ![No barrier](/tdsenobarrier.gif)
 
 ##### Matlab Code to Include the Gaussian
+
 ```Matlab
 function [x,E,psiX,psiE]=TDSE
 ```
@@ -43,42 +44,54 @@ The number of elements in the x vector is now defined. The linspace command is u
 x = linspace(0, L, pts)';
 dx = x(2)-x(1);
 ```
-
+The potential vector {Vvec} can now be constructed by creating a vector of zeros. This defines the potential energy within the box to zero, and by setting the first and last three entries of the barrier equal to the {barht} defined above, a well with infinite potential is created. A barrier is also put into the middle of the box in order to determine how the behavior of the Gaussian wavepacket changes with the introduction of an additional barrier. 
+```
 %x is a vector that goes from 0 to L separated by some amount, dictated by the number
 %of points. Vvec is a vector with the dimension of pts entries with one column
 % now we have points number of entries in the x vector
 Vvec = zeros(pts, 1);
 Vvec([1:w, end - (w-1):end]) = barht;
 Vvec(120:130) = 75;
+this makes a barrier in the middle of the box
+```
+By putting the entries of Vvec on the diagonal of a new matrix, V, the potential energy matrix has been created.
 
-%We created a vector of zeros, but we just set the first three and the last 
-%three entries (because w=3) equal to some barht (large number, using 1e6)
-%to model the infinite potential well
+```
+%Now we create the potential energy matrix but putting the entries of Vvec in a diagonal matrix
 
-%Now we create the potential energy matrix but putting the entries of Vvec
-% in a diagonal matrix
 V = diag(Vvec);
+```
 
-%making the second derivative matrix
+We've then created a matrix which will find the kinetic energy of a different matrix. The second derivative of a function can be thought of as how the change in slope of a graph changes, and a similar thought is used here to consider how the change in entries of a vector change. This second derivative matrix shown below is then multiplied by 1/dx^2 and that resulting matrix is then multiplied by frac{/hbar^2}{2* m} to determine the total kinetic energy of the vector.
+
+```%making the second derivative matrix
 
 D2 = (1/(dx^2))*(-2*eye(pts) + diag(ones(pts-1,1), 1) + diag(ones(pts-1,1),-1));
 
-%now account for the delta x idea by subtracting the first element from the
-%second element because they will be evenly spaced, and multiply the matrix
-%by the constants
+%now account for the delta x idea by subtracting the first element from the second element because they will be evenly spaced, and multiply the matrix by the constants 
 
 T = (-hbarsq/(2*m))*D2;
+```
+A new matrix H is then defined as the sum of the potential energy matrix and the kinetic energy matrix, as the Hamiltonian takes both the potential energy and kinetic energy in account in order to solve the total energy of a state.
+```
+%here's our Hamiltonian, which accounts for both the potential energy and kinetic energy
 
-%here's our Hamiltonian, which accounts for both the potential energy and
-%kinetic energy
 H= T + V;
+```
 
+The [vecs, vals] command creates two new matrices which are the eigenvectors and eigenvalues of the matrix, H. The vecs matrix has the eigenvectors of H as columns in the matrix, and the vals matrix has all of the eigenvalues for H on the diagonal of the matrix. 
+
+```
 %now we want to solve for the eigenvalues of the square matrix H
-[vecs, vals] = eig(H);
 
-%now we sort the vectors and values so that they are plotted in ascending
-%order of n, but the eigenvalues and eigenvectors stay together
+[vecs, vals] = eig(H);
+```
+
+The srtvecs commmand, [described here](/Eigsort.md) puts the eigenvectors and eigenvalues together in ascending order of energy level. 
+```
+%now we sort the vectors and values so that they are plotted in ascending order of n, but the eigenvalues and eigenvectors stay together
 [srtvecs, srtvals] = eigsort(vecs, vals);
+```
 
 EtoX = srtvecs; 
 XtoE = inv(srtvecs);
