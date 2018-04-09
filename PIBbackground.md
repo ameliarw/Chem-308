@@ -6,6 +6,8 @@ The particle-in-a-box model builds from one dimensional motion to three dimensio
 
 
 By placing the particle in a box surrounded by infinite potential, the particle essentially can only exist within the box, and therefore the motion is constrained. This simple model illustrates the foundation of quantum mechanics and quantization of energy. While theoretically, the particle's motion is constrained by impenetrable walls of potential energy, in reality, particles have the ability to tunnel through potentials which they would not classibly be able to penetrate. Quantum tunneling is the phenomenon of particles overcoming energy potentials that these particles do not classically have the capability to overcome. The energy that the particle needs to overcome the barrier is higher than the energy of the particle, therefore, following the classical laws of physics, the particle would not be able to change state. This tunneling phenonmenon can be observed in the figure below, where the probability amplitude of the particle is first plotted (a) and then the probablity density is displayed (b): 
+
+
 ![tunnels](/tunneling.gif) 
 
 
