@@ -92,7 +92,7 @@ The srtvecs commmand, [described here](/Eigsort.md) puts the eigenvectors and ei
 %now we sort the vectors and values so that they are plotted in ascending order of n, but the eigenvalues and eigenvectors stay together
 [srtvecs, srtvals] = eigsort(vecs, vals);
 ```
-
+```
 EtoX = srtvecs; 
 XtoE = inv(srtvecs);
 %defining an energy space vector which corresponds to the first energy
