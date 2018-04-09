@@ -33,9 +33,9 @@ The time function is ${T_n(t) = \exp(−iE_nt/\hbar)}$
 The complete time-dependent Schrodinger equation can be written as:
 \begin{equation}\label{tdse} \mathcal{H}\Psi(x,t) = E\Psi(x,t) \end{equation}
 
-The solutions of the TDSE can be in the position basis or the energy basis depending on which basis is chosen, as eigenvectors
-do not have a specific basis. The energy basis, however, proves to be a more useful basis to use when describing the time
-evolution of quantum states, as quantum states will have faster or slower rates of rotation through the complex plane
+The solutions of the TDSE do not depend on basis and therefore can be expressed in either the energy basis or the position basis. Eigenvalues do not have a specific basis. The energy basis, however, proves to be a more useful basis to use when describing the time evolution of quantum states. 
+
+Quantum states will have faster or slower rates of rotation through the complex plane
 depending on the energies of those quantum states. Therefore, solutions to the TDSE should be changed into the energy basis. 
 
 What happens when you aren't dealing with a quantum state that is an energy eigenstate and the variables can no longer be separated? 
