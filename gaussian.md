@@ -52,8 +52,9 @@ The potential vector {Vvec} can now be constructed by creating a vector of zeros
 Vvec = zeros(pts, 1);
 Vvec([1:w, end - (w-1):end]) = barht;
 Vvec(120:130) = 75;
-this makes a barrier in the middle of the box
+%this
 ```
+
 By putting the entries of Vvec on the diagonal of a new matrix, V, the potential energy matrix has been created.
 
 ```
@@ -79,7 +80,7 @@ A new matrix H is then defined as the sum of the potential energy matrix and the
 H= T + V;
 ```
 
-The [vecs, vals] command creates two new matrices which are the eigenvectors and eigenvalues of the matrix, H. The vecs matrix has the eigenvectors of H as columns in the matrix, and the vals matrix has all of the eigenvalues for H on the diagonal of the matrix. 
+The [[vecs, vals]] command creates two new matrices which are the eigenvectors and eigenvalues of the matrix, H. The vecs matrix has the eigenvectors of H as columns in the matrix, and the vals matrix has all of the eigenvalues for H on the diagonal of the matrix. 
 
 ```
 %now we want to solve for the eigenvalues of the square matrix H
@@ -92,44 +93,48 @@ The srtvecs commmand, [described here](/Eigsort.md) puts the eigenvectors and ei
 %now we sort the vectors and values so that they are plotted in ascending order of n, but the eigenvalues and eigenvectors stay together
 [srtvecs, srtvals] = eigsort(vecs, vals);
 ```
+
+Two matrices must now be created in order to change from the position basis to the energy basis so that the wavevector may be represented in the energy basis. The idea behind the change of basis is described on the [Change of Basis page](/Basis.md). By multiplying the matrix EtoX by the matrix psiE, the corresponding stationary state is found in the energy basis. Here, psiX is defined by a Gaussian wavepacket and (x-0.25) term shifts the wavepacket over to the left side of the box, while the K value scales it to take up around a quarter of the box initially. 
 ```
 EtoX = srtvecs; 
 XtoE = inv(srtvecs);
-%defining an energy space vector which corresponds to the first energy
-%eigenvector 
-% psiE = zeros(pts, 1);
-% psiE([1 2]) = 1;
 
 %now set the Gaussian to take up a quarter of the box and shift it over to the left side
-%psiX = EtoX*psiE;
 K=4;
 psiX = exp(-25*((x - .25).^2)) .* exp(i.*K.*x);
 psiE = XtoE*psiX;
+````
 
-%get the corresponding x values corresponding to the first eigenvector
+The matrix E is now a vector composed of the diagonal elements of the srtvals matrix, which are the eigenvalues sorted in ascending order. 
+```
 E = diag(srtvals);
-%set t to get animation with time evolving
+```
+
+The time evolution aspect will now be defined. The dt value determines how quickly the time evolution occurs. 
+```
 t = 0;
 dt = 0.005;
+```
 
-
-
+The time evolution of this stationary state can now be visualized. The variable k defines how many points are observed during the time evolution. First the time dependence of the wavevector in the energy basis is introduced in psiEt. This new matrix can now be changed into the position basis. These vectors are also then normalized, and the concept of normalization is further developed [here](/Background.md). 
+```
 for k = 1:100
+%introduce time evolution
     psiEt = psiE.*exp((-1i*E*t)/hbarsq);
-    psiXt = EtoX*psiEt;
-    
-    %normalize these vectors
+    psiXt = EtoX*psiEt
+%normalize these vectors
     psiXt = psiXt/norm(psiXt);
     psiEt = psiEt/norm(psiEt);
-    
+```
+The probability density of the normalized wavevector is then found in the position space, as the probabiltiy density is represented by the square modulus of the wavevector in position space. This probability density is then scaled in order to be better visualized. 
+```
     %the probability density would be the normalized psiX * normpsiX
     %complex conjugate
-    
-%     prob = psiXt .* psiXt;
     prob = 5000* abs(psiXt).^2;
-
+```
+Ultimately, the second energy eigenvector is plotted in position space and energy space. The probability density of the wavevector is also visualized on the figure as well. 
+```
  figure(1)
-% %clf 
  subplot (2,2,1)
     AW_plot3 (x, 5.*psiXt,1)
  subplot (2,2,2)
@@ -137,24 +142,26 @@ for k = 1:100
  subplot (2,2,[3 4])
     plot(x, prob, x, Vvec)
     axis([-inf inf 0 100])
-    
-
+ ```
+ The expectation value for position are then determined by finding the inner product of the position operator acting on the wavevector and the complex conjugate of the wavevector. The energy expectation value is calculated in a similar fashion as well. 
+ ```
 % expectation value for position, plotted with a red *
-   xexp = psiXt' * diag(x) *psiXt;
+   xexp = real(psiXt'*(x.*psiXt));
    hold on 
    plot (real(xexp), 0, 'r*')
    
-% energy expectation value
-   Eexp = real(psiEt'*(srtvals*psiEt));
-   plot (0, Eexp, 'b*')
-   text(50, Eexp,['E= ' num2str(Eexp)])
-   hold off
-
+% energy expectation value in energy basis
+   Eexp=real(psiEt'*(srtvals*psiEt));
+   plot (xexp, Eexp, 'b*')
+   text(0.2,Eexp,['E= ' num2str(Eexp)])
+ hold off
+  
  drawnow
 t = t + dt;
 end
 
 end
+``` 
 
 
 [home](/README.md)
