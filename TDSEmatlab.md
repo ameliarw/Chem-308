@@ -101,7 +101,7 @@ t = 0;
 dt = 0.005;
 ```
 
-The time evolution of this stationary state can now be visualized. The variable k defines how many points are observed during the time evolution. First the time dependence of the wavefunctions in the energy basis is introduced in psiEt. This new matrix can now be changed into the position basis. These vectors are also then normalized, and the concept of normalization is further developed [here](/Background.md). 
+The time evolution of this stationary state can now be visualized. The variable k defines how many points are observed during the time evolution. First the time dependence of the wavevector in the energy basis is introduced in psiEt. This new matrix can now be changed into the position basis. These vectors are also then normalized, and the concept of normalization is further developed [here](/Background.md). 
 ```
 for k = 1:100
 %introduce time evolution
@@ -128,7 +128,7 @@ Ultimately, the second energy eigenvector is plotted in position space and energ
     plot(x, prob, x, Vvec)
     axis([-inf inf 0 100])
  ```
- The expectation value for position are then determined by finding the inner product of the position operator acting on the wavevector and the complex conjugate of the wavefunction. The energy expectation value is calculated in a similar fashion as well. 
+ The expectation value for position are then determined by finding the inner product of the position operator acting on the wavevector and the complex conjugate of the wavevector. The energy expectation value is calculated in a similar fashion as well. 
  ```
 % expectation value for position, plotted with a red *
    xexp = real(psiXt'*(x.*psiXt));
