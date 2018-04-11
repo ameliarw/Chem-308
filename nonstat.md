@@ -80,38 +80,47 @@ The srtvecs commmand, [described here](/Eigsort.md) puts the eigenvectors and ei
 %now we sort the vectors and values so that they are plotted in ascending order of n, but the eigenvalues and eigenvectors stay together
 [srtvecs, srtvals] = eigsort(vecs, vals);
 ```
-```
 
-% Create two matrices which allow us to change from energy basis to position basis and change from the position basis to the energy basis
+Two matrices must now be created in order to change from the position basis to the energy basis so that the wavevector may be represented in the energy basis. The idea behind the change of basis is described on the [Change of Basis page](/Basis.md). By multiplying the matrix EtoX by the matrix psiE, the corresponding stationary state is found in the energy basis. This example specifically solves for the eigenvector which has equal contributions from the first, second, and fifth stationary states.  
+
+```
 EtoX=srtvecs; 
 XtoE=inv(srtvecs); 
-% this is our vector in the energy basis. A stationary state will only have one value of 1, the total contribution is only due to one state
-psiE=zeros(pts,1);
-%psiE now has equal contributions from vectors 1, 2, and 5
+psiE=zeros(pts,1); 
 psiE([1 2 5])=1; 
 psiX=EtoX*psiE;
+````
 
-
-%get the corresponding x values corresponding to the first eigenvector
+The matrix E is now a vector composed of the diagonal elements of the srtvals matrix, which are the eigenvalues sorted in ascending order. 
+```
 E = diag(srtvals);
-%set t to get animation with time evolving
+```
+
+The time evolution aspect will now be defined. The dt value determines how quickly the time evolution occurs. 
+```
 t = 0;
 dt = 0.005;
+```
 
-
+The time evolution of this stationary state can now be visualized. The variable k defines how many points are observed during the time evolution. First the time dependence of the wavevectors in the energy basis is introduced in psiEt. This new matrix can now be changed into the position basis. These vectors are also then normalized, and the concept of normalization is further developed [here](/Background.md). 
+```
 for k = 1:100
+%introduce time evolution
     psiEt = psiE.*exp((-1i*E*t)/hbarsq);
-    psiXt = EtoX*psiEt;
-    
-    %normalize these vectors
+    psiXt = EtoX*psiEt
+%normalize these vectors
     psiXt = psiXt/norm(psiXt);
     psiEt = psiEt/norm(psiEt);
- 
- %scale the probability for easier viewing on the graph
+```
+The probability density of the normalized wavevector is then found in the position space, as the probabiltiy density is represented by the square modulus of the wavevector in position space. This probability density is then scaled in order to be better visualized. 
+```
+    %the probability density would be the normalized psiX * normpsiX
+    %complex conjugate
     prob = 5000* abs(psiXt).^2;
-    
+```
+Ultimately, this non-stationary state is plotted in position space and energy space. The probability density of the wavevector is also visualized on the figure as well. 
+```
  figure(1)
-% %clf 
  subplot (2,2,1)
     AW_plot3 (x, 5.*psiXt,1)
  subplot (2,2,2)
@@ -119,8 +128,9 @@ for k = 1:100
  subplot (2,2,[3 4])
     plot(x, prob, x, Vvec)
     axis([-inf inf 0 100])
-    
-
+ ```
+ The expectation value for position are then determined by finding the inner product of the position operator acting on the wavevector and the complex conjugate of the wavevector. The energy expectation value is calculated in a similar fashion as well. 
+ ```
 % expectation value for position, plotted with a red *
    xexp = real(psiXt'*(x.*psiXt));
    hold on 
@@ -131,15 +141,13 @@ for k = 1:100
    plot (xexp, Eexp, 'b*')
    text(0.2,Eexp,['E= ' num2str(Eexp)])
  hold off
-
-    
+  
  drawnow
 t = t + dt;
 end
 
-
 end
-```
+``` 
 
 [home](/README.md)
   
