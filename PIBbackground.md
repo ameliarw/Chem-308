@@ -11,7 +11,7 @@ By placing the particle in a box surrounded by infinite potential, the particle 
 ![tunnels](/tunneling.gif) 
 
 
-The second energy eigenfunction of the Particle in a Box model in the position basis can be thought of as a linear combination of different {x} positions to create an overall function. The {x_1} position has some contribution to the overall function, the {x_2} position has a different contribution to the overall function, and the {x_3} position has a different contribution to the overall function. This idea continues for all {x} positions and their contributions, and therefore an overall quantum state. 
+The second energy eigenfunction of the Particle in a Box model in the position basis can be thought of as a linear combination of different %{x}% positions to create an overall function. The %{x_1}% position has some contribution to the overall function, the %{x_2}% position has a different contribution to the overall function, and the %{x_3}% position has a different contribution to the overall function. This idea continues for all %{x}% positions and their contributions, and therefore an overall quantum state. 
 
 
 PUT IN THE IDEA OF LINEAR COMBINATION GRAPHICAL DEPICTION.
