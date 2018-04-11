@@ -142,7 +142,7 @@ Ultimately, the second energy eigenvector is plotted in position space and energ
  hold off
   
  drawnow
-t = t + dt;
+t = t + dt; 
 end
 
 end
