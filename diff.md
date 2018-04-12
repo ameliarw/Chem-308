@@ -25,9 +25,9 @@ $$ \begin{equation}\label{wowwow} \hat{H}\Psi(x,t) = i{\hbar}\frac{\Delta \Psi(x
 
 With algebraic manipulation of this expression, we can ultimately solve for what the wavefunction appears as at a later time. Because ${-i}$ and ${\hbar}$ are defined as constants, we can rearrange the equation. 
 
-$$ \begin{equation}\label{another} \hat{H}\Psi(x,t) = i{hbar} \frac{\Psi(x, t + delta t) - \Psi(x,t)}{\Delta t} \end{equation} $$
+$$ \begin{equation}\label{another} \hat{H}\Psi(x,t) = i{hbar} \frac{\Psi(x, t + \Delta t) - \Psi(x,t)}{\Delta t} \end{equation} $$
 
-$ \Psi(x, t + \Delta t) = \frac{Delta t \hat{H} Psi(x, t)}{i hbar} + \Psi(x, t + \Delta t) $
+$ \Psi(x, t + \Delta t) = \frac{\Delta t \hat{H} Psi(x, t)}{i hbar} + \Psi(x, t + \Delta t) $
 
 The function which is {\psi} at the initial time can then be factored out of this expression above such that:
 
