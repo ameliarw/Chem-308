@@ -63,7 +63,7 @@ n=5;
 
 %now account for the delta x and discritize the number of elements in the x vector 
 %We say that there are some number of points within the x vector
-x = linspace(-1, L, pts);
+x = linspace(1, L, pts);
 dx = x(2)-x(1);
 
 %x is a vector that goes from 0 to 5 separated by some amount, dictated by
@@ -72,7 +72,7 @@ dx = x(2)-x(1);
 %now we have some number, points of entries in the x vector
 
 % morse potential 
-Vvec = 1*(1-exp((-1*(x-1).^2)));
+Vvec = 1*(1-exp((-1*(x).^2)));
 Vvec = Vvec.*100;
 % now scaled so we can see the states within the well
 
