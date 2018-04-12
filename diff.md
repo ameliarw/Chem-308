@@ -27,7 +27,7 @@ With algebraic manipulation of this expression, we can ultimately solve for what
 
 $$ \begin{equation}\label{another} \hat{H}\Psi(x,t) = i{hbar} \frac{\Psi(x, t + \Delta t) - \Psi(x,t)}{\Delta t} \end{equation} $$
 
-$ \Psi(x, t + \Delta t) = \frac{\Delta t \hat{H} Psi(x, t)}{i hbar} + \Psi(x, t + \Delta t) $
+$ \Psi(x, t + \Delta t) = \frac{\Delta t \hat{H} \Psi(x, t)}{i hbar} + \Psi(x, t + \Delta t) $
 
 The function which is {\psi} at the initial time can then be factored out of this expression above such that:
 
