@@ -1,4 +1,5 @@
 {% include mathjax.html %}
+[home](/README.md)
 
 # Particle in a Box
 
@@ -80,6 +81,7 @@ T = (-hbarsq/(2*m))*D2;
 ```
 
 A new matrix H is then defined as the sum of the potential energy matrix and the kinetic energy matrix, as the Hamiltonian takes both the potential energy and kinetic energy in account in order to solve the total energy of a state.
+
 ```
 %here's our Hamiltonian, which accounts for both the potential energy and kinetic energy
 
@@ -95,6 +97,7 @@ The [vecs, vals] command creates two new matrices which are the eigenvectors and
 ```
 
 The srtvecs commmand, [described here](/Eigsort.md) puts the eigenvectors and eigenvalues together in ascending order of energy level. 
+
 ```
 %now we sort the vectors and values so that they are plotted in ascending order of n, but the eigenvalues and eigenvectors stay together
 [srtvecs, srtvals] = eigsort(vecs, vals);
@@ -102,7 +105,8 @@ The srtvecs commmand, [described here](/Eigsort.md) puts the eigenvectors and ei
 
 Each energy level graph will then be shifted up by their own energies so that these different energy levels can be better visualized. A new matrix, called repvals, will be used in order to shift up the graphs. This shift must also be scaled by a factor in order for it to be better visualized. The shiftvecs matrix is a new matrix where the entries of the shifted eigenvectors have each been shifted up by their corresponding energy eigenvalue. 
 
-```%now we will need to shift the graphs up so that they are on different levels 
+```
+%now we will need to shift the graphs up so that they are on different levels 
 %start to make the repvals matrix, where k is a vector composed of the diagonal components of the vals matrix and l is a vector with points rows and one column
 
 k = diag(srtvals);
@@ -115,6 +119,7 @@ shiftvecs = repvals + sc*srtvecs;
 ```
 
 The resulting eigenvectors which have been shifted up by their energies are then plotted with the potential well also plotted on the same graph. 
+
 ```
 %we need to create a vector which has the diagonal entries of the potential energy matrix
 v = diag(V);
