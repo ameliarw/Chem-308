@@ -8,6 +8,8 @@ Here's what the time evolution of a non-stationary state looks like in the posit
 
 Because these three energy states are stationary states themselves, the time and position dependence for each state may be separated. The resulting graphs are representations of the equal contributions from these three stationary state to the overall non-stationary quantum state.
 
+This non-stationary state does not time-evolve in a periodic way like stationary states do. This is seen especially in the position space. The idea that this non-stationary state is composed of three different stationary states is depicted clearly in the energy space, as the three different stationary states have different energies and thus rotate through the complex plane at different rates. In the third graph, the energy and position expectation values are depicted by asterisks, and the position expectation value changes with time, as the probability distribution of the particle also changes over time. 
+
 ![three states](/tdsenonstat.gif)
 
 ###### Matlab code 
