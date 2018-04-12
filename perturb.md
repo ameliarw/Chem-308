@@ -5,7 +5,7 @@
 ## An Introduction to Perturbation Theory 
 Perturbation theory is the idea that we can better understand the behavior of an unknown quantum state by first looking at a familiar, known model. 
 
-We've begun with a small introduction to perturbation theory with the left well/right well example which we looked at in class on 2/28. 
+We've begun with a small introduction to perturbation theory with the left well/right well example. 
 To better understand the behavior of the particle in the well with a central barrier, we can combine the behavior of the particle in the left well and right well. 
 We will essentially change basis from the left well and right well to the basis of the central barrier. This mechanism will be further explored in the Perturbation2018 code presented below. 
 
