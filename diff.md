@@ -33,7 +33,7 @@ The function which is {\psi} at the initial time can then be factored out of thi
 
 $  \Psi(x, t + \Delta t) = (\frac{\Delta t \hat{H}}{i \hbar} + 1) \Psi(x, t)  $ 
 
-This form allows for a new translation into the linear algebra that we've been using so far as well. The first half of the expression can simplify to ({i \hbar}* the Hamiltonian matrix which takes the second derivative of a different matrix * the identity matrix of the same dimensions as the Hamiltonian) all then multiplied by the original wavevector. These mathematical manipulations would then yield a new wavevector of the original wavevector at a different time - $ {\Psi (x, t + Delta t)} $.
+This form allows for a new translation into the linear algebra that we've been using so far as well. The first half of the expression can simplify to ({i \hbar}* the Hamiltonian matrix which takes the second derivative of a different matrix * the identity matrix of the same dimensions as the Hamiltonian) all then multiplied by the original wavevector. These mathematical manipulations would then yield a new wavevector of the original wavevector at a different time - $ {\Psi (x, t + \Delta t)} $.
 
 
 
