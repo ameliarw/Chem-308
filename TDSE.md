@@ -31,7 +31,7 @@ energy eigenfunction/stationary state/solution to the TDSE.
 These two variables can be separated and our wavefunction can be written as the product of two functions, 
 one of which depends on space and the other depends on time. This separation of variables technique allows us to take the partial derivative of our function in respect to time and position separately. 
 
-The time function is ${T_n(t) = e^frac{−iE_nt}{\hbar}}$
+The time function is ${T_n(t) = e^\frac{−iE_nt}{\hbar}}$
 
 Through the separation of variables, the TDSE can then be re-written as: 
 
