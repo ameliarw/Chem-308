@@ -12,7 +12,7 @@ multiply the x positions of a wavevector (in position space) by the time-depende
 $$ \begin{equation}\label{tdse} \mathcal{H}\Psi(x,t) = E\Psi(x,t) \end{equation} $$ 
 
 Where the time dependence is represented as: 
-$${T_n(t) = e^[(((−i(E_n)t/\hbar))]}$$
+$${T_n(t) = e^(\frac{−i(E_n)t}{\hbar}}$$
 
 Instead of using a differential equation to solve the Hamiltonian and find an energy eigenvalue using this formula: 
 $ \hat{H} = \frac{-hbar^2}{2m}\frac{\partial^2}{\partial x^2} + {V(x)} $, we can instead define a difference equation to better understand the time evolution of a quantum state. 
@@ -21,11 +21,11 @@ Where we have previously discritized space using some arbitrary quantity {dt}, w
 $$ \begin{equation}\label{woo} \mathcal{H}\Psi(x,t) = i{\hbar}\frac{\partial}{\partial t}\Psi(x,t) \end{equation} $$
 
 This expression can now be expressed in the difference form by comparing the wavefunction {\psi} at two different times: 
-$$ \begin{equation}\label{label} \mathcal{H}\Psi(x,t) = i{hbar}\frac{\delta \Psi(x,t)}{\delta t}\end{equation} $$
+$$ \begin{equation}\label{wowwow} \mathcal{H}\Psi(x,t) = i{\hbar}\frac{\Delta \Psi(x,t)}{\Delta t}\end{equation} $$
 
 With algebraic manipulation of this expression, we can ultimately solve for what the wavefunction appears as at a later time. Because ${-i}$ and ${\hbar}$ are defined as constants, and we can rearrange the equation. 
 
-$ \begin{equation}\{another} \mathcal{H}\Psi(x,t) = i{hbar} \frac{\Psi(x, t + delta t) - \Psi(x,t)}{\Delta t} $
+$$ \begin{equation}\label{another} \mathcal{H}\Psi(x,t) = i{hbar} \frac{\Psi(x, t + delta t) - \Psi(x,t)}{\Delta t} \end{equation} $$
 
 $ \Psi(x, t + \Delta t) = \frac{delta t \mathcal{H} Psi(x, t)}{i hbar} + \Psi(x, t + \Delta t $
 
