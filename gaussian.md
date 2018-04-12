@@ -27,7 +27,7 @@ The curve behaves in a less complicated fashion when the barrier is removed:
 function [x,E,psiX,psiE]=TDSE
 ```
 
-First a number of different constants must be defined. Here, the mass of the particle (m), the length of the box (L), and ${/hbar^2}$ are all defined as 1 in order to simplify the problem. The height of the barrier is defined as a large number to account for the infinite potential of the box and is set at ${1 x 10^6}$. A new variable w is defined as 3 in order to construct the potential wall, where w is essentially the width of the barrier. The number points used is set equal to 250.
+First a number of different constants must be defined. Here, the mass of the particle (m), the length of the box (L), and ${(\hbar)^2}$ are all defined as 1 in order to simplify the problem. The height of the barrier is defined as a large number to account for the infinite potential of the box and is set at ${1 x 10^6}$. A new variable w is defined as 3 in order to construct the potential wall, where w is essentially the width of the barrier. The number points used is set equal to 250.
 ```
 %here are my constants: %m is mass, L is length of box, barht height of barrier, w is the barrier width
 m = 1;
@@ -63,7 +63,7 @@ By putting the entries of Vvec on the diagonal of a new matrix, V, the potential
 V = diag(Vvec);
 ```
 
-We've then created a matrix which will find the kinetic energy of a different matrix. The second derivative of a function can be thought of as how the change in slope of a graph changes, and a similar thought is used here to consider how the change in entries of a vector change. This second derivative matrix shown below is then multiplied by $ {1/dx^2} $and that resulting matrix is then multiplied by $frac{/hbar^2}{2* m}$ to determine the total kinetic energy of the vector.
+We've then created a matrix which will find the kinetic energy of a different matrix. The second derivative of a function can be thought of as how the change in slope of a graph changes, and a similar thought is used here to consider how the change in entries of a vector change. This second derivative matrix shown below is then multiplied by $ {1/dx^2} $and that resulting matrix is then multiplied by $\frac{\hbar^2}{2* m}$ to determine the total kinetic energy of the vector.
 
 ```%making the second derivative matrix
 
@@ -89,12 +89,14 @@ The [[vecs, vals]] command creates two new matrices which are the eigenvectors a
 ```
 
 The srtvecs commmand, [described here](/Eigsort.md) puts the eigenvectors and eigenvalues together in ascending order of energy level. 
+
 ```
 %now we sort the vectors and values so that they are plotted in ascending order of n, but the eigenvalues and eigenvectors stay together
 [srtvecs, srtvals] = eigsort(vecs, vals);
 ```
 
-Two matrices must now be created in order to change from the position basis to the energy basis so that the wavevector may be represented in the energy basis. The idea behind the change of basis is described on the [Change of Basis page](/Basis.md). By multiplying the matrix EtoX by the matrix psiE, the corresponding stationary state is found in the energy basis. Here, psiX is defined by a Gaussian wavepacket and (x-0.25) term shifts the wavepacket over to the left side of the box, while the K value scales it to take up around a quarter of the box initially. 
+Two matrices must now be created in order to change from the position basis to the energy basis so that the wavevector may be represented in the energy basis. The idea behind the change of basis is described on the [Change of Basis page](/Basis.md). By multiplying the matrix EtoX by the matrix psiE, the corresponding stationary state is found in the energy basis. Here, psiX is defined by a Gaussian wavepacket and (x-0.25) term shifts the wavepacket over to the left side of the box, while the K value scales it to take up around a quarter of the box initially.
+
 ```
 EtoX = srtvecs; 
 XtoE = inv(srtvecs);
@@ -106,17 +108,20 @@ psiE = XtoE*psiX;
 ````
 
 The matrix E is now a vector composed of the diagonal elements of the srtvals matrix, which are the eigenvalues sorted in ascending order. 
+
 ```
 E = diag(srtvals);
 ```
 
 The time evolution aspect will now be defined. The dt value determines how quickly the time evolution occurs. 
+
 ```
 t = 0;
 dt = 0.005;
 ```
 
 The time evolution of this stationary state can now be visualized. The variable k defines how many points are observed during the time evolution. First the time dependence of the wavevector in the energy basis is introduced in psiEt. This new matrix can now be changed into the position basis. These vectors are also then normalized, and the concept of normalization is further developed [here](/Background.md). 
+
 ```
 for k = 1:100
 %introduce time evolution
@@ -126,13 +131,17 @@ for k = 1:100
     psiXt = psiXt/norm(psiXt);
     psiEt = psiEt/norm(psiEt);
 ```
+
 The probability density of the normalized wavevector is then found in the position space, as the probabiltiy density is represented by the square modulus of the wavevector in position space. This probability density is then scaled in order to be better visualized. 
+
 ```
     %the probability density would be the normalized psiX * normpsiX
     %complex conjugate
     prob = 5000* abs(psiXt).^2;
 ```
+
 Ultimately, the second energy eigenvector is plotted in position space and energy space. The probability density of the wavevector is also visualized on the figure as well. 
+
 ```
  figure(1)
  subplot (2,2,1)
@@ -143,7 +152,9 @@ Ultimately, the second energy eigenvector is plotted in position space and energ
     plot(x, prob, x, Vvec)
     axis([-inf inf 0 100])
  ```
- The expectation value for position are then determined by finding the inner product of the position operator acting on the wavevector and the complex conjugate of the wavevector. The energy expectation value is calculated in a similar fashion as well. 
+ 
+The expectation value for position are then determined by finding the inner product of the position operator acting on the wavevector and the complex conjugate of the wavevector. The energy expectation value is calculated in a similar fashion as well. 
+ 
  ```
 % expectation value for position, plotted with a red *
    xexp = real(psiXt'*(x.*psiXt));
