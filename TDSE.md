@@ -22,6 +22,9 @@ frequencies as well. The energy eigenstates have more simple time evolution comp
 What does this time evolution of a stationary state look like? 
 [Stationary States](/TDSEmatlab.md)
 
+The complete time-dependent Schrodinger equation can be written as:
+\begin{equation}\label{tdse} \mathcal{H}\Psi(x,t) = E\Psi(x,t) \end{equation}
+
 We can mathematically separate the space and time dependence of our wavefunction if the wavefunction is an 
 energy eigenfunction/stationary state/solution to the TDSE. 
 
@@ -30,13 +33,10 @@ one of which depends on space and the other depends on time. This separation of 
 
 The time function is ${T_n(t) = e^[(−iE_nt/\hbar)]}$
 
-The complete time-dependent Schrodinger equation can be written as:
-\begin{equation}\label{tdse} \mathcal{H}\Psi(x,t) = E\Psi(x,t) \end{equation}
-
 The solutions of the TDSE do not depend on basis and therefore can be expressed in either the energy basis or the position basis. Eigenvalues do not have a specific basis. The energy basis, however, proves to be a more useful basis to use when describing the time evolution of quantum states. 
 
 Quantum states will have faster or slower rates of rotation through the complex plane
-depending on the energies of those quantum states. Therefore, solutions to the TDSE should be changed into the energy basis. 
+depending on the energies of those quantum states. Therefore, solutions to the TDSE can be changed into the energy basis in order to better visualize the energy of a certain state through its rotation through the complex plane. 
 
 What happens when you aren't dealing with a quantum state that is an energy eigenstate and the variables can no longer be separated? 
 [Non-Stationary States](/nonstat.md)
