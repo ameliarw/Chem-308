@@ -6,6 +6,8 @@
   
 ### Change of Basis
 
+In linear algebra, a basis is defined a the set of vectors which spans a certain vector space. Each vector in the basis set by definition can be written as a linear combination of the other vectors present in the basis. When operators are represented as matrices, this matrix is also defined by a certain basis. When the operation matches the basis space of the matrix, we say that the matrix is in its native basis. For example, when the position operator is represented in position space, it is in its native basis. It is often useful to be able to move between bases, like from the position basis to the energy basis for example. Therefore, a method for tranforming elements in one basis to another basis is necessary. When solving the time-dependent Schrodinger equation, it is useful to begin in one basis and then change basis to gain more information about a particle's behavior. 
+
 In order solve the time-dependent Schrodinger equation, we will first use an "easy" basis, then change the basis such that the 
 solution is in the basis we want. 
 
