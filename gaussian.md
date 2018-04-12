@@ -160,7 +160,6 @@ The expectation value for position are then determined by finding the inner prod
    xexp = real(psiXt'*(x.*psiXt));
    hold on 
    plot (real(xexp), 0, 'r*')
-   
 % energy expectation value in energy basis
    Eexp=real(psiEt'*(srtvals*psiEt));
    plot (xexp, Eexp, 'b*')
