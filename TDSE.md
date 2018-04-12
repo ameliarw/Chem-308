@@ -33,6 +33,12 @@ one of which depends on space and the other depends on time. This separation of 
 
 The time function is ${T_n(t) = e^frac{−iE_nt}{\hbar}}$
 
+Through the separation of variables, the TDSE can then be re-written as: 
+
+$e^{\frac{-i E_n}{\hbar}t}= $ cos$ (\frac{ E_n}{\hbar}t) - i$ sin$ (\frac{ E_n}{\hbar}t)$.
+
+
+
 The solutions of the TDSE do not depend on basis and therefore can be expressed in either the energy basis or the position basis. Eigenvalues do not have a specific basis. The energy basis, however, proves to be a more useful basis to use when describing the time evolution of quantum states. 
 
 Quantum states will have faster or slower rates of rotation through the complex plane
