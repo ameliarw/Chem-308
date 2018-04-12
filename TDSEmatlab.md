@@ -4,7 +4,7 @@
 
 A stationary state is an energy eigenstate of the Hamiltonian operator. Stationary states have well-defined energy, as they describe a single energy state. There are only contributions from one energy state to the overall state. 
 
-Here's the time evolution of the second eigenvector in the position basis and energy basis. The expectation value for position is plotted with a red star, and the expectation value for energy is shown on the graph. In the first graph, the time evolution of the quantum state described by the second energy eigenvalue is displayed in the positions basis. The probability amplitude of each position value evolves through the complex plane with time. In the second graph, the time evolution of the second energy eigenstate in the energy basis is depicted. Note that the expectation value for the position does not change over the course of the time period. The probability amplitude in the position basis also rotates throught the complex plane with regularity, which is characteristic of a stationary state. 
+Here's the time evolution of the second eigenvector in the position basis and energy basis. The expectation value for position is plotted with a red star, and the expectation value for energy is shown on the graph. In the first graph, the time evolution of the quantum state described by the second energy eigenvalue is displayed in the positions basis. The probability amplitude of each position value evolves through the complex plane with time. In the second graph, the time evolution of the second energy eigenstate in the energy basis is depicted. Note that the expectation value for the position does not change over the course of the time period. The probability amplitude in the position basis also rotates throught the complex plane with regularity, which is characteristic of a stationary state. The final graph shows the probability density, or the probability of finding a particle at that x location. The energy expectation value, depicted by the blue star, and the position expectation value, depicted by the red star, are also superimposed on the graph. 
 
 ![Second State](/tdse2.gif)
 
@@ -51,7 +51,8 @@ V = diag(Vvec);
 
 We've then created a matrix which will find the kinetic energy of a different matrix. The second derivative of a function can be thought of as how the change in slope of a graph changes, and a similar thought is used here to consider how the change in entries of a vector change. This second derivative matrix shown below is then multiplied by 1/dx^2 and that resulting matrix is then multiplied by frac{/hbar^2}{2* m} to determine the total kinetic energy of the vector.
 
-```%making the second derivative matrix
+```
+%making the second derivative matrix
 
 D2 = (1/(dx^2))*(-2*eye(pts) + diag(ones(pts-1,1), 1) + diag(ones(pts-1,1),-1));
 
