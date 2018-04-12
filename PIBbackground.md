@@ -52,7 +52,7 @@ The number of elements in the x vector is now defined. The linspace command is u
 x = linspace(0, L, pts)';
 dx = x(2)-x(1);
 ```
-The potential vector {Vvec} can now be constructed by creating a vector of zeros. This defines the potential energy within the box to zero, and by setting the first and last three entries of the barrier equal to the {barht} defined above, a well with infinite potential is created. 
+The potential vector ${Vvec}$ can now be constructed by creating a vector of zeros. This defines the potential energy within the box to zero, and by setting the first and last three entries of the barrier equal to the ${barht}$ defined above, a well with infinite potential is created. 
 ```
 %x is a vector that goes from 0 to L separated by some amount, dictated by the number
 %of points. Vvec is a vector with the dimension of pts entries with one column
