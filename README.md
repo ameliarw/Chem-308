@@ -11,7 +11,6 @@ This website focuses on using linear algebra to describe the properties of quant
     - [Stationary States](/TDSEmatlab.md)
     - [Non-Stationary States](/nonstat.md)
     - [Gaussian Wavepackets](/gaussian.md)
-
 4. [Differential vs. Difference Equations](/diff.md)
 5. [Introduction to Pertubation Theory](/perturb.md)
 6. [Selection Rules](/rules.md)
@@ -19,9 +18,8 @@ This website focuses on using linear algebra to describe the properties of quant
     - [Electronic Transitions](/electrontrans.md)
     - [Morse Potential](/morse.md)
 7. [Fourier Transform](/ftrans.md)
-8. [Chemical Bonding from a Quantum Perspective](/chembond.md)
-    - [Born-Oppenheimer Approximation](/bo.md)
-    - [Molecular Dynamics](/moldynamics.md)
+8. [Born-Oppenheimer Approximation](/bo.md)
+9. [Molecular Dynamics](/moldynamics.md)
 
 
 ##### Collection of Matlab Functions
