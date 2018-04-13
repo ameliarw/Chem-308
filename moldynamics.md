@@ -17,6 +17,7 @@ Parameters:
 - Velocity of BC = -3
 - AB distance = 3.75
 - BC distance = 0.85
+
 ![reaction](/reaction.gif)
 
 In the simulation above, the velocities, both translational and vibrational, are high enough and the starting points allow the reaction to have the correct phase in order to successfully overcome the activation energy needed for the reaction to occur.  The distance between BC fluctuates as the bond length oscillates, and the distance between A and B decreases as A approaches BC. The reaction does occur, and ultimately the distance between A and B fluctuates with the new bond length oscillation, and the distance between B and C increases as AB moves farther from C.   
@@ -71,7 +72,7 @@ AB distance 3.5
 BC distance 0.85
 ![abcphase](/abcphase.gif)
 
-#LENNARD-JONES POTENTIAL 
+# Lennard-Jones Potential 
 A different potential energy hypersurface can also be used to model the potential energy of a system. The Lennard-Jones potential is modeled after non-reactive species like nobel gases and takes into account the atttractive long-range forces as well as the repulsive forces due to overlapping orbitals. The Lennard-Jones potential is defined by the depth of the potential well, the equilibrium bond length, and the distance between the two nuclei. No matter which parameters are chosen, this reaction will not occur due to the shape of the Lennard-Jones potential. 
 
 Velocity of AB -1.5
