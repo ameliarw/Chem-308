@@ -87,6 +87,8 @@ Parameters:
 - Velocity of BC -0
 - AB distance 3.9
 - BC distance 1.1
+
+
 ![LJnorxn](/ljno.gif)
 
 ![ljwell](/ljwell.gif)
