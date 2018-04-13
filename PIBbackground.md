@@ -13,7 +13,7 @@ By placing the particle in a box surrounded by infinite potential, the particle 
 
 From: http://sdsu-physics.org/physics197/phys197.html
 
-The second energy eigenfunction of the Particle in a Box model in the position basis can be thought of as a linear combination of different ${x}$ positions to create an overall function. The ${x_1}$ position has some contribution to the overall function, the ${x_2}$ position has a different contribution to the overall function, and the ${x_3}$ position has a different contribution to the overall function. This idea continues for all ${x}$ positions and their contributions, and therefore an overall quantum state. The figure simplifies this concept by spacing out the ${x_1},{x_2}, and {x_3}$ positions, but these positions can be thought of as infinitely close. 
+The second energy eigenfunction of the Particle in a Box model in the position basis can be thought of as a linear combination of different ${x}$ positions to create an overall function. The ${x_1}$ position has some contribution to the overall function, the ${x_2}$ position has a different contribution to the overall function, and the ${x_3}$ position has a different contribution to the overall function. This idea continues for all ${x}$ positions and their contributions, and therefore an overall quantum state. The figure simplifies this concept by spacing out the ${x_1},{x_2},$  and ${x_3}$ positions, but these positions can be thought of as infinitely close. 
 ![lincomb](/lincomb.jpg)
 
 
@@ -72,7 +72,7 @@ By putting the entries of Vvec on the diagonal of a new matrix, V, the potential
 V = diag(Vvec);
 ```
 
-We've then created a matrix which will find the kinetic energy of a different matrix. The second derivative of a function can be thought of as how the change in slope of a graph changes, and a similar thought is used here to consider how the change in entries of a vector change. This second derivative matrix shown below is then multiplied by ${1/dx^2}$ and that resulting matrix is then multiplied by $frac{/hbar^2}{2* m}$ to determine the total kinetic energy of the vector.
+We've then created a matrix which will find the kinetic energy of a different matrix. The second derivative of a function can be thought of as how the change in slope of a graph changes, and a similar thought is used here to consider how the change in entries of a vector change. This second derivative matrix shown below is then multiplied by ${1/dx^2}$ and that resulting matrix is then multiplied by $\frac{\hbar^2}{2* m}$ to determine the total kinetic energy of the vector.
 
 ```
 %making the second derivative matrix
