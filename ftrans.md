@@ -23,9 +23,14 @@ The Fourier transform can also be written with position and momentum:
 
 
 Gaussian wavepackets are composed of two different parts. 
-The first part builds the Gaussian envelope - ${e^{\alpha x^2}}$ 
+The first part builds the Gaussian envelope: 
+${e^{\alpha x^2}}$ 
+
 Where alpha relates to the width. The larger alpha is, the more narrow the envelope is. 
-The second part builds the k and x dependence  - ${e^ikx}$ 
+
+The second part builds the k and x dependence:
+${e^ikx}$ 
+
 When k or x are equal to zero, the Gaussian is composed of only real numbers. 
 
 The Fourier transform and inverse Fourier transform of position and momentum both yield Gaussian functions if all the values are real values. With the introduction of imaginary numbers, the Gaussian wavepacket time evolves through the complex plane when x or k do not equal zero. 
