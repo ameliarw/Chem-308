@@ -17,26 +17,12 @@ While it has been established that the electron state depends parametrically on 
 The Hamiltonian to describe the overall system consisting of two different nuclei and one electron, an {H_2^+} system, can be broken down into two different functions - one that depends on the separation between the two nuclei, and one that depends on the distance of the electron from the nuclei. This electronic function will also depend parametrically on the nucleus-nucleus distance. 
 
 The Hamiltonian must describe both the translational motion of the electron and nuclei in the system as well as the potential interactions between them. The Hamiltonian is then composed of both the potential and kinetic energies of the nuc-nuc interactions and the nucleus-electron interactions: 
-$ \hat{H} = \hat{T}_nuc 
 
-$\hat{H}=\hat{T}_nuc+\hat{T}_e+\hat{V}_{nuc-e}+\hat{V}_{nuc-nuc}$
+![math](/math.jpg)
 
-Expanded, when considering what each operator does, this expression equals: 
+By diving by $\psi * \chi$, the functions which don't depend on r or R can then be canceled out and the expression can be simplified. The product rule can then be used to further simplify the expression of the kinetic energy of nuclei A and B by taking the second derivative of the functions. 
 
-$ \hat{H} =(\frac{-\hbar^2 }{2M_a}\nabla^2_a + \frac{-\hbar^2 }{2M_b}\nabla^2_b) + \frac{-\hbar^2 }{2M_e}\nabla^2_e + (\frac{-q^2}{4\pi \epsilon_0 r_a} + \frac{-q^2}{4\pi \epsilon_0 r_b})+ \frac{q^2}{4\pi \epsilon_0 R_{ab}}. $
-
-Where m and M refer to electron or nuclear mass, q refers to the charge, r refers to the position of the particles, and $ epsilon_0 $ refers to the permittivity of space. 
-
-Separation of variables will be utilized in order to get two functions, $\psi $ and $\chi$ which depend on different variables. The electronic function, $ \psi $ parametrically depends on the radius of the nuclei. 
-$ \Psi(r, R_a, R_b) = \psi(r; R)\chi(R) $
-
-Therefore, 
-\hat{H}
-
-
-By diving by psi * chi the functions which don't depend on r or R can then be canceled out and the expression can be simplified. The product rule can then be used to further simplify the expression of the kinetic energy of nuclei A and B by taking the second derivative of the functions. 
-
-When everything is simplified down as much as possible, the end result is a total potential function which depends on both the repulsion of the two nuclei as well as the attraction between the nuclei and the electron. Gives rise to the shape of the potential energy function shown below. 
+When everything is simplified down as much as possible, the end result is a total potential function which depends on both the repulsion of the two nuclei as well as the attraction between the nuclei and the electron.
 
 ![PE Graph](/bondenergy.GIF)
 source: https://www.physicsforums.com/threads/why-does-the-potential-energy-get-lower-as-atoms-get-closer.897854/
