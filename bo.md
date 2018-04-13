@@ -17,6 +17,7 @@ While it has been established that the electron state depends parametrically on 
 The Hamiltonian to describe the overall system consisting of two different nuclei and one electron, an {H_2^+} system, can be broken down into two different functions - one that depends on the separation between the two nuclei, and one that depends on the distance of the electron from the nuclei. This electronic function will also depend parametrically on the nucleus-nucleus distance. 
 
 The Hamiltonian must describe both the translational motion of the electron and nuclei in the system as well as the potential interactions between them. The Hamiltonian is then composed of both the potential and kinetic energies of the nuc-nuc interactions and the nucleus-electron interactions: 
+$ \hat{H} = \hat{T}_nuc 
 
 $\hat{H}=\hat{T}_{nuc}+\hat{T}_{e}+\hat{V}_{nuc-e}+\hat{V}_{nuc-nuc}$
 
