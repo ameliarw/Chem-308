@@ -1,3 +1,5 @@
+[home](/README.md)
+{% include mathjax.html %}
 
 ## Born-Oppenheimer Approximation
 
@@ -5,7 +7,7 @@ The Born-Oppenheimer Approximation states that because the mass of a nucleus is 
 
 While it has been established that the electron state depends parametrically on the location of the nucleus, the Born-Oppenheimer Approximation allows for a simplification of the Hamiltonian describing the energy of an electron and two nuclei. 
 
-The Hamiltonian to describe the overall system consisting of two different nuclei and one electron, an H2+ system, can be broken down into two different functions - one that depends on the separation between the two nuclei, and one that depends on the distance of the electron from the nuclei. This electronic function will also depend parametrically on the nucleus-nucleus distance. 
+The Hamiltonian to describe the overall system consisting of two different nuclei and one electron, an {H_2^+} system, can be broken down into two different functions - one that depends on the separation between the two nuclei, and one that depends on the distance of the electron from the nuclei. This electronic function will also depend parametrically on the nucleus-nucleus distance. 
 
 The Hamiltonian to describe this system can be rewritten as a series of operators that describe the potential energy and kinetic energy of the nuclei and the electron: 
 
