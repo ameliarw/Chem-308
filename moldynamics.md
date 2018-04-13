@@ -1,11 +1,13 @@
 [home](/README.md)
 {% include mathjax.html %}
 
-# Modeling the Born-Oppenheimer Approximation
+# Modeling the Born-Oppenheimer Approximation 
 
 We can use potential energy hypersurfaces, or a two-dimensional simplification of the potential energy of a system, to better understand molecular dynamics. We've modeled a potential energy hypersurface that considers the nucleus-nucleus interactions and the nucleus-electron interactions, as previously discussed on the [Born-Approximation page](/bo.md). Initially, we begin with a LEPS potential energy surface, named for London-Erying-Polanyi-Sato, to model the dynamics of the reaction: 
 $A + B_C /rightarrow A-B + C$ 
 
+## Early Barrier
+This is the early barrier potential energy hypersurface. The reactants are higher energy than the products, and thus the reaction is more thermodynamically favorable and is exergonic. 
 ![pewell](/pewell.gif)
 
 This potential energy surface has a saddle point near the point where the reaction goes the completition, and this saddle point indicates the distance between AB and BC where the nucleus-nucleus interactions and nucleus-electron interactions are the most stabilizing. The well climbs steeply near r = 0 for both AB and BC because the repulsive nucleus-nucleus interactions are highly unfavorable. The well plateaus at increasing radii because the attractive nucleus-electron interactions become weaker at increasing distances. 
@@ -71,6 +73,11 @@ Velocity of BC -3
 AB distance 3.5
 BC distance 0.85
 ![abcphase](/abcphase.gif)
+
+## Late Barrier 
+The late barrier conditions describe a reaction where the energy of the reactants is lower than that of the products. This is to say that the reaction is endergonic and thus requires additional energy to occur. The initial velocities of the reactants and the products must be larger in this potential energy hypersurface in order for the reaction to occur. This idea is depicted in the animation below, where the intial velocity of AB is -5.5 and the initial BC velocity is -5. 
+
+![Late](/late.gif)
 
 # Lennard-Jones Potential 
 A different potential energy hypersurface can also be used to model the potential energy of a system. The Lennard-Jones potential is modeled after non-reactive species like nobel gases and takes into account the atttractive long-range forces as well as the repulsive forces due to overlapping orbitals. The Lennard-Jones potential is defined by the depth of the potential well, the equilibrium bond length, and the distance between the two nuclei. No matter which parameters are chosen, this reaction will not occur due to the shape of the Lennard-Jones potential. 
