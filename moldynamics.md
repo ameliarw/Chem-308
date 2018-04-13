@@ -4,7 +4,7 @@
 # Modeling the Born-Oppenheimer Approximation 
 
 We can use potential energy hypersurfaces, or a two-dimensional simplification of the potential energy of a system, to better understand molecular dynamics. We've modeled a potential energy hypersurface that considers the nucleus-nucleus interactions and the nucleus-electron interactions, as previously discussed on the [Born-Approximation page](/bo.md). Initially, we begin with a LEPS potential energy surface, named for London-Erying-Polanyi-Sato, to model the dynamics of the reaction: 
-$A + B_C /rightarrow A-B + C$ 
+$A + BC \rightarrow AB + C$ 
 
 ## Early Barrier
 This is the early barrier potential energy hypersurface. The reactants are higher energy than the products, and thus the reaction is more thermodynamically favorable and is exergonic. 
