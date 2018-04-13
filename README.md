@@ -18,7 +18,6 @@ This website focuses on using linear algebra to describe the properties of quant
     - [Morse Potential](/morse.md)
 7. [Fourier Transform](/ftrans.md)
     - [Gaussian Wavepackets](/gaussian.md)
-    - [Split Step Fourier Transform](/ssfour.md)
 8. [Chemical Bonding from a Quantum Perspective](/chembond.md)
     - [Born-Oppenheimer Approximation](/bo.md)
     - [Molecular Dynamics](/moldynamics.md)
