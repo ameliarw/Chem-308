@@ -15,7 +15,7 @@ Here's the time evolution of the second eigenvector in the position basis and en
 function [x,E,psiX,psiE]=TDSE
 ```
 
-First a number of different constants must be defined. Here, the mass of the particle (m), the length of the box (L), and ${/hbar^2}$ are all defined as 1 in order to simplify the problem. The height of the barrier is defined as a large number to account for the infinite potential of the box and is set at ${1 x 10^6}$. A new variable w is defined as 3 in order to construct the potential wall, where w is essentially the width of the barrier. The number points used is set equal to 250.
+First a number of different constants must be defined. Here, the mass of the particle (m), the length of the box (L), and ${\hbar^2}$ are all defined as 1 in order to simplify the problem. The height of the barrier is defined as a large number to account for the infinite potential of the box and is set at ${1 x 10^6}$. A new variable w is defined as 3 in order to construct the potential wall, where w is essentially the width of the barrier. The number points used is set equal to 250.
 ```
 %here are my constants: %m is mass, L is length of box, barht height of barrier, w is the barrier width
 m = 1;
@@ -50,7 +50,7 @@ By putting the entries of Vvec on the diagonal of a new matrix, V, the potential
 V = diag(Vvec);
 ```
 
-We've then created a matrix which will find the kinetic energy of a different matrix. The second derivative of a function can be thought of as how the change in slope of a graph changes, and a similar thought is used here to consider how the change in entries of a vector change. This second derivative matrix shown below is then multiplied by ${1/dx^2}$ and that resulting matrix is then multiplied by $frac{/hbar^2}{2* m}$ to determine the total kinetic energy of the vector.
+We've then created a matrix which will find the kinetic energy of a different matrix. The second derivative of a function can be thought of as how the change in slope of a graph changes, and a similar thought is used here to consider how the change in entries of a vector change. This second derivative matrix shown below is then multiplied by ${1/dx^2}$ and that resulting matrix is then multiplied by $\frac{\hbar^2}{2* m}$ to determine the total kinetic energy of the vector.
 
 ```
 %making the second derivative matrix
