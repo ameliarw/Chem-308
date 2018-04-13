@@ -15,7 +15,9 @@ The first equation allows for the transformation from the time domain to the fre
 
 ### Position and Momentum Space Fourier Transform
 
-The Fourier transform can also be used to move between position and momentum space. Fourier transforms are also the link between position space and momentum space and allow for the movement from one space to another. We've introduced a similar concept with the change of basis topic. The Fourier transform can also be written with position and momentum: 
+The Fourier transform can also be used to move between position and momentum space. Fourier transforms are also the link between position space and momentum space and allow for the movement from one space to another. We've introduced a similar concept with the change of basis topic. The Fourier transform decomposes a function into a a series of sinusoidal functions which combine to represent the original function. In doing this decompositions, derivative operations in a certain function become multiplication - this is a unique property of the Fourier transform. 
+ 
+The Fourier transform can also be written with position and momentum: 
 
 ![pos and mom](/posmom.png)
 
