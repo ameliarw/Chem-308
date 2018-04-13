@@ -17,9 +17,9 @@ We’ve been talking about electric dipole moments - where light is an oscillati
 
 Permanent dipole moments are uninteresting in this context, as we are actually interested in oscillating dipole moments, but we must first think of the expression used to describe a dipole. This expression scales linearly with separation and charge:
 
-${/mu = q * d}$
+${\mu = q * d}$
 
-Where ${/mu}$ is the dipole moment, ${q}$ is the charge, and ${d}$ is the displacement. 
+Where ${\mu}$ is the dipole moment, ${q}$ is the charge, and ${d}$ is the displacement. 
 
 If we have more than one charge/dipole, we will sum the dipole moments.
 
