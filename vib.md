@@ -21,6 +21,10 @@ Integral of the initial state* transition operator acting on the final state com
 Calculate integral of psi final star  * transition operator * psi  initial 
 The transition operator is simple...charge*displacement 
 
+![SHO](/selectionplot.PNG)
+
+![SHOO](/selectionprob.PNG)
+
 ---------------
  ## Code for Simple Harmonic Oscillator Transitions
  
