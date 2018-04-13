@@ -75,7 +75,7 @@ BC distance 0.85
 ![abcphase](/abcphase.gif)
 
 ## Late Barrier 
-The late barrier conditions describe a reaction where the energy of the reactants is lower than that of the products. This is to say that the reaction is endergonic and thus requires additional energy to occur. The initial velocities of the reactants and the products must be larger in this potential energy hypersurface in order for the reaction to occur. This idea is depicted in the animation below, where the intial velocity of AB is -5.5 and the initial BC velocity is -5. 
+The late barrier conditions describe a reaction where the energy of the reactants is lower than that of the products. This is to say that the reaction is endergonic and thus requires additional energy to occur. The initial velocities of the reactants and the products must be larger in this potential energy hypersurface in order for the reaction to occur. This idea is depicted in the animation below, where the intial velocity of AB is -5.5 and the initial BC velocity is -5. Decreasing either velocity will cause the reaction to no longer occur. Increasing the distance between A and BC initially, as in shifting over the starting position of A causes no reaction. Decreasing this distance between A and BC by shifting the starting position of A to the left results in a reaction where A and BC go to AB and C. 
 
 ![Late](/late.gif)
 
