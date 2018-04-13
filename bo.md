@@ -4,7 +4,7 @@
 
 ## Born-Oppenheimer Approximation
 
- !(Hydrogen)[h2.jpeg]
+ ![Hydrogen](h2.jpeg)
  How can we calculate the energy of this system? 
  
 In the model depicted above, a system composed of three bodies is depicted. In order to calculate the total energy of the system, the interactions between the three different bodies, Nucleus A, Nucleus B, and the electron must be considered. Three-body problems are unable to computationally solved, but the Born-Oppenheimer approximation introduces a simplification which allows for the energy of the system to be determined. 
