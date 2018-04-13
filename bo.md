@@ -25,9 +25,11 @@ By diving by $\psi * \chi$, the functions which don't depend on r or R can then 
 When everything is simplified down as much as possible, the end result is a total potential function which depends on both the repulsion of the two nuclei as well as the attraction between the nuclei and the electron.
 
 ![PE Graph](/bondenergy.GIF)
+
 source: https://www.physicsforums.com/threads/why-does-the-potential-energy-get-lower-as-atoms-get-closer.897854/
 
 In the graph above, the total potential energy of a system is depicted by changing the internuclear distance. The graph can be thought of as  a collection of electronic energy calculations made by changing the position of the reduced mass of the nuclei and then adding an electron to the system and calculating the energy of the electron. By using the reduced mass of the nuclei, one nucleus can be thought of as stationary. The minimum energy depicted on the graph is reflective of the equilibrium bond length on the r axis and the energy of the bond on the E axis. The energy of the electron at these different nucelar positions ends up determining the total potential energy of the system. 
 
 When the electronic energy is calculated, the total potential energy ends up being calculated. 
 
+[home](/README.md)
