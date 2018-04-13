@@ -82,10 +82,11 @@ The late barrier conditions describe a reaction where the energy of the reactant
 # Lennard-Jones Potential 
 A different potential energy hypersurface can also be used to model the potential energy of a system. The Lennard-Jones potential is modeled after non-reactive species like nobel gases and takes into account the atttractive long-range forces as well as the repulsive forces due to overlapping orbitals. The Lennard-Jones potential is defined by the depth of the potential well, the equilibrium bond length, and the distance between the two nuclei. No matter which parameters are chosen, this reaction will not occur due to the shape of the Lennard-Jones potential. 
 
-Velocity of AB -1.5
-Velocity of BC -0
-AB distance 3.9
-BC distance 1.1
+Parameters: 
+- Velocity of AB -1.5
+- Velocity of BC -0
+- AB distance 3.9
+- BC distance 1.1
 ![LJnorxn](/ljno.gif)
 
 ![ljwell](/ljwell.gif)
