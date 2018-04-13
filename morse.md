@@ -1,6 +1,6 @@
 ## Modeling the Morse Potential  
   
-The Morse potential more act 
+The Morse potential more accurately describes how the potential energy of a system changes with increasing internuclear distance. The Morse potential also models the plateau in potential energy at increasing distances, as the nuclei and electrons are no longer interacting if the distance between them is large. We've used a similar approach to model the allowed transitions between energy levels, but in order to model the selection rules with the Morse potential, we've defined the potential energy of the system as the Morse potential energy. 
 
 The plot of the Morse potential with the first ten energy levels is shown below. 
 ![Morse](/morseplot.PNG)
