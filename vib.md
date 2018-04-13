@@ -13,8 +13,8 @@ The dipole transition operator is represented with $\mu$
 
 On the graph below, the eigenvectors are again shifted up by their energies. With increasing energy levels, the nodes of the wavevectors become spaced closer together. The kinetic energy of the states increases with increasing energy levels, so the curvature of the graphical depiction of each energy state also increases. This is why the nodes become closer together with increasing energy level. 
 
-Each different energy level is equally separated, the spacing is $ \hbar*\omega $ where $ \omega $ also refers to the frequency of the 
-The zero point energy is $ ½*\hbar*\omega $ of the first energy level, depicted by the ground state with a Gaussian shape. 
+Each different energy level is equally separated, the spacing is $\hbar*\omega$ where $\omega$ also refers to the frequency of the 
+The zero point energy is $½*\hbar*\omega$ of the first energy level, depicted by the ground state with a Gaussian shape. 
 
 ![SHO](/selectionplot.PNG)
 
@@ -91,4 +91,5 @@ transitions=vecs'*(q*diag(x))*vecs;
     figure(2);plot(x,shiftvecs(:,1:n),x,Vvec); 
 axis([-inf inf 0 200]);
 end
- 
+ ```
+[home](/README.md)
