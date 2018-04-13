@@ -2,6 +2,8 @@
   
 The Morse potential more accurately describes how the potential energy of a system changes with increasing internuclear distance. The Morse potential also models the plateau in potential energy at increasing distances, as the nuclei and electrons are no longer interacting if the distance between them is large. We've used a similar approach to model the allowed transitions between energy levels, but in order to model the selection rules with the Morse potential, we've defined the potential energy of the system as the Morse potential energy. 
 
+First, the time independent Schrodinger equation will be solved using the Morse potential to define our potential energy. The original particle in a box code was modified such that the potential energy matrix modeled the harmonic oscillator potential energy. Then the eigenvectors and eigenvalues can be solved. We will use the dipole moment as the transition operator to determine whether or not the transition is allowed. We say that the transition dipole operator is the complex conjugate of the final wavevector state multiplied by the x position multiplied by the initial wavevector. We yield a scalar which is proportional to the likelihood of the transition from one initial state to a final state. Therefore, the likelihood of the transition is equal to $\langle \psi_initial | \mu | \psi_final \rangle $, where $/mu$ is the transition dipole operator. 
+
 The plot of the Morse potential with the first ten energy levels is shown below. 
 ![Morse](/morseplot.PNG)
 
