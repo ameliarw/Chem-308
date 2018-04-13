@@ -10,7 +10,7 @@ By placing the particle in a box surrounded by infinite potential, the particle 
 
 
 ![tunnels](/tunneling.gif) 
-
+From: http://sdsu-physics.org/physics197/phys197.html
 
 The second energy eigenfunction of the Particle in a Box model in the position basis can be thought of as a linear combination of different ${x}$ positions to create an overall function. The ${x_1}$ position has some contribution to the overall function, the ${x_2}$ position has a different contribution to the overall function, and the ${x_3}$ position has a different contribution to the overall function. This idea continues for all ${x}$ positions and their contributions, and therefore an overall quantum state. The figure simplifies this concept by spacing out the ${x_1},{x_2}, and {x_3}$ positions, but these positions can be thought of as infinitely close. 
 ![lincomb](/lincomb.jpg)
@@ -36,7 +36,7 @@ This is the code which sets the length of the box, the mass of the particle, and
 function [x,E,psiX,psiE]=TDSE
 ```
 
-First a number of different constants must be defined. Here, the mass of the particle (m), the length of the box (L), and ${/hbar^2}$ are all defined as 1 in order to simplify the problem. The height of the barrier is defined as a large number to account for the infinite potential of the box and is set at ${1 x 10^6}$. A new variable w is defined as 3 in order to construct the potential wall, where w is essentially the width of the barrier. The number points used is set equal to 250.
+First a number of different constants must be defined. Here, the mass of the particle (m), the length of the box (L), and ${\hbar^2}$ are all defined as 1 in order to simplify the problem. The height of the barrier is defined as a large number to account for the infinite potential of the box and is set at ${1 x 10^6}$. A new variable w is defined as 3 in order to construct the potential wall, where w is essentially the width of the barrier. The number points used is set equal to 250.
 ```
 %here are my constants: %m is mass, L is length of box, barht height of barrier, w is the barrier width
 m = 1;
