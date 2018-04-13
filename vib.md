@@ -7,8 +7,6 @@ We use the harmonic oscillator to model simple molecular vibration. We use reduc
  
 First, the time independent Schrodinger equation will be solved using the potential energy of the harmonic oscillator. The original particle in a box code was modified such that the potential energy matrix modeled the harmonic oscillator potential energy. Then the eigenvectors and eigenvalues can be solved. We will use the dipole moment as the transition operator to determine whether or not the transition is allowed. We say that the transition dipole operator is the complex conjugate of the final wavevector state multiplied by the x position multiplied by the initial wavevector. We yield a scalar which is proportional to the likelihood of the transition from one initial state to a final state. 
 
-We yield a scalar which is proportional to the likelihood of the transition from one initial state to a final state. 
-
 On the graph below, the eigenvectors are again shifted up by their energies. With increasing energy levels, the nodes of the wavevectors become spaced closer together. The kinetic energy of the states increases with increasing energy levels, so the curvature of the graphical depiction of each energy state also increases. This is why the nodes become closer together with increasing energy level. 
 
 
