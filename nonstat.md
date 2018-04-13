@@ -1,5 +1,7 @@
 [home](/README.md)
 
+{% include mathjax.html %}
+
 #### Time Evolution of Non-Stationary States
 While the time evolution of stationary states proves to be periodic and predictable, non-stationary states are composed of 
 eigenvectors of different energies, leading to variation in the rates of time evolution. 
@@ -17,7 +19,7 @@ This non-stationary state does not time-evolve in a periodic way like stationary
 function [x,E,psiX,psiE]=TDSE
 ```
 
-First a number of different constants must be defined. Here, the mass of the particle (m), the length of the box (L), and ${/hbar^2}$ are all defined as 1 in order to simplify the problem. The height of the barrier is defined as a large number to account for the infinite potential of the box and is set at ${1 x 10^6}$. A new variable w is defined as 3 in order to construct the potential wall, where w is essentially the width of the barrier. The number points used is set equal to 250.
+First a number of different constants must be defined. Here, the mass of the particle (m), the length of the box (L), and ${\hbar^2}$ are all defined as 1 in order to simplify the problem. The height of the barrier is defined as a large number to account for the infinite potential of the box and is set at ${1 x 10^6}$. A new variable w is defined as 3 in order to construct the potential wall, where w is essentially the width of the barrier. The number points used is set equal to 250.
 ```
 %here are my constants: %m is mass, L is length of box, barht height of barrier, w is the barrier width
 m = 1;
@@ -52,9 +54,10 @@ By putting the entries of Vvec on the diagonal of a new matrix, V, the potential
 V = diag(Vvec);
 ```
 
-We've then created a matrix which will find the kinetic energy of a different matrix. The second derivative of a function can be thought of as how the change in slope of a graph changes, and a similar thought is used here to consider how the change in entries of a vector change. This second derivative matrix shown below is then multiplied by $1/dx^2 $and that resulting matrix is then multiplied by $frac{/hbar^2}{2* m}$ to determine the total kinetic energy of the vector.
+We've then created a matrix which will find the kinetic energy of a different matrix. The second derivative of a function can be thought of as how the change in slope of a graph changes, and a similar thought is used here to consider how the change in entries of a vector change. This second derivative matrix shown below is then multiplied by $1/dx^2 $and that resulting matrix is then multiplied by $\frac{\hbar^2}{2* m}$ to determine the total kinetic energy of the vector.
 
-```%making the second derivative matrix
+```
+%making the second derivative matrix
 
 D2 = (1/(dx^2))*(-2*eye(pts) + diag(ones(pts-1,1), 1) + diag(ones(pts-1,1),-1));
 
@@ -81,6 +84,7 @@ The srtvecs commmand, [described here](/Eigsort.md) puts the eigenvectors and ei
 ```
 %now we sort the vectors and values so that they are plotted in ascending order of n, but the eigenvalues and eigenvectors stay together
 [srtvecs, srtvals] = eigsort(vecs, vals);
+
 ```
 
 Two matrices must now be created in order to change from the position basis to the energy basis so that the wavevector may be represented in the energy basis. The idea behind the change of basis is described on the [Change of Basis page](/Basis.md). By multiplying the matrix EtoX by the matrix psiE, the corresponding stationary state is found in the energy basis. This example specifically solves for the eigenvector which has equal contributions from the first, second, and fifth stationary states.  
@@ -91,6 +95,7 @@ XtoE=inv(srtvecs);
 psiE=zeros(pts,1); 
 psiE([1 2 5])=1; 
 psiX=EtoX*psiE;
+
 ````
 
 The matrix E is now a vector composed of the diagonal elements of the srtvals matrix, which are the eigenvalues sorted in ascending order. 
