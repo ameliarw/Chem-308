@@ -9,17 +9,12 @@ First, the time independent Schrodinger equation will be solved using the potent
 
 On the graph below, the eigenvectors are again shifted up by their energies. With increasing energy levels, the nodes of the wavevectors become spaced closer together. The kinetic energy of the states increases with increasing energy levels, so the curvature of the graphical depiction of each energy state also increases. This is why the nodes become closer together with increasing energy level. 
 
-
-Each different energy level is equally separated, the spacing is hbar*omega 
+Each different energy level is equally separated, the spacing is \hbar*\omega where \omega also refers to the frequency of the 
 The zero point energy is ½ hbar *omega 
 The ground state is a Gaussian 
-
-Integral of the initial state* transition operator acting on the final state complex conjugate from infinity over all space
-
-Calculate integral of psi final star  * transition operator * psi  initial 
-The transition operator is simple...charge*displacement 
-
 ![SHO](/selectionplot.PNG)
+
+The probabilty of the transition from one initial state to any other state is depicted below. The more probable transitions are indicated by colors closer to yellow, while the less probable transitions are blue. The selection rules hold in the simple harmonic oscillator, where the transition that are allowed are when the change in energy level is equal to 1. 
 
 ![SHOO](/selectionprob.PNG)
 
