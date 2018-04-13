@@ -2,13 +2,6 @@
 {% include mathjax.html %}
 
 ### Fourier Transforms Introduction
-   
-In the video:  
-There are two graphs present. One graph is the time evolution of a wavepacket in the position space, and the other graph is the time evolution of a wavepacket in the momentum space. The plane in the middle is at x = 0 and k = 0. 
- 
-At a higher k values, the wavelength of the wavepacket will be decreased and the graph will appear more steep. At higher k values, or wavenumbers, the wavepacket will have more energy. 
-
-![video](/posmom.gif)
 
 The Fourier transform classically refers to the idea of tranforming a function which exists in time space into a function which exists in frequency space. A function of time can be transformed into a function of frequency, using the Fourier transform. 
 
@@ -39,6 +32,16 @@ Position and momentum are still defined by their uncertainties relative to each 
 If the position of a particle is known, the momentum will be more uncertain. If the momentum is well-defined, the position will not be well-defined. This relation hold true with gaussian wavepackets in postion and momentum space as well. If the wavepacket is narrow in position space. When the wavepacket in the position space is wide, the wavepacket in the momentum space evolves more slowly. 
 
 The Fourier transform is a linear combination of sines and cosines. The evolving combination of sines and cosines is what causes the helical shape, and with higher energy, higher k values, the helical shape will appear to evolve more quickly and display more kinks. 
+
+
+In the video:  
+There are two graphs present. One graph is the time evolution of a wavepacket in the position space, and the other graph is the time evolution of a wavepacket in the momentum space. The plane in the middle is at x = 0 and k = 0. 
+ 
+At a higher k values, the wavelength of the wavepacket will be decreased and the graph will appear more steep. At higher k values, or wavenumbers, the wavepacket will have more energy. 
+
+![video](/posmom.gif)
+
+
  
 -----------------------
 
