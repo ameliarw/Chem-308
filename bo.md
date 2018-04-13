@@ -19,7 +19,7 @@ The Hamiltonian to describe the overall system consisting of two different nucle
 The Hamiltonian must describe both the translational motion of the electron and nuclei in the system as well as the potential interactions between them. The Hamiltonian is then composed of both the potential and kinetic energies of the nuc-nuc interactions and the nucleus-electron interactions: 
 $ \hat{H} = \hat{T}_nuc 
 
-$\hat{H}=\hat{T}_{nuc}+\hat{T}_{e}+\hat{V}_{nuc-e}+\hat{V}_{nuc-nuc}$
+$\hat{H}=\hat{T}_nuc+\hat{T}_e+\hat{V}_{nuc-e}+\hat{V}_{nuc-nuc}$
 
 Expanded, when considering what each operator does, this expression equals: 
 
