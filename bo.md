@@ -30,84 +30,81 @@ When the electronic energy is calculated, the total potential energy ends up bei
 
 For example, consider $H_2^+$ shown in Fig.1 bellow. It is composed of three particles: 2 protons and 1 electrons. The Hamiltonian of the system is given by the sum of the kinetic energy and potential energy of each particle.
 
-<p align="center"><img src="https://user-images.githubusercontent.com/35305574/38473469-79e4be14-3b5e-11e8-8c9e-887bc297ffff.jpg" width="500"></p>
-<p align="center">Fig.1</p>
-
 We can write the Hamiltonian as:
 
-<p align="center">$\hat{H}=\hat{T}_{nuclear}+\hat{T}_{electron}+\hat{V}_{nuc-e}+\hat{V}_{nuc-nuc}$</p>
+$\hat{H}=\hat{T}_{nuclear}+\hat{T}_{electron}+\hat{V}_{nuc-e}+\hat{V}_{nuc-nuc}$</p>
 
-<p align="center">$=(\frac{-\hbar^2 }{2M_a}\nabla^2_a + \frac{-\hbar^2 }{2M_b}\nabla^2_b) + \frac{-\hbar^2 }{2M_e}\nabla^2_e + (\frac{-q^2}{4\pi \epsilon_0 r_a} + \frac{-q^2}{4\pi \epsilon_0 r_b})+ \frac{q^2}{4\pi \epsilon_0 R_{ab}}.$</p>
+$=(\frac{-\hbar^2 }{2M_a}\nabla^2_a + \frac{-\hbar^2 }{2M_b}\nabla^2_b) + \frac{-\hbar^2 }{2M_e}\nabla^2_e + (\frac{-q^2}{4\pi \epsilon_0 r_a} + \frac{-q^2}{4\pi \epsilon_0 r_b})+ \frac{q^2}{4\pi \epsilon_0 R_{ab}}.$</p>
 
 Therefore, the TISE is given by
 
-<p align="center">$\hat{H}\Psi(r,R)=\xi \Psi(r,R)$</p>
+$\hat{H}\Psi(r,R)=\xi \Psi(r,R)$</p>
 so
-<p align="center">$(\hat{T}_{nuclear}+\hat{T}_{electron}+\hat{V}_{nuc-e}+\hat{V}_{nuc-nuc})\Psi(r,R)=\xi \Psi(r,R).$</p>
+$(\hat{T}_{nuclear}+\hat{T}_{electron}+\hat{V}_{nuc-e}+\hat{V}_{nuc-nuc})\Psi(r,R)=\xi \Psi(r,R).$</p>
 
 To solve this TISE we need to resort once again to the separation of variables trick and let
 
-<p align="center">$\Psi(r,R)=\psi(r;R)\chi(R),$</p>
+$\Psi(r,R)=\psi(r;R)\chi(R),$</p>
 where $\psi(r;R)$ means that $\psi$ is a function of $r$ and has $R$ as a parameter.
 
 So the TISE becomes
 
-<p align="center">$(\hat{T}_{nuclear}+\hat{T}_{electron}+\hat{V}_{nuc-e}+\hat{V}_{nuc-nuc})\psi(r;R)\chi(R)=\xi \psi(r;R)\chi(R),$</p>
+$(\hat{T}_{nuc}+\hat{T}_{e}+\hat{V}_{nuc-e}+\hat{V}_{nuc-nuc})\psi(r;R)\chi(R)=\xi \psi(r;R)\chi(R),$</p>
 
 such that
 
-<p align="center">$\hat{T}_{nuclear}(\psi \chi)+\hat{T}_{electron}(\psi \chi)+\hat{V}_{nuc-e}(\psi \chi)+\hat{V}_{nuc-nuc}(\psi \chi)$</p>
+$\hat{T}_{nuclear}(\psi \chi)+\hat{T}_{electron}(\psi \chi)+\hat{V}_{nuc-e}(\psi \chi)+\hat{V}_{nuc-nuc}(\psi \chi)$</p>
   <p align="center">$=\xi \psi \chi.$</p>
 
 Then dividing both sides by $\psi \chi$ we have
 
-<p align="center">$\frac{\hat{T}_{nuclear}(\psi \chi)}{\psi \chi}+ \frac{\hat{T}_{electron}\psi}{\psi}+ \hat{V}_{nuc-e} +\hat{V}_{nuc-nuc} =\xi.$</p>
+$\frac{\hat{T}_{nuclear}(\psi \chi)}{\psi \chi}+ \frac{\hat{T}_{electron}\psi}{\psi}+ \hat{V}_{nuc-e} +\hat{V}_{nuc-nuc} =\xi.$</p>
 
 We can see that the first term should be the most challenging to deal with, so let’s start with it. We have 
 
-<p align="center"> $\hat{T}_{nuclear}(\psi \chi)= (\frac{-\hbar^2 }{2M_a}\nabla^2_a + \frac{-\hbar^2 }{2M_b}\nabla^2_b) (\psi \chi) .$</p>
+ $\hat{T}_{nuclear}(\psi \chi)= (\frac{-\hbar^2 }{2M_a}\nabla^2_a + \frac{-\hbar^2 }{2M_b}\nabla^2_b) (\psi \chi) .$</p>
 
-<p align="center"> $= \frac{-\hbar^2 }{2M_a}\nabla^2_a(\psi \chi) + \frac{-\hbar^2 }{2M_b}\nabla^2_b(\psi \chi) .$</p>
+ $= \frac{-\hbar^2 }{2M_a}\nabla^2_a(\psi \chi) + \frac{-\hbar^2 }{2M_b}\nabla^2_b(\psi \chi) .$</p>
 
 The two terms in the equation above are similar, so we can solve the first term and determine the second one by analogy.
 
 
-<p align="center"> $\frac{-\hbar^2 }{2M_a}\nabla^2_a(\psi \chi) = \frac{-\hbar^2 }{2M_a} \frac{\partial}{\partial R_a} (\frac{\chi \partial \psi}{\partial R_a} + \frac{\psi \partial \chi}{\partial R_a}) $</p>
+$\frac{-\hbar^2 }{2M_a}\nabla^2_a(\psi \chi) = \frac{-\hbar^2 }{2M_a} \frac{\partial}{\partial R_a} (\frac{\chi \partial \psi}{\partial R_a} + \frac{\psi \partial \chi}{\partial R_a}) $</p>
 
-<p align="center"> $= \frac{-\hbar^2 }{2M_a}[(\chi \frac{\partial^2 \psi}{\partial {R_a}^2}+\frac{\partial \psi}{\partial {R_a}}\frac{\partial \chi}{\partial {R_a}}) +  (\psi \frac{\partial^2 \chi}{\partial {R_a}^2}+\frac{\partial \psi}{\partial {R_a}}\frac{\partial \chi}{\partial {R_a}})] $</p>
+ $= \frac{-\hbar^2 }{2M_a}[(\chi \frac{\partial^2 \psi}{\partial {R_a}^2}+\frac{\partial \psi}{\partial {R_a}}\frac{\partial \chi}{\partial {R_a}}) +  (\psi \frac{\partial^2 \chi}{\partial {R_a}^2}+\frac{\partial \psi}{\partial {R_a}}\frac{\partial \chi}{\partial {R_a}})] $</p>
 
 Now comes the Born-Oppenheimer approximation. We know that the mass of the proton is 1836 times greater than that of the electron. Therefore, as the whole system (electron + two protons) move in space, the electron also moves relative to the center of mass of the system. We can then approximate that the rate of change of $\psi$ with respect to $R_a$ is insignificant. So that
 
-<p align="center"> $\frac{\partial^2 \psi}{\partial {R_a}^2}= \frac{\partial \psi}{\partial {R_a}}=0 $.</p>
+ $\frac{\partial^2 \psi}{\partial {R_a}^2}= \frac{\partial \psi}{\partial {R_a}}=0 $.</p>
 
 We then obtain
 
-<p align="center"> $\frac{-\hbar^2 }{2M_a}\nabla^2_a(\psi \chi) = \frac{-\hbar^2 }{2M_a}\psi \frac{\partial^2 \chi}{\partial {R_a}^2} $.</p>
+ $\frac{-\hbar^2 }{2M_a}\nabla^2_a(\psi \chi) = \frac{-\hbar^2 }{2M_a}\psi \frac{\partial^2 \chi}{\partial {R_a}^2} $.</p>
 
 By analogy we also have 
 
-<p align="center"> $\frac{-\hbar^2 }{2M_b}\nabla^2_b(\psi \chi) = \frac{-\hbar^2 }{2M_b}\psi \frac{\partial^2 \chi}{\partial {R_b}^2}$. $</p>
+$\frac{-\hbar^2 }{2M_b}\nabla^2_b(\psi \chi) = \frac{-\hbar^2 }{2M_b}\psi \frac{\partial^2 \chi}{\partial {R_b}^2}$. $</p>
 
 Therefore, the TISE become
 
-<p align="center"> $\frac{\frac{-\hbar^2 }{2M_a} \frac{\partial^2 \chi}{\partial {R_a}^2}}{\chi} + \frac{\frac{-\hbar^2 }{2M_b} \frac{\partial^2 \chi}{\partial {R_b}^2}}{\chi} + \frac{\hat{T}_{electron} \psi}{\psi} + \hat{V}_{nuc-e}+\hat{V}_{nuc-nuc} =\xi$.</p>
+$\frac{\frac{-\hbar^2 }{2M_a} \frac{\partial^2 \chi}{\partial {R_a}^2}}{\chi} + \frac{\frac{-\hbar^2 }{2M_b} \frac{\partial^2 \chi}{\partial {R_b}^2}}{\chi} + \frac{\hat{T}_{e} \psi}{\psi} + \hat{V}_{nuc-e}+\hat{V}_{nuc-nuc} =\xi$.</p>
 
 The TISE can be rewritten as 
 
-<p align="center"> $(\frac{\hat{T}_{nuclear} \chi}{\chi} + \frac{\chi}{\chi} \hat{V}_{nuc-nuc})+ (\frac{\hat{T}_{electron} \psi}{\psi} + \frac{\psi}{\psi} \hat{V}_{nuc-e})=\xi$.</p>
+ $(\frac{\hat{T}_{nuc} \chi}{\chi} + \frac{\chi}{\chi} \hat{V}_{nuc-nuc})+ (\frac{\hat{T}_{electron} \psi}{\psi} + \frac{\psi}{\psi} \hat{V}_{nuc-e})=\xi$.</p>
 
 Call the second term $E_e$ and factor out the $\chi$ in the first term to obtain
 
-<p align="center"> $(\frac{\hat{T}_{nuclear}}{\chi} + \frac{1}{\chi} \hat{V}_{nuc-nuc})\chi+ E_e=\xi$.</p>
+$(\frac{\hat{T}_{nuc}}{\chi} + \frac{1}{\chi} \hat{V}_{nuc-nuc})\chi+ E_e=\xi$.</p>
 
 Then multiply both sides by $\chi$ to obtain
 
-<p align="center"> $(\hat{T}_{nuclear} + \hat{V}_{nuc-nuc})\chi + E_e \chi =\xi \chi$.</p>
+$(\hat{T}_{nuc} + \hat{V}_{nuc-nuc})\chi + E_e \chi =\xi \chi$.</p>
 
 This can be rewritten as 
 
-<p align="center"> $\hat{T}_{nuclear} \chi + (\hat{V}_{nuc-nuc}+E_e) \chi =\xi \chi$.</p>
+ $\hat{T}_{nuc} \chi + (\hat{V}_{nuc-nuc}+E_e) \chi =\xi \chi$.</p>
 
 Call the terms in parenthesis $ \hat{V}_{nuclear}$ to obtain
 
-<p align="center"> $\hat{T}_{nuclear} \chi + \hat{V}_{nuclear} \chi =\xi \chi$.</p>
+ $\hat{T}_{nuc} \chi + \hat{V}_{nuc} \chi =\xi \chi$.</p>
