@@ -1,4 +1,4 @@
-{ % include mathjax.html % }  
+{% include mathjax.html %}  
 [home](/README.md)
 
 ## Modeling the Morse Potential  
