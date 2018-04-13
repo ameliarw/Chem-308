@@ -5,6 +5,7 @@
 ## Born-Oppenheimer Approximation
 
  ![Hydrogen](h2.jpg)
+
  How can we calculate the energy of this system? 
  
 In the model depicted above, a system composed of three bodies is depicted. In order to calculate the total energy of the system, the interactions between the three different bodies, Nucleus A, Nucleus B, and the electron must be considered. Three-body problems are unable to computationally solved, but the Born-Oppenheimer approximation introduces a simplification which allows for the energy of the system to be determined. 
@@ -26,7 +27,10 @@ $ \hat{H} =(\frac{-\hbar^2 }{2M_a}\nabla^2_a + \frac{-\hbar^2 }{2M_b}\nabla^2_b)
 Where m and M refer to electron or nuclear mass, q refers to the charge, r refers to the position of the particles, and $ epsilon_0 $ refers to the permittivity of space. 
 
 Separation of variables will be utilized in order to get two functions, $\psi $ and $\chi$ which depend on different variables. The electronic function, $ \psi $ parametrically depends on the radius of the nuclei. 
+$ \Psi(r, R_a, R_b) = \psi(r; R)\chi(R) $
 
+Therefore, 
+\hat{H}
 
 
 By diving by psi * chi the functions which don't depend on r or R can then be canceled out and the expression can be simplified. The product rule can then be used to further simplify the expression of the kinetic energy of nuclei A and B by taking the second derivative of the functions. 
