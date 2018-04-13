@@ -1,46 +1,16 @@
-## Vibrational Transitions
+{% include mathjax.html %}
+[home](/README.md)
 
-Mechanism we are focused on is the relationship between an oscillating electromagnetic field (light) and a dipole moment. 
-
-We need to have an oscillating dipole moment (can’t get from stationary state) 
+## Simple Harmonic Oscillator
+How can we visually display which transitions are allowed? 
+We use the harmonic oscillator to model simple molecular vibration. We use reduced mass in order to “fix” one side. This allows us to assume that we have one dimensional motion of on mass along an axis. 
  
-Electric dipole moment which oscillates at the frequency of the electromagnetic field. 
-Frequency matching as energy matching → if you match the frequency, you match the energy
-Polarization of light 
-Horizontal or vertical (think of as basis)  
-Or a combination of the two in circularly polarized light 
-Circularly polarized light has angular and linear momentum, should be considered 
-Horizontal and vertical together as combination
-If there isn’t a 90 difference between the two components, then you get elliptically polarized light 
-Polarization - in space, what is the path of the maximum as it travels across space? 
-SO why is polarization important? 
+First, the time independent Schrodinger equation will be solved using the potential energy of the harmonic oscillator. The original particle in a box code was modified such that the potential energy matrix modeled the harmonic oscillator potential energy. Then the eigenvectors and eigenvalues can be solved. We will use the dipole moment as the transition operator to determine whether or not the transition is allowed. We say that the transition dipole operator is the complex conjugate of the final wavevector state multiplied by the x position multiplied by the initial wavevector. We yield a scalar which is proportional to the likelihood of the transition from one initial state to a final state. 
 
-Transition dipole moment is the point where the two orbitals have equal contribution - if that distribution changes with time, with phase changes, then you have an oscillating dipole moment. 
+We yield a scalar which is proportional to the likelihood of the transition from one initial state to a final state. 
 
-A linear combination of two eigenvectors with the same energy (degenerate energy) will yield another eigenvector of the Hamiltonian 
+On the graph below, the eigenvectors are again shifted up by their energies. With increasing energy levels, the nodes of the wavevectors become spaced closer together. The kinetic energy of the states increases with increasing energy levels, so the curvature of the graphical depiction of each energy state also increases. This is why the nodes become closer together with increasing energy level. 
 
-2px = e-ml(fi) - e
-
-3dz2 is not a linear combination - it has well defined energy all by itself. 
-
-Conservation laws come out of symmetry - if you bring in another atom, symmetry is broken.
-
-The orbitals as cartoons to conceptualize the idea of selection rules, which would be allowed 
-
-Molecular vibration case
-We use the harmonic oscillator to model simple molecular vibration. 
-K is the force constant. 
-We use reduced mass in order to “fix” one side. This allows us to assume that we have one dimensional motion of on mass along one 
-
-
-Bond strength is the Eo
-R0 is the equilibrium bond length 
-K is the curvature - stiffer, skinnier curve 
-
-Morse Potential - could solve for the potential, can be solved analytically. 
-But we have matlab so we will adopt an approximation of ½ kx2 as the V(x) 
-So now it is the harmonic oscillator problem. 
-If I am in a particular state of a harmonic oscillator, can I get to another state of a harmonic oscillator 
 
 Each different energy level is equally separated, the spacing is hbar*omega 
 The zero point energy is ½ hbar *omega 
@@ -48,19 +18,48 @@ The ground state is a Gaussian
 
 Integral of the initial state* transition operator acting on the final state complex conjugate from infinity over all space
 
-How do we do this in matlab
-Solve TISE for hamiltonian operator, where the V(x) is modeled by this potential 
-Get vecs and vals
-Plot vecs 1-6 
-Displaced by their energies 
-We need a potential - the potential is V(x) - the x is already linspace, just make a matrix with the solutions of ½ kx2 on the diagonal to make the potential energy matrix 
-How do we get the selection rules? 
-If you’re in one quantum state, what other quantum states would be allowed? 
-Conceptually, 0 - 5 are the first six states (start with V = 0) 
-Then you have the possible final states
-Think about making a matrix/table of what transitions are allowed 
-Before we make this plot, we have to find our values .
 Calculate integral of psi final star  * transition operator * psi  initial 
 The transition operator is simple...charge*displacement 
 
 ---------------
+ ## Code for Simple Harmonic Oscillator Transitions
+ 
+ First a number of constants must be defined. Most of these constants are set to zero in order to simplify the program. M is the mass of the particle, ${/hbar^2}$ 
+ ```Matlab
+ function selection(n)
+    m = 1;
+    hbarsq = 1; 
+    pts = 250;
+    k = 1e3;
+    q = 1;
+    n=10;
+
+%now account for the delta x and discritize the number of elements in the x vector 
+%We say that there are some number of points within the x vector
+x = linspace(-1, 1, pts);
+dx = x(2)-x(1);
+
+ D2 = -2*eye(pts) + diag(ones(pts-1,1), 1) + diag(ones(pts-1,1),-1);   
+    T = 1/(dx^2)*(-hbarsq/(2*m))*D2;
+    Vvec=.5*k*(x.^2);
+    V=diag(Vvec);
+    H=T+V; 
+
+[vecs, vals] = eig(H);
+[srtvecs, srtvals] = eigsort(vecs, vals);
+
+k = diag(srtvals);
+l = ones(pts, 1);
+repvals = l*k';
+
+sc = 100;
+shiftvecs = repvals + sc*srtvecs;
+    
+    transitions=vecs'*(q*diag(x))*vecs;
+
+    figure(1);pcolor(abs(transitions(1:n,1:n).^2))
+    axis square
+    figure(2);plot(x,shiftvecs(:,1:n),x,Vvec); 
+axis([-inf inf 0 200]);
+end
+ 
