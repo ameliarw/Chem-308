@@ -40,7 +40,8 @@ Try it with the morse potential - does it move off to the side? Do we see differ
 
 Adjust the depth of the well and the x bounds to make sure that our graph fits within the new morse potential 
 
-![Morse](/unshiftedmorse.png)
+![Morse](/morseplot.png)
+![Morse](/morseprob.png)
 
 --------------
 #### Matlab Code
